@@ -1,0 +1,44 @@
+.intro {
+    color: #DEE5FFD9;
+    text-align: center;
+    font-family: Avenir Next LT Pro;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 4rem;
+}
+
+.mainIntro {
+    color: #DEE5FFD9;
+    font-family: Avenir Next LT Pro;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-block: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.eqBtn {
+    display: flex;
+    justify-content: center;
+    padding: 0.85713rem 3.42856rem;
+    cursor: pointer;
+    align-items: center;
+    margin: 2rem auto auto auto;
+    gap: 0.71431rem;
+    border-radius: 0.85713rem;
+    border: 1px solid #01FDFE;
+    background: rgba(18, 101, 172, 0.40);
+    font-family: Avenir Next LT Pro;
+    font-size: 1.42856rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.8;
+    background: linear-gradient(91deg, #01FDFE 0.43%, #1C9DFE 97.21%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
