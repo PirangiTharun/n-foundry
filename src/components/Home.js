@@ -11,7 +11,13 @@ const Home = () => {
   const [x, setX] = useState(400);
   const [y, setY] = useState(400);
   const [z, setZ] = useState(400);
+  const [distance, setDistance] = useState(0);
   // console.log(z, "z in home");
+
+  /**
+   * props.distance = Math.min(props.distance, 300);
+  props.distance = Math.max(props.dispose,0);
+   */
   return (
     <div>
         <Navbar />
@@ -21,15 +27,15 @@ const Home = () => {
 
             <button className='eqBtn'>Enquire now</button>
             <div style={{height: '40vh', width: 'inherit'}}>
-              <Canvas onMouseEnter={()=>setZ(z+50)} onMouseLeave={()=>setZ(z-50)}  camera={{ position: [z, z, z], fov: 35}}>
+              <Canvas onWheel={(e)=> setDistance(Math.min(Math.max(distance+e.deltaY/5, 0),300))} camera={{ position: [400, 400, 400], fov: 35}}>
                 {/* <color attach="background" args={[0xe2f4df]} /> */}
                 <ambientLight />
-                <OrbitControls autoRotate />
+                <OrbitControls enableZoom={false} autoRotate={false} />
                 <directionalLight intensity={1.1} position={[0.5, 0, 0.866]} />
                 <directionalLight intensity={0.8} position={[-6, 2, 2]} />
                 <Suspense fallback={null}>
-                  <Model z={z} setZ={setZ}/>
-                  {/* <CapsulePill /> */}
+                    <CapsulePill scale={0.8} distance={distance} />
+                    {/* <Model z={z} scale={0.3} setZ={setZ}/> */}
                 </Suspense>
               </Canvas>
             </div>

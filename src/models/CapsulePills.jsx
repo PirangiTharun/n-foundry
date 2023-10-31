@@ -7,15 +7,22 @@ import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
   const { nodes, materials } = useGLTF("/Capsule pills.gltf");
+
   return (
-    <group rotateOnAxis {...props} dispose={null}>
+    <group rotation={[0,Math.PI/4,0]} rotateOnAxis {...props} dispose={null}>
       <mesh
+        // this is greeen shit
+        position={[props.distance/4,0,0]}
+        rotation={[0,0,-props.distance/400]}
         castShadow
         receiveShadow
         geometry={nodes.Roundcube.geometry}
         material={materials.Material}
       />
       <mesh
+        // this is white shit
+        position={[-props.distance/4,0,0]}
+        rotation={[0,0,props.distance/400]}
         castShadow
         receiveShadow
         geometry={nodes.Roundcube001.geometry}
