@@ -42,3 +42,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.canvasContainer {
+    position: relative;
+    z-index: 999;
+    height: 50vh;
+    /* padding-top: 10rem; */
+}

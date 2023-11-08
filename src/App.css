@@ -1,5 +1,8 @@
 .outerBody {
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background: linear-gradient(302deg, #010618 52.98%, #0D1329 100%);
 }
