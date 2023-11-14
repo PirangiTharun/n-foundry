@@ -9,7 +9,7 @@ export function Model(props) {
   const { nodes, materials } = useGLTF("/Capsule pills.gltf");
 
   return (
-    <group rotation={[0,Math.PI/4,0]} rotateOnAxis {...props} dispose={null}>
+    <group position={[0,-200,0]} rotateOnAxis {...props} dispose={null}>
       <mesh
         // this is greeen shit
         position={[props.distance/4,0,0]}

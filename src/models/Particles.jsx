@@ -9,13 +9,13 @@ export function Model(props) {
   const { nodes, materials } = useGLTF("/Pills out of capsule no lights.gltf");
   console.log(props.distance);
   return (
-    <group {...props} dispose={null}>
+    <group position={[0,-200,0]} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Sphere.geometry}
         material={materials["Dark blue"]}
-        scale={ (props.distance*2)>1?0.106:0 }
+        scale={ (props.distance)>1?0.106:0 }
       />
       <mesh
         castShadow
@@ -24,7 +24,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.437, 0.465, -0.006]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>2?0.106:0 }
+        scale={ (props.distance)>2?0.106:0 }
       />
       <mesh
         castShadow
@@ -32,7 +32,7 @@ export function Model(props) {
         geometry={nodes.Sphere002.geometry}
         material={materials["light blue"]}
         position={[-0.571, 0.782, 0]}
-        scale={ (props.distance*2)>3?0.106:0 }
+        scale={ (props.distance)>3?0.106:0 }
       />
       <mesh
         castShadow
@@ -41,7 +41,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.437, 1.226, -0.006]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>4?0.106:0 }
+        scale={ (props.distance)>4?0.106:0 }
       />
       <mesh
         castShadow
@@ -50,7 +50,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.662, 1.776, 0.376]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>5?0.106:0 }
+        scale={ (props.distance)>5?0.106:0 }
       />
       <mesh
         castShadow
@@ -59,7 +59,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.377, 2.198, 0.015]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>6?0.106:0 }
+        scale={ (props.distance)>6?0.106:0 }
       />
       <mesh
         castShadow
@@ -68,7 +68,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.51, 2.422, -0.516]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>7?0.106:0 }
+        scale={ (props.distance)>7?0.106:0 }
       />
       <mesh
         castShadow
@@ -76,7 +76,7 @@ export function Model(props) {
         geometry={nodes.Sphere007.geometry}
         material={materials["light blue"]}
         position={[2.114, 2.769, 0]}
-        scale={ (props.distance*2)>8?0.106:0 }
+        scale={ (props.distance)>8?0.106:0 }
       />
       <mesh
         castShadow
@@ -84,7 +84,7 @@ export function Model(props) {
         geometry={nodes.Sphere008.geometry}
         material={materials["Dark blue"]}
         position={[1.057, 3.615, 0]}
-        scale={ (props.distance*2)>9?0.106:0 }
+        scale={ (props.distance)>9?0.106:0 }
       />
       <mesh
         castShadow
@@ -92,7 +92,7 @@ export function Model(props) {
         geometry={nodes.Sphere009.geometry}
         material={materials["light blue"]}
         position={[-0.402, 3.891, 0.387]}
-        scale={ (props.distance*2)>10?0.106:0 }
+        scale={ (props.distance)>10?0.106:0 }
       />
       <mesh
         castShadow
@@ -101,7 +101,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.961, 3.281, 0.194]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>11?0.106:0 }
+        scale={ (props.distance)>11?0.106:0 }
       />
       <mesh
         castShadow
@@ -109,7 +109,7 @@ export function Model(props) {
         geometry={nodes.Sphere011.geometry}
         material={materials["light blue"]}
         position={[-1.628, 3.658, -0.296]}
-        scale={ (props.distance*2)>12?0.106:0 }
+        scale={ (props.distance)>12?0.106:0 }
       />
       <mesh
         castShadow
@@ -118,7 +118,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.399, 3.53, 0.98]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>13?0.106:0 }
+        scale={ (props.distance)>13?0.106:0 }
       />
       <mesh
         castShadow
@@ -127,7 +127,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.86, 2.728, 0.904]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>14?0.106:0 }
+        scale={ (props.distance)>14?0.106:0 }
       />
       <mesh
         castShadow
@@ -136,7 +136,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.761, 3.002, 0.41]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>15?0.106:0 }
+        scale={ (props.distance)>15?0.106:0 }
       />
       <mesh
         castShadow
@@ -144,7 +144,7 @@ export function Model(props) {
         geometry={nodes.Sphere015.geometry}
         material={materials["light blue"]}
         position={[-3.72, 4.396, 0.375]}
-        scale={ (props.distance*2)>16?0.106:0 }
+        scale={ (props.distance)>16?0.106:0 }
       />
       <mesh
         castShadow
@@ -153,7 +153,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.299, 4.566, 0.945]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>17?0.106:0 }
+        scale={ (props.distance)>17?0.106:0 }
       />
       <mesh
         castShadow
@@ -161,7 +161,7 @@ export function Model(props) {
         geometry={nodes.Sphere017.geometry}
         material={materials["light blue"]}
         position={[-1.501, 4.735, 0]}
-        scale={ (props.distance*2)>18?0.106:0 }
+        scale={ (props.distance)>18?0.106:0 }
       />
       <mesh
         castShadow
@@ -169,7 +169,7 @@ export function Model(props) {
         geometry={nodes.Sphere018.geometry}
         material={materials["light blue"]}
         position={[-0.402, 4.05, 1.196]}
-        scale={ (props.distance*2)>19?0.106:0 }
+        scale={ (props.distance)>19?0.106:0 }
       />
       <mesh
         castShadow
@@ -177,7 +177,7 @@ export function Model(props) {
         geometry={nodes.Sphere019.geometry}
         material={materials["light blue"]}
         position={[0.782, 5.327, 0]}
-        scale={ (props.distance*2)>20?0.106:0 }
+        scale={ (props.distance)>20?0.106:0 }
       />
       <mesh
         castShadow
@@ -186,7 +186,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.475, 4.219, -0.268]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>21?0.106:0 }
+        scale={ (props.distance)>21?0.106:0 }
       />
       <mesh
         castShadow
@@ -195,7 +195,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.932, 5.01, -0.874]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>22?0.106:0 }
+        scale={ (props.distance)>22?0.106:0 }
       />
       <mesh
         castShadow
@@ -204,7 +204,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.971, 4.693, -1.235]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>23?0.106:0 }
+        scale={ (props.distance)>23?0.106:0 }
       />
       <mesh
         castShadow
@@ -212,7 +212,7 @@ export function Model(props) {
         geometry={nodes.Sphere023.geometry}
         material={materials["Dark blue"]}
         position={[5.39, 4.545, 0]}
-        scale={ (props.distance*2)>24?0.106:0 }
+        scale={ (props.distance)>24?0.106:0 }
       />
       <mesh
         castShadow
@@ -220,7 +220,7 @@ export function Model(props) {
         geometry={nodes.Sphere024.geometry}
         material={materials["Dark blue"]}
         position={[3.361, 3.763, 0]}
-        scale={ (props.distance*2)>25?0.106:0 }
+        scale={ (props.distance)>25?0.106:0 }
       />
       <mesh
         castShadow
@@ -229,7 +229,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.567, 1.694, -0.508]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>26?0.106:0 }
+        scale={ (props.distance)>26?0.106:0 }
       />
       <mesh
         castShadow
@@ -238,7 +238,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.356, 2.22, 0.635]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>27?0.106:0 }
+        scale={ (props.distance)>27?0.106:0 }
       />
       <mesh
         castShadow
@@ -247,7 +247,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.947, 3.615, 0.333]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>28?0.106:0 }
+        scale={ (props.distance)>28?0.106:0 }
       />
       <mesh
         castShadow
@@ -256,7 +256,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.887, 3.044, -0.824]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>29?0.106:0 }
+        scale={ (props.distance)>29?0.106:0 }
       />
       <mesh
         castShadow
@@ -265,7 +265,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.776, 3.002, -0.48]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>30?0.106:0 }
+        scale={ (props.distance)>30?0.106:0 }
       />
       <mesh
         castShadow
@@ -274,7 +274,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.898, 4.481, -2.502]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>31?0.106:0 }
+        scale={ (props.distance)>31?0.106:0 }
       />
       <mesh
         castShadow
@@ -283,7 +283,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.322, 4.735, -0.649]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>32?0.106:0 }
+        scale={ (props.distance)>32?0.106:0 }
       />
       <mesh
         castShadow
@@ -292,7 +292,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.272, 4.92, -0.337]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>33?0.106:0 }
+        scale={ (props.distance)>33?0.106:0 }
       />
       <mesh
         castShadow
@@ -301,7 +301,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.959, 5.01, 0.679]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>34?0.106:0 }
+        scale={ (props.distance)>34?0.106:0 }
       />
       <mesh
         castShadow
@@ -310,7 +310,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.38, 4.693, 2.127]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>35?0.106:0 }
+        scale={ (props.distance)>35?0.106:0 }
       />
       <mesh
         castShadow
@@ -319,7 +319,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.26, 4.545, 1.393]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>36?0.106:0 }
+        scale={ (props.distance)>36?0.106:0 }
       />
       <mesh
         castShadow
@@ -328,7 +328,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.657, 0.465, -0.197]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>37?0.106:0 }
+        scale={ (props.distance)>37?0.106:0 }
       />
       <mesh
         castShadow
@@ -337,7 +337,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.457, 1.776, -0.903]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>38?0.106:0 }
+        scale={ (props.distance)>38?0.106:0 }
       />
       <mesh
         castShadow
@@ -346,7 +346,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.284, 1.73, 0.752]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>39?0.106:0 }
+        scale={ (props.distance)>39?0.106:0 }
       />
       <mesh
         castShadow
@@ -355,7 +355,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.085, 2.31, -0.9]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>40?0.106:0 }
+        scale={ (props.distance)>40?0.106:0 }
       />
       <mesh
         castShadow
@@ -364,7 +364,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.785, 3.044, -2.35]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>41?0.106:0 }
+        scale={ (props.distance)>41?0.106:0 }
       />
       <mesh
         castShadow
@@ -373,7 +373,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.246, 3.002, -1.32]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>42?0.106:0 }
+        scale={ (props.distance)>42?0.106:0 }
       />
       <mesh
         castShadow
@@ -382,7 +382,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.54, 4.481, -3.792]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>43?0.106:0 }
+        scale={ (props.distance)>43?0.106:0 }
       />
       <mesh
         castShadow
@@ -391,7 +391,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.95, 4.735, -1.366]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>44?0.106:0 }
+        scale={ (props.distance)>44?0.106:0 }
       />
       <mesh
         castShadow
@@ -400,7 +400,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1, 4.46, -0.852]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>45?0.106:0 }
+        scale={ (props.distance)>45?0.106:0 }
       />
       <mesh
         castShadow
@@ -409,7 +409,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.568, 5.01, 2.144]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>46?0.106:0 }
+        scale={ (props.distance)>46?0.106:0 }
       />
       <mesh
         castShadow
@@ -418,7 +418,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.118, 4.693, 2.454]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>47?0.106:0 }
+        scale={ (props.distance)>47?0.106:0 }
       />
       <mesh
         castShadow
@@ -427,7 +427,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.074, 4.545, 3.351]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>48?0.106:0 }
+        scale={ (props.distance)>48?0.106:0 }
       />
       <mesh
         castShadow
@@ -436,7 +436,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.076, 0.53, 0.391]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>49?0.106:0 }
+        scale={ (props.distance)>49?0.106:0 }
       />
       <mesh
         castShadow
@@ -445,7 +445,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.013, 0.782, -0.815]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>50?0.106:0 }
+        scale={ (props.distance)>50?0.106:0 }
       />
       <mesh
         castShadow
@@ -454,7 +454,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.053, 1.031, 0.688]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>51?0.106:0 }
+        scale={ (props.distance)>51?0.106:0 }
       />
       <mesh
         castShadow
@@ -463,7 +463,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.119, 2.198, 0.02]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>52?0.106:0 }
+        scale={ (props.distance)>52?0.106:0 }
       />
       <mesh
         castShadow
@@ -472,7 +472,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.606, 3.615, 0.774]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>53?0.106:0 }
+        scale={ (props.distance)>53?0.106:0 }
       />
       <mesh
         castShadow
@@ -481,7 +481,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.432, 3.678, -1.164]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>54?0.106:0 }
+        scale={ (props.distance)>54?0.106:0 }
       />
       <mesh
         castShadow
@@ -490,7 +490,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.178, 3.678, -1.859]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>55?0.106:0 }
+        scale={ (props.distance)>55?0.106:0 }
       />
       <mesh
         castShadow
@@ -499,7 +499,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.882, 3.044, -2.002]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>56?0.106:0 }
+        scale={ (props.distance)>56?0.106:0 }
       />
       <mesh
         castShadow
@@ -508,7 +508,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.65, 4.481, -3.437]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>57?0.106:0 }
+        scale={ (props.distance)>57?0.106:0 }
       />
       <mesh
         castShadow
@@ -517,7 +517,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.199, 5.327, 0.521]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>58?0.106:0 }
+        scale={ (props.distance)>58?0.106:0 }
       />
       <mesh
         castShadow
@@ -526,7 +526,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.301, 4.481, 1.168]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>59?0.106:0 }
+        scale={ (props.distance)>59?0.106:0 }
       />
       <mesh
         castShadow
@@ -535,7 +535,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.543, 5.01, 2.692]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>60?0.106:0 }
+        scale={ (props.distance)>60?0.106:0 }
       />
       <mesh
         castShadow
@@ -544,7 +544,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.338, 2.22, 1.187]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>61?0.106:0 }
+        scale={ (props.distance)>61?0.106:0 }
       />
       <mesh
         castShadow
@@ -553,7 +553,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.809, 3.002, -1.028]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>62?0.106:0 }
+        scale={ (props.distance)>62?0.106:0 }
       />
       <mesh
         castShadow
@@ -562,7 +562,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.944, 4.481, -3.893]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>63?0.106:0 }
+        scale={ (props.distance)>63?0.106:0 }
       />
       <mesh
         castShadow
@@ -571,7 +571,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.626, 4.735, -1.697]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>64?0.106:0 }
+        scale={ (props.distance)>64?0.106:0 }
       />
       <mesh
         castShadow
@@ -580,7 +580,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.566, 4.46, -0.559]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>65?0.106:0 }
+        scale={ (props.distance)>65?0.106:0 }
       />
       <mesh
         castShadow
@@ -589,7 +589,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.99, 5.01, 2.444]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>66?0.106:0 }
+        scale={ (props.distance)>66?0.106:0 }
       />
       <mesh
         castShadow
@@ -598,7 +598,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.36, 4.545, 5.124]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>67?0.106:0 }
+        scale={ (props.distance)>67?0.106:0 }
       />
       <mesh
         castShadow
@@ -607,7 +607,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.192, 3.095, 1.282]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>68?0.106:0 }
+        scale={ (props.distance)>68?0.106:0 }
       />
       <mesh
         castShadow
@@ -616,7 +616,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.198, 3.044, 1.823]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>69?0.106:0 }
+        scale={ (props.distance)>69?0.106:0 }
       />
       <mesh
         castShadow
@@ -625,7 +625,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.691, 3.002, 0.734]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>70?0.106:0 }
+        scale={ (props.distance)>70?0.106:0 }
       />
       <mesh
         castShadow
@@ -634,7 +634,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.335, 4.481, 1.625]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>71?0.106:0 }
+        scale={ (props.distance)>71?0.106:0 }
       />
       <mesh
         castShadow
@@ -643,7 +643,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.299, 4.545, -1.285]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>72?0.106:0 }
+        scale={ (props.distance)>72?0.106:0 }
       />
       <mesh
         castShadow
@@ -652,7 +652,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.073, 0.338, -0.189]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>73?0.106:0 }
+        scale={ (props.distance)>73?0.106:0 }
       />
       <mesh
         castShadow
@@ -661,7 +661,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.315, 0.803, 0.011]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>74?0.106:0 }
+        scale={ (props.distance)>74?0.106:0 }
       />
       <mesh
         castShadow
@@ -670,7 +670,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.577, 1.12, -0.457]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>75?0.106:0 }
+        scale={ (props.distance)>75?0.106:0 }
       />
       <mesh
         castShadow
@@ -679,7 +679,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.315, 1.564, 0.011]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>76?0.106:0 }
+        scale={ (props.distance)>76?0.106:0 }
       />
       <mesh
         castShadow
@@ -688,7 +688,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.834, 2.113, -0.169]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>77?0.106:0 }
+        scale={ (props.distance)>77?0.106:0 }
       />
       <mesh
         castShadow
@@ -697,7 +697,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.526, 2.557, 0.2]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>78?0.106:0 }
+        scale={ (props.distance)>78?0.106:0 }
       />
       <mesh
         castShadow
@@ -706,7 +706,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.607, 3.263, 0.607]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>79?0.106:0 }
+        scale={ (props.distance)>79?0.106:0 }
       />
       <mesh
         castShadow
@@ -715,7 +715,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.371, 3.995, -1.215]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>80?0.106:0 }
+        scale={ (props.distance)>80?0.106:0 }
       />
       <mesh
         castShadow
@@ -724,7 +724,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.651, 3.868, -0.452]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>81?0.106:0 }
+        scale={ (props.distance)>81?0.106:0 }
       />
       <mesh
         castShadow
@@ -733,7 +733,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.14, 3.066, -0.265]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>82?0.106:0 }
+        scale={ (props.distance)>82?0.106:0 }
       />
       <mesh
         castShadow
@@ -742,7 +742,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.617, 5.665, 0.179]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>83?0.106:0 }
+        scale={ (props.distance)>83?0.106:0 }
       />
       <mesh
         castShadow
@@ -751,7 +751,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.926, 5.347, 0.419]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>84?0.106:0 }
+        scale={ (props.distance)>84?0.106:0 }
       />
       <mesh
         castShadow
@@ -760,7 +760,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.012, 5.03, 0.589]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>85?0.106:0 }
+        scale={ (props.distance)>85?0.106:0 }
       />
       <mesh
         castShadow
@@ -769,7 +769,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.684, 4.882, 2.346]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>86?0.106:0 }
+        scale={ (props.distance)>86?0.106:0 }
       />
       <mesh
         castShadow
@@ -778,7 +778,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.893, 4.1, 1.392]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>87?0.106:0 }
+        scale={ (props.distance)>87?0.106:0 }
       />
       <mesh
         castShadow
@@ -787,7 +787,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.606, 3.952, 0.551]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>88?0.106:0 }
+        scale={ (props.distance)>88?0.106:0 }
       />
       <mesh
         castShadow
@@ -796,7 +796,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.533, 3.339, -0.978]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>89?0.106:0 }
+        scale={ (props.distance)>89?0.106:0 }
       />
       <mesh
         castShadow
@@ -805,7 +805,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.454, 4.819, -3.759]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>90?0.106:0 }
+        scale={ (props.distance)>90?0.106:0 }
       />
       <mesh
         castShadow
@@ -814,7 +814,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.934, 5.073, -1.383]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>91?0.106:0 }
+        scale={ (props.distance)>91?0.106:0 }
       />
       <mesh
         castShadow
@@ -823,7 +823,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.599, 0.803, -0.053]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>92?0.106:0 }
+        scale={ (props.distance)>92?0.106:0 }
       />
       <mesh
         castShadow
@@ -832,7 +832,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.637, 2.113, -0.301]}
         rotation={[Math.PI, -0.264, Math.PI]}
-        scale={ (props.distance*2)>93?0.106:0 }
+        scale={ (props.distance)>93?0.106:0 }
       />
       <mesh
         castShadow
@@ -841,7 +841,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.678, 2.068, 0.341]}
         rotation={[Math.PI, -0.264, Math.PI]}
-        scale={ (props.distance*2)>94?0.106:0 }
+        scale={ (props.distance)>94?0.106:0 }
       />
       <mesh
         castShadow
@@ -850,7 +850,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.425, 2.647, -0.943]}
         rotation={[Math.PI, -0.264, Math.PI]}
-        scale={ (props.distance*2)>95?0.106:0 }
+        scale={ (props.distance)>95?0.106:0 }
       />
       <mesh
         castShadow
@@ -859,7 +859,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.647, 3.339, -0.768]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>96?0.106:0 }
+        scale={ (props.distance)>96?0.106:0 }
       />
       <mesh
         castShadow
@@ -868,7 +868,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.21, 4.798, -0.47]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>97?0.106:0 }
+        scale={ (props.distance)>97?0.106:0 }
       />
       <mesh
         castShadow
@@ -877,7 +877,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.583, 5.347, 1.436]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>98?0.106:0 }
+        scale={ (props.distance)>98?0.106:0 }
       />
       <mesh
         castShadow
@@ -886,7 +886,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.19, 0.868, 0.192]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>99?0.106:0 }
+        scale={ (props.distance)>99?0.106:0 }
       />
       <mesh
         castShadow
@@ -895,7 +895,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.299, 1.12, -0.914]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>100?0.106:0 }
+        scale={ (props.distance)>100?0.106:0 }
       />
       <mesh
         castShadow
@@ -904,7 +904,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.097, 3.952, 0.779]}
         rotation={[0, -1.569, 0]}
-        scale={ (props.distance*2)>101?0.106:0 }
+        scale={ (props.distance)>101?0.106:0 }
       />
       <mesh
         castShadow
@@ -913,7 +913,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.143, 5.665, 0.364]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>102?0.106:0 }
+        scale={ (props.distance)>102?0.106:0 }
       />
       <mesh
         castShadow
@@ -922,7 +922,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.357, 4.819, 0.984]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>103?0.106:0 }
+        scale={ (props.distance)>103?0.106:0 }
       />
       <mesh
         castShadow
@@ -931,7 +931,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.93, 2.557, 0.699]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>104?0.106:0 }
+        scale={ (props.distance)>104?0.106:0 }
       />
       <mesh
         castShadow
@@ -940,7 +940,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.124, 3.339, -0.715]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>105?0.106:0 }
+        scale={ (props.distance)>105?0.106:0 }
       />
       <mesh
         castShadow
@@ -949,7 +949,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.59, 4.819, -3.181]}
         rotation={[Math.PI, -0.938, Math.PI]}
-        scale={ (props.distance*2)>106?0.106:0 }
+        scale={ (props.distance)>106?0.106:0 }
       />
       <mesh
         castShadow
@@ -958,7 +958,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.689, 4.798, -0.416]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>107?0.106:0 }
+        scale={ (props.distance)>107?0.106:0 }
       />
       <mesh
         castShadow
@@ -967,7 +967,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.263, 4.882, -3.344]}
         rotation={[-Math.PI, 0.815, -Math.PI]}
-        scale={ (props.distance*2)>108?0.106:0 }
+        scale={ (props.distance)>108?0.106:0 }
       />
       <mesh
         castShadow
@@ -975,7 +975,7 @@ export function Model(props) {
         geometry={nodes.Sphere108.geometry}
         material={materials["light blue"]}
         position={[1.98, 5.412, -2.46]}
-        scale={ (props.distance*2)>109?0.106:0 }
+        scale={ (props.distance)>109?0.106:0 }
       />
       <mesh
         castShadow
@@ -983,7 +983,7 @@ export function Model(props) {
         geometry={nodes.Sphere109.geometry}
         material={materials["Dark blue"]}
         position={[0.923, 6.258, -2.46]}
-        scale={ (props.distance*2)>110?0.106:0 }
+        scale={ (props.distance)>110?0.106:0 }
       />
       <mesh
         castShadow
@@ -991,7 +991,7 @@ export function Model(props) {
         geometry={nodes.Sphere110.geometry}
         material={materials["Dark blue"]}
         position={[-0.535, 6.534, -2.073]}
-        scale={ (props.distance*2)>111?0.106:0 }
+        scale={ (props.distance)>111?0.106:0 }
       />
       <mesh
         castShadow
@@ -1000,7 +1000,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.095, 5.923, -2.266]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>112?0.106:0 }
+        scale={ (props.distance)>112?0.106:0 }
       />
       <mesh
         castShadow
@@ -1008,7 +1008,7 @@ export function Model(props) {
         geometry={nodes.Sphere112.geometry}
         material={materials["Dark blue"]}
         position={[-1.761, 6.301, -2.756]}
-        scale={ (props.distance*2)>113?0.106:0 }
+        scale={ (props.distance)>113?0.106:0 }
       />
       <mesh
         castShadow
@@ -1017,7 +1017,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.532, 6.173, -1.481]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>114?0.106:0 }
+        scale={ (props.distance)>114?0.106:0 }
       />
       <mesh
         castShadow
@@ -1026,7 +1026,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.993, 5.371, -1.556]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>115?0.106:0 }
+        scale={ (props.distance)>115?0.106:0 }
       />
       <mesh
         castShadow
@@ -1035,7 +1035,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.895, 5.645, -2.05]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>116?0.106:0 }
+        scale={ (props.distance)>116?0.106:0 }
       />
       <mesh
         castShadow
@@ -1043,7 +1043,7 @@ export function Model(props) {
         geometry={nodes.Sphere116.geometry}
         material={materials["Dark blue"]}
         position={[-3.854, 7.039, -2.085]}
-        scale={ (props.distance*2)>117?0.106:0 }
+        scale={ (props.distance)>117?0.106:0 }
       />
       <mesh
         castShadow
@@ -1052,7 +1052,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.433, 7.209, -1.516]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>118?0.106:0 }
+        scale={ (props.distance)>118?0.106:0 }
       />
       <mesh
         castShadow
@@ -1060,7 +1060,7 @@ export function Model(props) {
         geometry={nodes.Sphere118.geometry}
         material={materials["Dark blue"]}
         position={[-1.635, 7.378, -2.46]}
-        scale={ (props.distance*2)>119?0.106:0 }
+        scale={ (props.distance)>119?0.106:0 }
       />
       <mesh
         castShadow
@@ -1068,7 +1068,7 @@ export function Model(props) {
         geometry={nodes.Sphere119.geometry}
         material={materials["light blue"]}
         position={[-0.535, 6.693, -1.264]}
-        scale={ (props.distance*2)>120?0.106:0 }
+        scale={ (props.distance)>120?0.106:0 }
       />
       <mesh
         castShadow
@@ -1076,7 +1076,7 @@ export function Model(props) {
         geometry={nodes.Sphere120.geometry}
         material={materials["Dark blue"]}
         position={[0.648, 7.97, -2.46]}
-        scale={ (props.distance*2)>121?0.106:0 }
+        scale={ (props.distance)>121?0.106:0 }
       />
       <mesh
         castShadow
@@ -1085,7 +1085,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.341, 6.862, -2.728]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>122?0.106:0 }
+        scale={ (props.distance)>122?0.106:0 }
       />
       <mesh
         castShadow
@@ -1094,7 +1094,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.799, 7.653, -3.334]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>123?0.106:0 }
+        scale={ (props.distance)>123?0.106:0 }
       />
       <mesh
         castShadow
@@ -1103,7 +1103,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.837, 7.336, -3.695]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>124?0.106:0 }
+        scale={ (props.distance)>124?0.106:0 }
       />
       <mesh
         castShadow
@@ -1111,7 +1111,7 @@ export function Model(props) {
         geometry={nodes.Sphere124.geometry}
         material={materials["Dark blue"]}
         position={[5.257, 7.188, -2.46]}
-        scale={ (props.distance*2)>125?0.106:0 }
+        scale={ (props.distance)>125?0.106:0 }
       />
       <mesh
         castShadow
@@ -1119,7 +1119,7 @@ export function Model(props) {
         geometry={nodes.Sphere125.geometry}
         material={materials["light blue"]}
         position={[3.227, 6.406, -2.46]}
-        scale={ (props.distance*2)>126?0.106:0 }
+        scale={ (props.distance)>126?0.106:0 }
       />
       <mesh
         castShadow
@@ -1128,7 +1128,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.813, 6.258, -2.127]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>127?0.106:0 }
+        scale={ (props.distance)>127?0.106:0 }
       />
       <mesh
         castShadow
@@ -1137,7 +1137,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.021, 5.687, -3.285]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>128?0.106:0 }
+        scale={ (props.distance)>128?0.106:0 }
       />
       <mesh
         castShadow
@@ -1146,7 +1146,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.91, 5.645, -2.94]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>129?0.106:0 }
+        scale={ (props.distance)>129?0.106:0 }
       />
       <mesh
         castShadow
@@ -1155,7 +1155,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.032, 7.124, -4.962]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>130?0.106:0 }
+        scale={ (props.distance)>130?0.106:0 }
       />
       <mesh
         castShadow
@@ -1164,7 +1164,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.455, 7.378, -3.109]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>131?0.106:0 }
+        scale={ (props.distance)>131?0.106:0 }
       />
       <mesh
         castShadow
@@ -1173,7 +1173,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.406, 7.563, -2.798]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>132?0.106:0 }
+        scale={ (props.distance)>132?0.106:0 }
       />
       <mesh
         castShadow
@@ -1182,7 +1182,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.825, 7.653, -1.782]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>133?0.106:0 }
+        scale={ (props.distance)>133?0.106:0 }
       />
       <mesh
         castShadow
@@ -1191,7 +1191,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.246, 7.336, -0.333]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>134?0.106:0 }
+        scale={ (props.distance)>134?0.106:0 }
       />
       <mesh
         castShadow
@@ -1200,7 +1200,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.126, 7.188, -1.068]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>135?0.106:0 }
+        scale={ (props.distance)>135?0.106:0 }
       />
       <mesh
         castShadow
@@ -1209,7 +1209,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.651, 5.687, -4.811]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>136?0.106:0 }
+        scale={ (props.distance)>136?0.106:0 }
       />
       <mesh
         castShadow
@@ -1218,7 +1218,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.112, 5.645, -3.781]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>137?0.106:0 }
+        scale={ (props.distance)>137?0.106:0 }
       />
       <mesh
         castShadow
@@ -1227,7 +1227,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.406, 7.124, -6.253]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>138?0.106:0 }
+        scale={ (props.distance)>138?0.106:0 }
       />
       <mesh
         castShadow
@@ -1236,7 +1236,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.816, 7.378, -3.827]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>139?0.106:0 }
+        scale={ (props.distance)>139?0.106:0 }
       />
       <mesh
         castShadow
@@ -1245,7 +1245,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.867, 7.103, -3.312]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>140?0.106:0 }
+        scale={ (props.distance)>140?0.106:0 }
       />
       <mesh
         castShadow
@@ -1254,7 +1254,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.702, 7.653, -0.316]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>141?0.106:0 }
+        scale={ (props.distance)>141?0.106:0 }
       />
       <mesh
         castShadow
@@ -1263,7 +1263,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.252, 7.336, -0.007]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>142?0.106:0 }
+        scale={ (props.distance)>142?0.106:0 }
       />
       <mesh
         castShadow
@@ -1272,7 +1272,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.207, 7.188, 0.891]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>143?0.106:0 }
+        scale={ (props.distance)>143?0.106:0 }
       />
       <mesh
         castShadow
@@ -1281,7 +1281,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.472, 6.258, -1.686]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>144?0.106:0 }
+        scale={ (props.distance)>144?0.106:0 }
       />
       <mesh
         castShadow
@@ -1290,7 +1290,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.566, 6.321, -3.624]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>145?0.106:0 }
+        scale={ (props.distance)>145?0.106:0 }
       />
       <mesh
         castShadow
@@ -1299,7 +1299,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.312, 6.321, -4.319]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>146?0.106:0 }
+        scale={ (props.distance)>146?0.106:0 }
       />
       <mesh
         castShadow
@@ -1308,7 +1308,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.015, 5.687, -4.463]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>147?0.106:0 }
+        scale={ (props.distance)>147?0.106:0 }
       />
       <mesh
         castShadow
@@ -1317,7 +1317,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.784, 7.124, -5.898]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>148?0.106:0 }
+        scale={ (props.distance)>148?0.106:0 }
       />
       <mesh
         castShadow
@@ -1326,7 +1326,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.065, 7.97, -1.939]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>149?0.106:0 }
+        scale={ (props.distance)>149?0.106:0 }
       />
       <mesh
         castShadow
@@ -1335,7 +1335,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.167, 7.124, -1.292]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>150?0.106:0 }
+        scale={ (props.distance)>150?0.106:0 }
       />
       <mesh
         castShadow
@@ -1344,7 +1344,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.409, 7.653, 0.232]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>151?0.106:0 }
+        scale={ (props.distance)>151?0.106:0 }
       />
       <mesh
         castShadow
@@ -1353,7 +1353,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.676, 5.645, -3.488]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>152?0.106:0 }
+        scale={ (props.distance)>152?0.106:0 }
       />
       <mesh
         castShadow
@@ -1362,7 +1362,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.81, 7.124, -6.354]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>153?0.106:0 }
+        scale={ (props.distance)>153?0.106:0 }
       />
       <mesh
         castShadow
@@ -1371,7 +1371,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.492, 7.378, -4.157]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>154?0.106:0 }
+        scale={ (props.distance)>154?0.106:0 }
       />
       <mesh
         castShadow
@@ -1380,7 +1380,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.432, 7.103, -3.019]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>155?0.106:0 }
+        scale={ (props.distance)>155?0.106:0 }
       />
       <mesh
         castShadow
@@ -1389,7 +1389,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.124, 7.653, -0.016]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>156?0.106:0 }
+        scale={ (props.distance)>156?0.106:0 }
       />
       <mesh
         castShadow
@@ -1398,7 +1398,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.494, 7.188, 2.663]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>157?0.106:0 }
+        scale={ (props.distance)>157?0.106:0 }
       />
       <mesh
         castShadow
@@ -1407,7 +1407,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.326, 5.738, -1.179]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>158?0.106:0 }
+        scale={ (props.distance)>158?0.106:0 }
       />
       <mesh
         castShadow
@@ -1416,7 +1416,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.065, 5.687, -0.637]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>159?0.106:0 }
+        scale={ (props.distance)>159?0.106:0 }
       />
       <mesh
         castShadow
@@ -1425,7 +1425,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.557, 5.645, -1.726]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>160?0.106:0 }
+        scale={ (props.distance)>160?0.106:0 }
       />
       <mesh
         castShadow
@@ -1434,7 +1434,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.201, 7.124, -0.835]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>161?0.106:0 }
+        scale={ (props.distance)>161?0.106:0 }
       />
       <mesh
         castShadow
@@ -1443,7 +1443,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.392, 5.2, -2.26]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>162?0.106:0 }
+        scale={ (props.distance)>162?0.106:0 }
       />
       <mesh
         castShadow
@@ -1452,7 +1452,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.473, 5.906, -1.854]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>163?0.106:0 }
+        scale={ (props.distance)>163?0.106:0 }
       />
       <mesh
         castShadow
@@ -1461,7 +1461,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.504, 6.638, -3.676]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>164?0.106:0 }
+        scale={ (props.distance)>164?0.106:0 }
       />
       <mesh
         castShadow
@@ -1470,7 +1470,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.785, 6.511, -2.913]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>165?0.106:0 }
+        scale={ (props.distance)>165?0.106:0 }
       />
       <mesh
         castShadow
@@ -1479,7 +1479,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.273, 5.708, -2.726]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>166?0.106:0 }
+        scale={ (props.distance)>166?0.106:0 }
       />
       <mesh
         castShadow
@@ -1488,7 +1488,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.483, 8.307, -2.282]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>167?0.106:0 }
+        scale={ (props.distance)>167?0.106:0 }
       />
       <mesh
         castShadow
@@ -1497,7 +1497,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.792, 7.99, -2.042]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>168?0.106:0 }
+        scale={ (props.distance)>168?0.106:0 }
       />
       <mesh
         castShadow
@@ -1506,7 +1506,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.878, 7.673, -1.872]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>169?0.106:0 }
+        scale={ (props.distance)>169?0.106:0 }
       />
       <mesh
         castShadow
@@ -1515,7 +1515,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.55, 7.525, -0.115]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>170?0.106:0 }
+        scale={ (props.distance)>170?0.106:0 }
       />
       <mesh
         castShadow
@@ -1524,7 +1524,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.759, 6.743, -1.069]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>171?0.106:0 }
+        scale={ (props.distance)>171?0.106:0 }
       />
       <mesh
         castShadow
@@ -1533,7 +1533,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.472, 6.595, -1.91]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>172?0.106:0 }
+        scale={ (props.distance)>172?0.106:0 }
       />
       <mesh
         castShadow
@@ -1542,7 +1542,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.667, 5.982, -3.438]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>173?0.106:0 }
+        scale={ (props.distance)>173?0.106:0 }
       />
       <mesh
         castShadow
@@ -1551,7 +1551,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.588, 7.462, -6.22]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>174?0.106:0 }
+        scale={ (props.distance)>174?0.106:0 }
       />
       <mesh
         castShadow
@@ -1560,7 +1560,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.068, 7.716, -3.843]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>175?0.106:0 }
+        scale={ (props.distance)>175?0.106:0 }
       />
       <mesh
         castShadow
@@ -1569,7 +1569,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.291, 5.29, -3.403]}
         rotation={[Math.PI, -0.264, Math.PI]}
-        scale={ (props.distance*2)>176?0.106:0 }
+        scale={ (props.distance)>176?0.106:0 }
       />
       <mesh
         castShadow
@@ -1578,7 +1578,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.513, 5.982, -3.229]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>177?0.106:0 }
+        scale={ (props.distance)>177?0.106:0 }
       />
       <mesh
         castShadow
@@ -1587,7 +1587,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.077, 7.441, -2.931]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>178?0.106:0 }
+        scale={ (props.distance)>178?0.106:0 }
       />
       <mesh
         castShadow
@@ -1596,7 +1596,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.717, 7.99, -1.024]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>179?0.106:0 }
+        scale={ (props.distance)>179?0.106:0 }
       />
       <mesh
         castShadow
@@ -1605,7 +1605,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.037, 6.595, -1.681]}
         rotation={[0, -1.569, 0]}
-        scale={ (props.distance*2)>180?0.106:0 }
+        scale={ (props.distance)>180?0.106:0 }
       />
       <mesh
         castShadow
@@ -1614,7 +1614,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.277, 8.307, -2.096]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>181?0.106:0 }
+        scale={ (props.distance)>181?0.106:0 }
       />
       <mesh
         castShadow
@@ -1623,7 +1623,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.491, 7.462, -1.477]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>182?0.106:0 }
+        scale={ (props.distance)>182?0.106:0 }
       />
       <mesh
         castShadow
@@ -1632,7 +1632,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.991, 5.982, -3.176]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>183?0.106:0 }
+        scale={ (props.distance)>183?0.106:0 }
       />
       <mesh
         castShadow
@@ -1641,7 +1641,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.456, 7.462, -5.642]}
         rotation={[Math.PI, -0.938, Math.PI]}
-        scale={ (props.distance*2)>184?0.106:0 }
+        scale={ (props.distance)>184?0.106:0 }
       />
       <mesh
         castShadow
@@ -1650,7 +1650,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.555, 7.441, -2.876]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>185?0.106:0 }
+        scale={ (props.distance)>185?0.106:0 }
       />
       <mesh
         castShadow
@@ -1659,7 +1659,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.685, 5.669, 0.873]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>186?0.106:0 }
+        scale={ (props.distance)>186?0.106:0 }
       />
       <mesh
         castShadow
@@ -1668,7 +1668,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.072, 6.514, 1.734]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>187?0.106:0 }
+        scale={ (props.distance)>187?0.106:0 }
       />
       <mesh
         castShadow
@@ -1677,7 +1677,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.54, 6.791, 3.146]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>188?0.106:0 }
+        scale={ (props.distance)>188?0.106:0 }
       />
       <mesh
         castShadow
@@ -1686,7 +1686,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.058, 6.18, 3.489]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>189?0.106:0 }
+        scale={ (props.distance)>189?0.106:0 }
       />
       <mesh
         castShadow
@@ -1695,7 +1695,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.728, 6.557, 3.748]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>190?0.106:0 }
+        scale={ (props.distance)>190?0.106:0 }
       />
       <mesh
         castShadow
@@ -1704,7 +1704,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.137, 6.43, 5.116]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>191?0.106:0 }
+        scale={ (props.distance)>191?0.106:0 }
       />
       <mesh
         castShadow
@@ -1713,7 +1713,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.115, 5.627, 4.633]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>192?0.106:0 }
+        scale={ (props.distance)>192?0.106:0 }
       />
       <mesh
         castShadow
@@ -1722,7 +1722,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.35, 5.901, 3.452]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>193?0.106:0 }
+        scale={ (props.distance)>193?0.106:0 }
       />
       <mesh
         castShadow
@@ -1731,7 +1731,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.397, 7.296, 5.841]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>194?0.106:0 }
+        scale={ (props.distance)>194?0.106:0 }
       />
       <mesh
         castShadow
@@ -1740,7 +1740,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.107, 7.465, 5.014]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>195?0.106:0 }
+        scale={ (props.distance)>195?0.106:0 }
       />
       <mesh
         castShadow
@@ -1749,7 +1749,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.413, 7.635, 3.816]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>196?0.106:0 }
+        scale={ (props.distance)>196?0.106:0 }
       />
       <mesh
         castShadow
@@ -1758,7 +1758,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.199, 6.949, 3.616]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>197?0.106:0 }
+        scale={ (props.distance)>197?0.106:0 }
       />
       <mesh
         castShadow
@@ -1767,7 +1767,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.912, 8.226, 1.957]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>198?0.106:0 }
+        scale={ (props.distance)>198?0.106:0 }
       />
       <mesh
         castShadow
@@ -1776,7 +1776,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.096, 7.119, 1.238]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>199?0.106:0 }
+        scale={ (props.distance)>199?0.106:0 }
       />
       <mesh
         castShadow
@@ -1785,7 +1785,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.449, 7.909, -0.301]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>200?0.106:0 }
+        scale={ (props.distance)>200?0.106:0 }
       />
       <mesh
         castShadow
@@ -1794,7 +1794,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.758, 7.592, -1.356]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>201?0.106:0 }
+        scale={ (props.distance)>201?0.106:0 }
       />
       <mesh
         castShadow
@@ -1803,7 +1803,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.588, 7.444, -1.795]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>202?0.106:0 }
+        scale={ (props.distance)>202?0.106:0 }
       />
       <mesh
         castShadow
@@ -1812,7 +1812,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.409, 6.662, -0.142]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>203?0.106:0 }
+        scale={ (props.distance)>203?0.106:0 }
       />
       <mesh
         castShadow
@@ -1821,7 +1821,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.279, 6.514, 2.016]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>204?0.106:0 }
+        scale={ (props.distance)>204?0.106:0 }
       />
       <mesh
         castShadow
@@ -1830,7 +1830,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.309, 5.943, 3.652]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>205?0.106:0 }
+        scale={ (props.distance)>205?0.106:0 }
       />
       <mesh
         castShadow
@@ -1839,7 +1839,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.384, 5.901, 2.948]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>206?0.106:0 }
+        scale={ (props.distance)>206?0.106:0 }
       />
       <mesh
         castShadow
@@ -1848,7 +1848,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.261, 7.381, 3.501]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>207?0.106:0 }
+        scale={ (props.distance)>207?0.106:0 }
       />
       <mesh
         castShadow
@@ -1857,7 +1857,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.838, 7.635, 3.293]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>208?0.106:0 }
+        scale={ (props.distance)>208?0.106:0 }
       />
       <mesh
         castShadow
@@ -1866,7 +1866,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.025, 7.82, 2.619]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>209?0.106:0 }
+        scale={ (props.distance)>209?0.106:0 }
       />
       <mesh
         castShadow
@@ -1875,7 +1875,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.728, 7.909, 0.579]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>210?0.106:0 }
+        scale={ (props.distance)>210?0.106:0 }
       />
       <mesh
         castShadow
@@ -1884,7 +1884,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.153, 7.592, 1.077]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>211?0.106:0 }
+        scale={ (props.distance)>211?0.106:0 }
       />
       <mesh
         castShadow
@@ -1893,7 +1893,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.646, 7.444, -0.88]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>212?0.106:0 }
+        scale={ (props.distance)>212?0.106:0 }
       />
       <mesh
         castShadow
@@ -1902,7 +1902,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.419, 5.943, -0.224]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>213?0.106:0 }
+        scale={ (props.distance)>213?0.106:0 }
       />
       <mesh
         castShadow
@@ -1911,7 +1911,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.106, 5.901, 0.813]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>214?0.106:0 }
+        scale={ (props.distance)>214?0.106:0 }
       />
       <mesh
         castShadow
@@ -1920,7 +1920,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.155, 7.381, -1.676]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>215?0.106:0 }
+        scale={ (props.distance)>215?0.106:0 }
       />
       <mesh
         castShadow
@@ -1929,7 +1929,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.345, 7.36, 1.285]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>216?0.106:0 }
+        scale={ (props.distance)>216?0.106:0 }
       />
       <mesh
         castShadow
@@ -1938,7 +1938,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.874, 7.909, 4.302]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>217?0.106:0 }
+        scale={ (props.distance)>217?0.106:0 }
       />
       <mesh
         castShadow
@@ -1947,7 +1947,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.226, 7.592, 5.743]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>218?0.106:0 }
+        scale={ (props.distance)>218?0.106:0 }
       />
       <mesh
         castShadow
@@ -1956,7 +1956,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.402, 7.444, 7.042]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>219?0.106:0 }
+        scale={ (props.distance)>219?0.106:0 }
       />
       <mesh
         castShadow
@@ -1965,7 +1965,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.44, 6.514, 2.55]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>220?0.106:0 }
+        scale={ (props.distance)>220?0.106:0 }
       />
       <mesh
         castShadow
@@ -1974,7 +1974,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.741, 6.578, 2.27]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>221?0.106:0 }
+        scale={ (props.distance)>221?0.106:0 }
       />
       <mesh
         castShadow
@@ -1983,7 +1983,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.159, 6.578, 1.66]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>222?0.106:0 }
+        scale={ (props.distance)>222?0.106:0 }
       />
       <mesh
         castShadow
@@ -1992,7 +1992,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.684, 5.943, 2.149]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>223?0.106:0 }
+        scale={ (props.distance)>223?0.106:0 }
       />
       <mesh
         castShadow
@@ -2001,7 +2001,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.299, 7.381, 1.942]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>224?0.106:0 }
+        scale={ (props.distance)>224?0.106:0 }
       />
       <mesh
         castShadow
@@ -2010,7 +2010,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.998, 8.226, 2.735]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>225?0.106:0 }
+        scale={ (props.distance)>225?0.106:0 }
       />
       <mesh
         castShadow
@@ -2019,7 +2019,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.584, 7.381, 3.027]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>226?0.106:0 }
+        scale={ (props.distance)>226?0.106:0 }
       />
       <mesh
         castShadow
@@ -2028,7 +2028,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.965, 7.909, 3.715]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>227?0.106:0 }
+        scale={ (props.distance)>227?0.106:0 }
       />
       <mesh
         castShadow
@@ -2037,7 +2037,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.091, 5.901, 1.338]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>228?0.106:0 }
+        scale={ (props.distance)>228?0.106:0 }
       />
       <mesh
         castShadow
@@ -2046,7 +2046,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.164, 7.381, -0.435]}
         rotation={[0, -0.763, 0]}
-        scale={ (props.distance*2)>229?0.106:0 }
+        scale={ (props.distance)>229?0.106:0 }
       />
       <mesh
         castShadow
@@ -2055,7 +2055,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.56, 7.635, 1.099]}
         rotation={[0, -0.763, 0]}
-        scale={ (props.distance*2)>230?0.106:0 }
+        scale={ (props.distance)>230?0.106:0 }
       />
       <mesh
         castShadow
@@ -2064,7 +2064,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.332, 7.36, 1.809]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>231?0.106:0 }
+        scale={ (props.distance)>231?0.106:0 }
       />
       <mesh
         castShadow
@@ -2073,7 +2073,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.873, 7.909, 4.819]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>232?0.106:0 }
+        scale={ (props.distance)>232?0.106:0 }
       />
       <mesh
         castShadow
@@ -2082,7 +2082,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.39, 5.994, 3.495]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>233?0.106:0 }
+        scale={ (props.distance)>233?0.106:0 }
       />
       <mesh
         castShadow
@@ -2091,7 +2091,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.219, 5.943, 1.863]}
         rotation={[Math.PI, -0.292, Math.PI]}
-        scale={ (props.distance*2)>234?0.106:0 }
+        scale={ (props.distance)>234?0.106:0 }
       />
       <mesh
         castShadow
@@ -2100,7 +2100,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.037, 5.901, 1.644]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>235?0.106:0 }
+        scale={ (props.distance)>235?0.106:0 }
       />
       <mesh
         castShadow
@@ -2109,7 +2109,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.298, 7.381, 0.008]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>236?0.106:0 }
+        scale={ (props.distance)>236?0.106:0 }
       />
       <mesh
         castShadow
@@ -2118,7 +2118,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.399, 7.444, -1.812]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>237?0.106:0 }
+        scale={ (props.distance)>237?0.106:0 }
       />
       <mesh
         castShadow
@@ -2127,7 +2127,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.507, 5.457, 1.468]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>238?0.106:0 }
+        scale={ (props.distance)>238?0.106:0 }
       />
       <mesh
         castShadow
@@ -2136,7 +2136,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.885, 6.163, 1.638]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>239?0.106:0 }
+        scale={ (props.distance)>239?0.106:0 }
       />
       <mesh
         castShadow
@@ -2145,7 +2145,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.327, 6.895, 3.004]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>240?0.106:0 }
+        scale={ (props.distance)>240?0.106:0 }
       />
       <mesh
         castShadow
@@ -2154,7 +2154,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.449, 6.767, 4.49]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>241?0.106:0 }
+        scale={ (props.distance)>241?0.106:0 }
       />
       <mesh
         castShadow
@@ -2163,7 +2163,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1, 5.965, 4.182]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>242?0.106:0 }
+        scale={ (props.distance)>242?0.106:0 }
       />
       <mesh
         castShadow
@@ -2172,7 +2172,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.962, 8.564, 2.196]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>243?0.106:0 }
+        scale={ (props.distance)>243?0.106:0 }
       />
       <mesh
         castShadow
@@ -2181,7 +2181,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.498, 8.247, 0.455]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>244?0.106:0 }
+        scale={ (props.distance)>244?0.106:0 }
       />
       <mesh
         castShadow
@@ -2190,7 +2190,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.266, 7.93, -0.33]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>245?0.106:0 }
+        scale={ (props.distance)>245?0.106:0 }
       />
       <mesh
         castShadow
@@ -2199,7 +2199,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.087, 7.782, 0.143]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>246?0.106:0 }
+        scale={ (props.distance)>246?0.106:0 }
       />
       <mesh
         castShadow
@@ -2208,7 +2208,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.271, 7, 1.047]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>247?0.106:0 }
+        scale={ (props.distance)>247?0.106:0 }
       />
       <mesh
         castShadow
@@ -2217,7 +2217,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.258, 6.852, 2.421]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>248?0.106:0 }
+        scale={ (props.distance)>248?0.106:0 }
       />
       <mesh
         castShadow
@@ -2226,7 +2226,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.647, 6.239, 2.46]}
         rotation={[0, 0.161, 0]}
-        scale={ (props.distance*2)>249?0.106:0 }
+        scale={ (props.distance)>249?0.106:0 }
       />
       <mesh
         castShadow
@@ -2235,7 +2235,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.447, 7.719, 1.595]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>250?0.106:0 }
+        scale={ (props.distance)>250?0.106:0 }
       />
       <mesh
         castShadow
@@ -2244,7 +2244,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.211, 7.972, 2.552]}
         rotation={[0, 0.161, 0]}
-        scale={ (props.distance*2)>251?0.106:0 }
+        scale={ (props.distance)>251?0.106:0 }
       />
       <mesh
         castShadow
@@ -2253,7 +2253,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.063, 5.547, 1.7]}
         rotation={[Math.PI, -1.216, Math.PI]}
-        scale={ (props.distance*2)>252?0.106:0 }
+        scale={ (props.distance)>252?0.106:0 }
       />
       <mesh
         castShadow
@@ -2262,7 +2262,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.789, 6.239, 0.807]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>253?0.106:0 }
+        scale={ (props.distance)>253?0.106:0 }
       />
       <mesh
         castShadow
@@ -2271,7 +2271,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.778, 7.697, 1.335]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>254?0.106:0 }
+        scale={ (props.distance)>254?0.106:0 }
       />
       <mesh
         castShadow
@@ -2280,7 +2280,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.708, 8.247, 4.717]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>255?0.106:0 }
+        scale={ (props.distance)>255?0.106:0 }
       />
       <mesh
         castShadow
@@ -2289,7 +2289,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.149, 6.852, 2.967]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>256?0.106:0 }
+        scale={ (props.distance)>256?0.106:0 }
       />
       <mesh
         castShadow
@@ -2298,7 +2298,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.672, 8.564, 2.922]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>257?0.106:0 }
+        scale={ (props.distance)>257?0.106:0 }
       />
       <mesh
         castShadow
@@ -2307,7 +2307,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.052, 7.719, 3.456]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>258?0.106:0 }
+        scale={ (props.distance)>258?0.106:0 }
       />
       <mesh
         castShadow
@@ -2316,7 +2316,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.528, 6.239, 1.263]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>259?0.106:0 }
+        scale={ (props.distance)>259?0.106:0 }
       />
       <mesh
         castShadow
@@ -2325,7 +2325,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.628, 7.719, -1.362]}
         rotation={[0, -1.253, 0]}
-        scale={ (props.distance*2)>260?0.106:0 }
+        scale={ (props.distance)>260?0.106:0 }
       />
       <mesh
         castShadow
@@ -2334,7 +2334,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.52, 7.697, 1.792]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>261?0.106:0 }
+        scale={ (props.distance)>261?0.106:0 }
       />
       <mesh
         castShadow
@@ -2343,7 +2343,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.159, 7.782, 3.309]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>262?0.106:0 }
+        scale={ (props.distance)>262?0.106:0 }
       />
       <mesh
         castShadow
@@ -2352,7 +2352,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.964, 4.978, 0.179]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>263?0.106:0 }
+        scale={ (props.distance)>263?0.106:0 }
       />
       <mesh
         castShadow
@@ -2360,7 +2360,7 @@ export function Model(props) {
         geometry={nodes.Sphere267.geometry}
         material={materials["Dark blue"]}
         position={[4.27, 5.571, -2.46]}
-        scale={ (props.distance*2)>264?0.106:0 }
+        scale={ (props.distance)>264?0.106:0 }
       />
       <mesh
         castShadow
@@ -2369,7 +2369,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.688, 6.175, -2.728]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>265?0.106:0 }
+        scale={ (props.distance)>265?0.106:0 }
       />
       <mesh
         castShadow
@@ -2378,7 +2378,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.16, 5.571, -2.127]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>266?0.106:0 }
+        scale={ (props.distance)>266?0.106:0 }
       />
       <mesh
         castShadow
@@ -2387,7 +2387,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.459, 4.958, -3.781]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>267?0.106:0 }
+        scale={ (props.distance)>267?0.106:0 }
       />
       <mesh
         castShadow
@@ -2396,7 +2396,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.163, 6.691, -3.827]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>268?0.106:0 }
+        scale={ (props.distance)>268?0.106:0 }
       />
       <mesh
         castShadow
@@ -2405,7 +2405,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.214, 6.416, -3.312]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>269?0.106:0 }
+        scale={ (props.distance)>269?0.106:0 }
       />
       <mesh
         castShadow
@@ -2414,7 +2414,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.819, 5.571, -1.686]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>270?0.106:0 }
+        scale={ (props.distance)>270?0.106:0 }
       />
       <mesh
         castShadow
@@ -2423,7 +2423,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.756, 6.966, 0.232]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>271?0.106:0 }
+        scale={ (props.distance)>271?0.106:0 }
       />
       <mesh
         castShadow
@@ -2432,7 +2432,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.023, 4.958, -3.488]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>272?0.106:0 }
+        scale={ (props.distance)>272?0.106:0 }
       />
       <mesh
         castShadow
@@ -2441,7 +2441,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.839, 6.691, -4.157]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>273?0.106:0 }
+        scale={ (props.distance)>273?0.106:0 }
       />
       <mesh
         castShadow
@@ -2450,7 +2450,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.779, 6.416, -3.019]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>274?0.106:0 }
+        scale={ (props.distance)>274?0.106:0 }
       />
       <mesh
         castShadow
@@ -2459,7 +2459,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.412, 5, -0.637]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>275?0.106:0 }
+        scale={ (props.distance)>275?0.106:0 }
       />
       <mesh
         castShadow
@@ -2468,7 +2468,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.904, 4.958, -1.726]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>276?0.106:0 }
+        scale={ (props.distance)>276?0.106:0 }
       />
       <mesh
         castShadow
@@ -2477,7 +2477,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.82, 5.219, -1.854]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>277?0.106:0 }
+        scale={ (props.distance)>277?0.106:0 }
       />
       <mesh
         castShadow
@@ -2486,7 +2486,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.819, 5.908, -1.91]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>278?0.106:0 }
+        scale={ (props.distance)>278?0.106:0 }
       />
       <mesh
         castShadow
@@ -2495,7 +2495,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.86, 5.295, -3.229]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>279?0.106:0 }
+        scale={ (props.distance)>279?0.106:0 }
       />
       <mesh
         castShadow
@@ -2504,7 +2504,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.424, 6.754, -2.931]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>280?0.106:0 }
+        scale={ (props.distance)>280?0.106:0 }
       />
       <mesh
         castShadow
@@ -2513,7 +2513,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.338, 5.295, -3.176]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>281?0.106:0 }
+        scale={ (props.distance)>281?0.106:0 }
       />
       <mesh
         castShadow
@@ -2522,7 +2522,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.902, 6.754, -2.876]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>282?0.106:0 }
+        scale={ (props.distance)>282?0.106:0 }
       />
       <mesh
         castShadow
@@ -2531,7 +2531,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.032, 4.982, 0.873]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>283?0.106:0 }
+        scale={ (props.distance)>283?0.106:0 }
       />
       <mesh
         castShadow
@@ -2540,7 +2540,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.419, 5.827, 1.734]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>284?0.106:0 }
+        scale={ (props.distance)>284?0.106:0 }
       />
       <mesh
         castShadow
@@ -2549,7 +2549,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.887, 6.104, 3.146]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>285?0.106:0 }
+        scale={ (props.distance)>285?0.106:0 }
       />
       <mesh
         castShadow
@@ -2558,7 +2558,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.697, 5.214, 3.452]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>286?0.106:0 }
+        scale={ (props.distance)>286?0.106:0 }
       />
       <mesh
         castShadow
@@ -2567,7 +2567,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.546, 6.262, 3.616]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>287?0.106:0 }
+        scale={ (props.distance)>287?0.106:0 }
       />
       <mesh
         castShadow
@@ -2576,7 +2576,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.443, 6.432, 1.238]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>288?0.106:0 }
+        scale={ (props.distance)>288?0.106:0 }
       />
       <mesh
         castShadow
@@ -2585,7 +2585,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.105, 6.905, -1.356]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>289?0.106:0 }
+        scale={ (props.distance)>289?0.106:0 }
       />
       <mesh
         castShadow
@@ -2594,7 +2594,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.626, 5.827, 2.016]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>290?0.106:0 }
+        scale={ (props.distance)>290?0.106:0 }
       />
       <mesh
         castShadow
@@ -2603,7 +2603,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.825, 6.948, 0.213]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>291?0.106:0 }
+        scale={ (props.distance)>291?0.106:0 }
       />
       <mesh
         castShadow
@@ -2612,7 +2612,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.692, 6.673, 1.285]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>292?0.106:0 }
+        scale={ (props.distance)>292?0.106:0 }
       />
       <mesh
         castShadow
@@ -2621,7 +2621,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.787, 5.827, 2.55]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>293?0.106:0 }
+        scale={ (props.distance)>293?0.106:0 }
       />
       <mesh
         castShadow
@@ -2630,7 +2630,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.931, 6.694, 3.027]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>294?0.106:0 }
+        scale={ (props.distance)>294?0.106:0 }
       />
       <mesh
         castShadow
@@ -2639,7 +2639,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.737, 5.307, 3.495]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>295?0.106:0 }
+        scale={ (props.distance)>295?0.106:0 }
       />
       <mesh
         castShadow
@@ -2648,7 +2648,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.384, 5.214, 1.644]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>296?0.106:0 }
+        scale={ (props.distance)>296?0.106:0 }
       />
       <mesh
         castShadow
@@ -2657,7 +2657,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.232, 5.476, 1.638]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>297?0.106:0 }
+        scale={ (props.distance)>297?0.106:0 }
       />
       <mesh
         castShadow
@@ -2666,7 +2666,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.605, 6.165, 2.421]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>298?0.106:0 }
+        scale={ (props.distance)>298?0.106:0 }
       />
       <mesh
         castShadow
@@ -2675,7 +2675,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.136, 5.552, 0.807]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>299?0.106:0 }
+        scale={ (props.distance)>299?0.106:0 }
       />
       <mesh
         castShadow
@@ -2684,7 +2684,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.125, 7.01, 1.335]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>300?0.106:0 }
+        scale={ (props.distance)>300?0.106:0 }
       />
       <mesh
         castShadow
@@ -2693,7 +2693,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.496, 6.165, 2.967]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>301?0.106:0 }
+        scale={ (props.distance)>301?0.106:0 }
       />
       <mesh
         castShadow
@@ -2702,7 +2702,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.399, 7.032, 3.456]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>302?0.106:0 }
+        scale={ (props.distance)>302?0.106:0 }
       />
       <mesh
         castShadow
@@ -2711,7 +2711,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.875, 5.552, 1.263]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>303?0.106:0 }
+        scale={ (props.distance)>303?0.106:0 }
       />
       <mesh
         castShadow
@@ -2720,7 +2720,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.867, 7.01, 1.792]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>304?0.106:0 }
+        scale={ (props.distance)>304?0.106:0 }
       />
       <mesh
         castShadow
@@ -2729,7 +2729,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.664, 4.872, 0.179]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>305?0.106:0 }
+        scale={ (props.distance)>305?0.106:0 }
       />
       <mesh
         castShadow
@@ -2737,7 +2737,7 @@ export function Model(props) {
         geometry={nodes.Sphere313.geometry}
         material={materials["Dark blue"]}
         position={[-3.357, 5.465, -2.46]}
-        scale={ (props.distance*2)>306?0.106:0 }
+        scale={ (props.distance)>306?0.106:0 }
       />
       <mesh
         castShadow
@@ -2746,7 +2746,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.94, 6.07, -2.728]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>307?0.106:0 }
+        scale={ (props.distance)>307?0.106:0 }
       />
       <mesh
         castShadow
@@ -2755,7 +2755,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.467, 5.465, -2.127]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>308?0.106:0 }
+        scale={ (props.distance)>308?0.106:0 }
       />
       <mesh
         castShadow
@@ -2764,7 +2764,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.63, 4.894, -4.811]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>309?0.106:0 }
+        scale={ (props.distance)>309?0.106:0 }
       />
       <mesh
         castShadow
@@ -2773,7 +2773,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.169, 4.852, -3.781]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>310?0.106:0 }
+        scale={ (props.distance)>310?0.106:0 }
       />
       <mesh
         castShadow
@@ -2782,7 +2782,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.464, 6.585, -3.827]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>311?0.106:0 }
+        scale={ (props.distance)>311?0.106:0 }
       />
       <mesh
         castShadow
@@ -2791,7 +2791,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.414, 6.31, -3.312]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>312?0.106:0 }
+        scale={ (props.distance)>312?0.106:0 }
       />
       <mesh
         castShadow
@@ -2800,7 +2800,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.809, 5.465, -1.686]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>313?0.106:0 }
+        scale={ (props.distance)>313?0.106:0 }
       />
       <mesh
         castShadow
@@ -2809,7 +2809,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.872, 6.86, 0.232]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>314?0.106:0 }
+        scale={ (props.distance)>314?0.106:0 }
       />
       <mesh
         castShadow
@@ -2818,7 +2818,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.605, 4.852, -3.488]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>315?0.106:0 }
+        scale={ (props.distance)>315?0.106:0 }
       />
       <mesh
         castShadow
@@ -2827,7 +2827,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.848, 6.31, -3.019]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>316?0.106:0 }
+        scale={ (props.distance)>316?0.106:0 }
       />
       <mesh
         castShadow
@@ -2836,7 +2836,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.216, 4.894, -0.637]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>317?0.106:0 }
+        scale={ (props.distance)>317?0.106:0 }
       />
       <mesh
         castShadow
@@ -2845,7 +2845,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.724, 4.852, -1.726]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>318?0.106:0 }
+        scale={ (props.distance)>318?0.106:0 }
       />
       <mesh
         castShadow
@@ -2854,7 +2854,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.807, 5.113, -1.854]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>319?0.106:0 }
+        scale={ (props.distance)>319?0.106:0 }
       />
       <mesh
         castShadow
@@ -2863,7 +2863,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.808, 5.803, -1.91]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>320?0.106:0 }
+        scale={ (props.distance)>320?0.106:0 }
       />
       <mesh
         castShadow
@@ -2872,7 +2872,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.767, 5.19, -3.229]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>321?0.106:0 }
+        scale={ (props.distance)>321?0.106:0 }
       />
       <mesh
         castShadow
@@ -2881,7 +2881,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.204, 6.648, -2.931]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>322?0.106:0 }
+        scale={ (props.distance)>322?0.106:0 }
       />
       <mesh
         castShadow
@@ -2890,7 +2890,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.29, 5.19, -3.176]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>323?0.106:0 }
+        scale={ (props.distance)>323?0.106:0 }
       />
       <mesh
         castShadow
@@ -2899,7 +2899,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.725, 6.648, -2.876]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>324?0.106:0 }
+        scale={ (props.distance)>324?0.106:0 }
       />
       <mesh
         castShadow
@@ -2908,7 +2908,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.595, 4.876, 0.873]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>325?0.106:0 }
+        scale={ (props.distance)>325?0.106:0 }
       />
       <mesh
         castShadow
@@ -2917,7 +2917,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.209, 5.722, 1.734]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>326?0.106:0 }
+        scale={ (props.distance)>326?0.106:0 }
       />
       <mesh
         castShadow
@@ -2926,7 +2926,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.74, 5.998, 3.146]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>327?0.106:0 }
+        scale={ (props.distance)>327?0.106:0 }
       />
       <mesh
         castShadow
@@ -2935,7 +2935,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.931, 5.108, 3.452]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>328?0.106:0 }
+        scale={ (props.distance)>328?0.106:0 }
       />
       <mesh
         castShadow
@@ -2944,7 +2944,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.082, 6.156, 3.616]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>329?0.106:0 }
+        scale={ (props.distance)>329?0.106:0 }
       />
       <mesh
         castShadow
@@ -2953,7 +2953,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.185, 6.326, 1.238]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>330?0.106:0 }
+        scale={ (props.distance)>330?0.106:0 }
       />
       <mesh
         castShadow
@@ -2962,7 +2962,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.523, 6.8, -1.356]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>331?0.106:0 }
+        scale={ (props.distance)>331?0.106:0 }
       />
       <mesh
         castShadow
@@ -2971,7 +2971,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.001, 5.722, 2.016]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>332?0.106:0 }
+        scale={ (props.distance)>332?0.106:0 }
       />
       <mesh
         castShadow
@@ -2980,7 +2980,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.803, 6.842, 0.213]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>333?0.106:0 }
+        scale={ (props.distance)>333?0.106:0 }
       />
       <mesh
         castShadow
@@ -2989,7 +2989,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.935, 6.567, 1.285]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>334?0.106:0 }
+        scale={ (props.distance)>334?0.106:0 }
       />
       <mesh
         castShadow
@@ -2998,7 +2998,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.841, 5.722, 2.55]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>335?0.106:0 }
+        scale={ (props.distance)>335?0.106:0 }
       />
       <mesh
         castShadow
@@ -3007,7 +3007,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.697, 6.588, 3.027]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>336?0.106:0 }
+        scale={ (props.distance)>336?0.106:0 }
       />
       <mesh
         castShadow
@@ -3016,7 +3016,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.891, 5.202, 3.495]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>337?0.106:0 }
+        scale={ (props.distance)>337?0.106:0 }
       />
       <mesh
         castShadow
@@ -3025,7 +3025,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.243, 5.108, 1.644]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>338?0.106:0 }
+        scale={ (props.distance)>338?0.106:0 }
       />
       <mesh
         castShadow
@@ -3034,7 +3034,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.395, 5.37, 1.638]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>339?0.106:0 }
+        scale={ (props.distance)>339?0.106:0 }
       />
       <mesh
         castShadow
@@ -3043,7 +3043,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.022, 6.059, 2.421]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>340?0.106:0 }
+        scale={ (props.distance)>340?0.106:0 }
       />
       <mesh
         castShadow
@@ -3052,7 +3052,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.492, 5.446, 0.807]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>341?0.106:0 }
+        scale={ (props.distance)>341?0.106:0 }
       />
       <mesh
         castShadow
@@ -3061,7 +3061,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.503, 6.905, 1.335]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>342?0.106:0 }
+        scale={ (props.distance)>342?0.106:0 }
       />
       <mesh
         castShadow
@@ -3070,7 +3070,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.132, 6.059, 2.967]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>343?0.106:0 }
+        scale={ (props.distance)>343?0.106:0 }
       />
       <mesh
         castShadow
@@ -3079,7 +3079,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.229, 6.926, 3.456]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>344?0.106:0 }
+        scale={ (props.distance)>344?0.106:0 }
       />
       <mesh
         castShadow
@@ -3088,7 +3088,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.752, 5.446, 1.263]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>345?0.106:0 }
+        scale={ (props.distance)>345?0.106:0 }
       />
       <mesh
         castShadow
@@ -3097,7 +3097,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.761, 6.905, 1.792]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>346?0.106:0 }
+        scale={ (props.distance)>346?0.106:0 }
       />
       <mesh
         castShadow
@@ -3105,7 +3105,7 @@ export function Model(props) {
         geometry={nodes.Sphere161.geometry}
         material={materials["Dark blue"]}
         position={[-3.72, 7.821, 4.459]}
-        scale={ (props.distance*2)>347?0.106:0 }
+        scale={ (props.distance)>347?0.106:0 }
       />
       <mesh
         castShadow
@@ -3114,7 +3114,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.299, 7.99, 5.029]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>348?0.106:0 }
+        scale={ (props.distance)>348?0.106:0 }
       />
       <mesh
         castShadow
@@ -3122,7 +3122,7 @@ export function Model(props) {
         geometry={nodes.Sphere217.geometry}
         material={materials["light blue"]}
         position={[-1.501, 8.159, 4.084]}
-        scale={ (props.distance*2)>349?0.106:0 }
+        scale={ (props.distance)>349?0.106:0 }
       />
       <mesh
         castShadow
@@ -3130,7 +3130,7 @@ export function Model(props) {
         geometry={nodes.Sphere235.geometry}
         material={materials["Dark blue"]}
         position={[0.782, 8.751, 4.084]}
-        scale={ (props.distance*2)>350?0.106:0 }
+        scale={ (props.distance)>350?0.106:0 }
       />
       <mesh
         castShadow
@@ -3139,7 +3139,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.932, 8.434, 3.21]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>351?0.106:0 }
+        scale={ (props.distance)>351?0.106:0 }
       />
       <mesh
         castShadow
@@ -3148,7 +3148,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.971, 8.117, 2.849]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>352?0.106:0 }
+        scale={ (props.distance)>352?0.106:0 }
       />
       <mesh
         castShadow
@@ -3156,7 +3156,7 @@ export function Model(props) {
         geometry={nodes.Sphere298.geometry}
         material={materials["light blue"]}
         position={[5.39, 7.969, 4.084]}
-        scale={ (props.distance*2)>353?0.106:0 }
+        scale={ (props.distance)>353?0.106:0 }
       />
       <mesh
         castShadow
@@ -3165,7 +3165,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.898, 7.906, 1.582]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>354?0.106:0 }
+        scale={ (props.distance)>354?0.106:0 }
       />
       <mesh
         castShadow
@@ -3174,7 +3174,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.322, 8.159, 3.435]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>355?0.106:0 }
+        scale={ (props.distance)>355?0.106:0 }
       />
       <mesh
         castShadow
@@ -3183,7 +3183,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.272, 8.345, 3.747]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>356?0.106:0 }
+        scale={ (props.distance)>356?0.106:0 }
       />
       <mesh
         castShadow
@@ -3192,7 +3192,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.959, 8.434, 4.763]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>357?0.106:0 }
+        scale={ (props.distance)>357?0.106:0 }
       />
       <mesh
         castShadow
@@ -3201,7 +3201,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.38, 8.117, 6.211]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>358?0.106:0 }
+        scale={ (props.distance)>358?0.106:0 }
       />
       <mesh
         castShadow
@@ -3210,7 +3210,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.648, 7.969, -1.829]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>359?0.106:0 }
+        scale={ (props.distance)>359?0.106:0 }
       />
       <mesh
         castShadow
@@ -3219,7 +3219,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.54, 7.906, 0.292]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>360?0.106:0 }
+        scale={ (props.distance)>360?0.106:0 }
       />
       <mesh
         castShadow
@@ -3228,7 +3228,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.95, 8.159, 2.718]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>361?0.106:0 }
+        scale={ (props.distance)>361?0.106:0 }
       />
       <mesh
         castShadow
@@ -3237,7 +3237,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1, 7.885, 3.232]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>362?0.106:0 }
+        scale={ (props.distance)>362?0.106:0 }
       />
       <mesh
         castShadow
@@ -3246,7 +3246,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.568, 8.434, 6.228]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>363?0.106:0 }
+        scale={ (props.distance)>363?0.106:0 }
       />
       <mesh
         castShadow
@@ -3255,7 +3255,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.118, 8.117, 6.538]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>364?0.106:0 }
+        scale={ (props.distance)>364?0.106:0 }
       />
       <mesh
         castShadow
@@ -3264,7 +3264,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.389, 7.969, 0.276]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>365?0.106:0 }
+        scale={ (props.distance)>365?0.106:0 }
       />
       <mesh
         castShadow
@@ -3273,7 +3273,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.65, 7.906, 0.647]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>366?0.106:0 }
+        scale={ (props.distance)>366?0.106:0 }
       />
       <mesh
         castShadow
@@ -3282,7 +3282,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.199, 8.751, 4.605]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>367?0.106:0 }
+        scale={ (props.distance)>367?0.106:0 }
       />
       <mesh
         castShadow
@@ -3291,7 +3291,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.301, 7.906, 5.252]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>368?0.106:0 }
+        scale={ (props.distance)>368?0.106:0 }
       />
       <mesh
         castShadow
@@ -3300,7 +3300,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.543, 8.434, 6.776]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>369?0.106:0 }
+        scale={ (props.distance)>369?0.106:0 }
       />
       <mesh
         castShadow
@@ -3309,7 +3309,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.944, 7.906, 0.191]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>370?0.106:0 }
+        scale={ (props.distance)>370?0.106:0 }
       />
       <mesh
         castShadow
@@ -3318,7 +3318,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.626, 8.159, 2.387]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>371?0.106:0 }
+        scale={ (props.distance)>371?0.106:0 }
       />
       <mesh
         castShadow
@@ -3327,7 +3327,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.566, 7.885, 3.525]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>372?0.106:0 }
+        scale={ (props.distance)>372?0.106:0 }
       />
       <mesh
         castShadow
@@ -3336,7 +3336,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.99, 8.434, 6.528]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>373?0.106:0 }
+        scale={ (props.distance)>373?0.106:0 }
       />
       <mesh
         castShadow
@@ -3345,7 +3345,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.36, 7.969, 9.208]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>374?0.106:0 }
+        scale={ (props.distance)>374?0.106:0 }
       />
       <mesh
         castShadow
@@ -3354,7 +3354,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.723, 7.906, -1.596]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>375?0.106:0 }
+        scale={ (props.distance)>375?0.106:0 }
       />
       <mesh
         castShadow
@@ -3363,7 +3363,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.299, 7.969, 2.799]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>376?0.106:0 }
+        scale={ (props.distance)>376?0.106:0 }
       />
       <mesh
         castShadow
@@ -3372,7 +3372,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.617, 9.089, 4.263]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>377?0.106:0 }
+        scale={ (props.distance)>377?0.106:0 }
       />
       <mesh
         castShadow
@@ -3381,7 +3381,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.926, 8.772, 4.503]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>378?0.106:0 }
+        scale={ (props.distance)>378?0.106:0 }
       />
       <mesh
         castShadow
@@ -3390,7 +3390,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.012, 8.455, 4.672]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>379?0.106:0 }
+        scale={ (props.distance)>379?0.106:0 }
       />
       <mesh
         castShadow
@@ -3399,7 +3399,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.072, 8.307, -0.876]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>380?0.106:0 }
+        scale={ (props.distance)>380?0.106:0 }
       />
       <mesh
         castShadow
@@ -3408,7 +3408,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.454, 8.243, 0.325]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>381?0.106:0 }
+        scale={ (props.distance)>381?0.106:0 }
       />
       <mesh
         castShadow
@@ -3417,7 +3417,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.934, 8.497, 2.701]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>382?0.106:0 }
+        scale={ (props.distance)>382?0.106:0 }
       />
       <mesh
         castShadow
@@ -3426,7 +3426,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.21, 8.222, 3.614]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>383?0.106:0 }
+        scale={ (props.distance)>383?0.106:0 }
       />
       <mesh
         castShadow
@@ -3435,7 +3435,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.583, 8.772, 5.52]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>384?0.106:0 }
+        scale={ (props.distance)>384?0.106:0 }
       />
       <mesh
         castShadow
@@ -3444,7 +3444,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.143, 9.089, 4.448]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>385?0.106:0 }
+        scale={ (props.distance)>385?0.106:0 }
       />
       <mesh
         castShadow
@@ -3453,7 +3453,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.357, 8.243, 5.068]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>386?0.106:0 }
+        scale={ (props.distance)>386?0.106:0 }
       />
       <mesh
         castShadow
@@ -3462,7 +3462,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.59, 8.243, 0.903]}
         rotation={[Math.PI, -0.938, Math.PI]}
-        scale={ (props.distance*2)>387?0.106:0 }
+        scale={ (props.distance)>387?0.106:0 }
       />
       <mesh
         castShadow
@@ -3471,7 +3471,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.689, 8.222, 3.668]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>388?0.106:0 }
+        scale={ (props.distance)>388?0.106:0 }
       />
       <mesh
         castShadow
@@ -3480,7 +3480,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.263, 8.307, 0.74]}
         rotation={[-Math.PI, 0.815, -Math.PI]}
-        scale={ (props.distance*2)>389?0.106:0 }
+        scale={ (props.distance)>389?0.106:0 }
       />
       <mesh
         castShadow
@@ -3488,7 +3488,7 @@ export function Model(props) {
         geometry={nodes.Sphere389.geometry}
         material={materials["Dark blue"]}
         position={[1.98, 8.837, 1.624]}
-        scale={ (props.distance*2)>390?0.106:0 }
+        scale={ (props.distance)>390?0.106:0 }
       />
       <mesh
         castShadow
@@ -3496,7 +3496,7 @@ export function Model(props) {
         geometry={nodes.Sphere390.geometry}
         material={materials["Dark blue"]}
         position={[0.923, 9.682, 1.624]}
-        scale={ (props.distance*2)>391?0.106:0 }
+        scale={ (props.distance)>391?0.106:0 }
       />
       <mesh
         castShadow
@@ -3504,7 +3504,7 @@ export function Model(props) {
         geometry={nodes.Sphere391.geometry}
         material={materials["Dark blue"]}
         position={[-0.535, 9.959, 2.011]}
-        scale={ (props.distance*2)>392?0.106:0 }
+        scale={ (props.distance)>392?0.106:0 }
       />
       <mesh
         castShadow
@@ -3513,7 +3513,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.095, 9.348, 1.818]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>393?0.106:0 }
+        scale={ (props.distance)>393?0.106:0 }
       />
       <mesh
         castShadow
@@ -3521,7 +3521,7 @@ export function Model(props) {
         geometry={nodes.Sphere393.geometry}
         material={materials["light blue"]}
         position={[-1.761, 9.725, 1.328]}
-        scale={ (props.distance*2)>394?0.106:0 }
+        scale={ (props.distance)>394?0.106:0 }
       />
       <mesh
         castShadow
@@ -3530,7 +3530,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.532, 9.598, 2.603]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>395?0.106:0 }
+        scale={ (props.distance)>395?0.106:0 }
       />
       <mesh
         castShadow
@@ -3539,7 +3539,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.993, 8.795, 2.528]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>396?0.106:0 }
+        scale={ (props.distance)>396?0.106:0 }
       />
       <mesh
         castShadow
@@ -3548,7 +3548,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.895, 9.069, 2.034]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>397?0.106:0 }
+        scale={ (props.distance)>397?0.106:0 }
       />
       <mesh
         castShadow
@@ -3556,7 +3556,7 @@ export function Model(props) {
         geometry={nodes.Sphere397.geometry}
         material={materials["Dark blue"]}
         position={[-3.854, 10.464, 1.999]}
-        scale={ (props.distance*2)>398?0.106:0 }
+        scale={ (props.distance)>398?0.106:0 }
       />
       <mesh
         castShadow
@@ -3565,7 +3565,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.433, 10.633, 2.568]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>399?0.106:0 }
+        scale={ (props.distance)>399?0.106:0 }
       />
       <mesh
         castShadow
@@ -3573,7 +3573,7 @@ export function Model(props) {
         geometry={nodes.Sphere399.geometry}
         material={materials["light blue"]}
         position={[-1.635, 10.802, 1.624]}
-        scale={ (props.distance*2)>400?0.106:0 }
+        scale={ (props.distance)>400?0.106:0 }
       />
       <mesh
         castShadow
@@ -3581,7 +3581,7 @@ export function Model(props) {
         geometry={nodes.Sphere400.geometry}
         material={materials["light blue"]}
         position={[-0.535, 10.117, 2.82]}
-        scale={ (props.distance*2)>401?0.106:0 }
+        scale={ (props.distance)>401?0.106:0 }
       />
       <mesh
         castShadow
@@ -3589,7 +3589,7 @@ export function Model(props) {
         geometry={nodes.Sphere401.geometry}
         material={materials["Dark blue"]}
         position={[0.648, 11.394, 1.624]}
-        scale={ (props.distance*2)>402?0.106:0 }
+        scale={ (props.distance)>402?0.106:0 }
       />
       <mesh
         castShadow
@@ -3598,7 +3598,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.341, 10.287, 1.356]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>403?0.106:0 }
+        scale={ (props.distance)>403?0.106:0 }
       />
       <mesh
         castShadow
@@ -3607,7 +3607,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.799, 11.077, 0.75]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>404?0.106:0 }
+        scale={ (props.distance)>404?0.106:0 }
       />
       <mesh
         castShadow
@@ -3616,7 +3616,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.837, 10.76, 0.389]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>405?0.106:0 }
+        scale={ (props.distance)>405?0.106:0 }
       />
       <mesh
         castShadow
@@ -3624,7 +3624,7 @@ export function Model(props) {
         geometry={nodes.Sphere405.geometry}
         material={materials["Dark blue"]}
         position={[5.257, 10.612, 1.624]}
-        scale={ (props.distance*2)>406?0.106:0 }
+        scale={ (props.distance)>406?0.106:0 }
       />
       <mesh
         castShadow
@@ -3632,7 +3632,7 @@ export function Model(props) {
         geometry={nodes.Sphere406.geometry}
         material={materials["Dark blue"]}
         position={[3.227, 9.83, 1.624]}
-        scale={ (props.distance*2)>407?0.106:0 }
+        scale={ (props.distance)>407?0.106:0 }
       />
       <mesh
         castShadow
@@ -3641,7 +3641,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.813, 9.682, 1.957]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>408?0.106:0 }
+        scale={ (props.distance)>408?0.106:0 }
       />
       <mesh
         castShadow
@@ -3650,7 +3650,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.021, 9.111, 0.799]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>409?0.106:0 }
+        scale={ (props.distance)>409?0.106:0 }
       />
       <mesh
         castShadow
@@ -3659,7 +3659,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.91, 9.069, 1.144]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>410?0.106:0 }
+        scale={ (props.distance)>410?0.106:0 }
       />
       <mesh
         castShadow
@@ -3668,7 +3668,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.032, 10.549, -0.878]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>411?0.106:0 }
+        scale={ (props.distance)>411?0.106:0 }
       />
       <mesh
         castShadow
@@ -3677,7 +3677,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.455, 10.802, 0.975]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>412?0.106:0 }
+        scale={ (props.distance)>412?0.106:0 }
       />
       <mesh
         castShadow
@@ -3686,7 +3686,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.406, 10.988, 1.286]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>413?0.106:0 }
+        scale={ (props.distance)>413?0.106:0 }
       />
       <mesh
         castShadow
@@ -3695,7 +3695,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.825, 11.077, 2.302]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>414?0.106:0 }
+        scale={ (props.distance)>414?0.106:0 }
       />
       <mesh
         castShadow
@@ -3704,7 +3704,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.246, 10.76, 3.751]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>415?0.106:0 }
+        scale={ (props.distance)>415?0.106:0 }
       />
       <mesh
         castShadow
@@ -3713,7 +3713,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.126, 10.612, 3.016]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>416?0.106:0 }
+        scale={ (props.distance)>416?0.106:0 }
       />
       <mesh
         castShadow
@@ -3722,7 +3722,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.651, 9.111, -0.727]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>417?0.106:0 }
+        scale={ (props.distance)>417?0.106:0 }
       />
       <mesh
         castShadow
@@ -3731,7 +3731,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.112, 9.069, 0.303]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>418?0.106:0 }
+        scale={ (props.distance)>418?0.106:0 }
       />
       <mesh
         castShadow
@@ -3740,7 +3740,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.406, 10.549, -2.169]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>419?0.106:0 }
+        scale={ (props.distance)>419?0.106:0 }
       />
       <mesh
         castShadow
@@ -3749,7 +3749,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.816, 10.802, 0.257]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>420?0.106:0 }
+        scale={ (props.distance)>420?0.106:0 }
       />
       <mesh
         castShadow
@@ -3758,7 +3758,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.867, 10.528, 0.772]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>421?0.106:0 }
+        scale={ (props.distance)>421?0.106:0 }
       />
       <mesh
         castShadow
@@ -3767,7 +3767,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.702, 11.077, 3.768]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>422?0.106:0 }
+        scale={ (props.distance)>422?0.106:0 }
       />
       <mesh
         castShadow
@@ -3776,7 +3776,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.252, 10.76, 4.077]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>423?0.106:0 }
+        scale={ (props.distance)>423?0.106:0 }
       />
       <mesh
         castShadow
@@ -3785,7 +3785,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.522, 10.612, -2.185]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>424?0.106:0 }
+        scale={ (props.distance)>424?0.106:0 }
       />
       <mesh
         castShadow
@@ -3794,7 +3794,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.472, 9.682, 2.398]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>425?0.106:0 }
+        scale={ (props.distance)>425?0.106:0 }
       />
       <mesh
         castShadow
@@ -3803,7 +3803,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.566, 9.745, 0.46]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>426?0.106:0 }
+        scale={ (props.distance)>426?0.106:0 }
       />
       <mesh
         castShadow
@@ -3812,7 +3812,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.312, 9.745, -0.235]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>427?0.106:0 }
+        scale={ (props.distance)>427?0.106:0 }
       />
       <mesh
         castShadow
@@ -3821,7 +3821,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.015, 9.111, -0.379]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>428?0.106:0 }
+        scale={ (props.distance)>428?0.106:0 }
       />
       <mesh
         castShadow
@@ -3830,7 +3830,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.784, 10.549, -1.814]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>429?0.106:0 }
+        scale={ (props.distance)>429?0.106:0 }
       />
       <mesh
         castShadow
@@ -3839,7 +3839,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.065, 11.394, 2.145]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>430?0.106:0 }
+        scale={ (props.distance)>430?0.106:0 }
       />
       <mesh
         castShadow
@@ -3848,7 +3848,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.167, 10.549, 2.792]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>431?0.106:0 }
+        scale={ (props.distance)>431?0.106:0 }
       />
       <mesh
         castShadow
@@ -3857,7 +3857,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.409, 11.077, 4.316]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>432?0.106:0 }
+        scale={ (props.distance)>432?0.106:0 }
       />
       <mesh
         castShadow
@@ -3866,7 +3866,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.676, 9.069, 0.596]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>433?0.106:0 }
+        scale={ (props.distance)>433?0.106:0 }
       />
       <mesh
         castShadow
@@ -3875,7 +3875,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.81, 10.549, -2.27]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>434?0.106:0 }
+        scale={ (props.distance)>434?0.106:0 }
       />
       <mesh
         castShadow
@@ -3884,7 +3884,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.492, 10.802, -0.073]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>435?0.106:0 }
+        scale={ (props.distance)>435?0.106:0 }
       />
       <mesh
         castShadow
@@ -3893,7 +3893,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.432, 10.528, 1.065]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>436?0.106:0 }
+        scale={ (props.distance)>436?0.106:0 }
       />
       <mesh
         castShadow
@@ -3902,7 +3902,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.124, 11.077, 4.068]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>437?0.106:0 }
+        scale={ (props.distance)>437?0.106:0 }
       />
       <mesh
         castShadow
@@ -3911,7 +3911,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.494, 10.612, 6.747]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>438?0.106:0 }
+        scale={ (props.distance)>438?0.106:0 }
       />
       <mesh
         castShadow
@@ -3920,7 +3920,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.326, 9.162, 2.905]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>439?0.106:0 }
+        scale={ (props.distance)>439?0.106:0 }
       />
       <mesh
         castShadow
@@ -3929,7 +3929,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.065, 9.111, 3.447]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>440?0.106:0 }
+        scale={ (props.distance)>440?0.106:0 }
       />
       <mesh
         castShadow
@@ -3938,7 +3938,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.557, 9.069, 2.357]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>441?0.106:0 }
+        scale={ (props.distance)>441?0.106:0 }
       />
       <mesh
         castShadow
@@ -3947,7 +3947,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.201, 10.549, 3.249]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>442?0.106:0 }
+        scale={ (props.distance)>442?0.106:0 }
       />
       <mesh
         castShadow
@@ -3956,7 +3956,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.392, 8.625, 1.824]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>443?0.106:0 }
+        scale={ (props.distance)>443?0.106:0 }
       />
       <mesh
         castShadow
@@ -3965,7 +3965,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.473, 9.33, 2.23]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>444?0.106:0 }
+        scale={ (props.distance)>444?0.106:0 }
       />
       <mesh
         castShadow
@@ -3974,7 +3974,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.504, 10.063, 0.408]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>445?0.106:0 }
+        scale={ (props.distance)>445?0.106:0 }
       />
       <mesh
         castShadow
@@ -3983,7 +3983,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.785, 9.935, 1.171]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>446?0.106:0 }
+        scale={ (props.distance)>446?0.106:0 }
       />
       <mesh
         castShadow
@@ -3992,7 +3992,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.273, 9.133, 1.358]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>447?0.106:0 }
+        scale={ (props.distance)>447?0.106:0 }
       />
       <mesh
         castShadow
@@ -4001,7 +4001,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.483, 11.732, 1.802]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>448?0.106:0 }
+        scale={ (props.distance)>448?0.106:0 }
       />
       <mesh
         castShadow
@@ -4010,7 +4010,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.792, 11.415, 2.042]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>449?0.106:0 }
+        scale={ (props.distance)>449?0.106:0 }
       />
       <mesh
         castShadow
@@ -4019,7 +4019,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.878, 11.098, 2.212]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>450?0.106:0 }
+        scale={ (props.distance)>450?0.106:0 }
       />
       <mesh
         castShadow
@@ -4028,7 +4028,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.55, 10.95, 3.969]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>451?0.106:0 }
+        scale={ (props.distance)>451?0.106:0 }
       />
       <mesh
         castShadow
@@ -4037,7 +4037,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.759, 10.168, 3.015]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>452?0.106:0 }
+        scale={ (props.distance)>452?0.106:0 }
       />
       <mesh
         castShadow
@@ -4046,7 +4046,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.472, 10.02, 2.174]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>453?0.106:0 }
+        scale={ (props.distance)>453?0.106:0 }
       />
       <mesh
         castShadow
@@ -4055,7 +4055,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.667, 9.407, 0.646]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>454?0.106:0 }
+        scale={ (props.distance)>454?0.106:0 }
       />
       <mesh
         castShadow
@@ -4064,7 +4064,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.588, 10.886, -2.136]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>455?0.106:0 }
+        scale={ (props.distance)>455?0.106:0 }
       />
       <mesh
         castShadow
@@ -4073,7 +4073,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.068, 11.14, 0.241]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>456?0.106:0 }
+        scale={ (props.distance)>456?0.106:0 }
       />
       <mesh
         castShadow
@@ -4082,7 +4082,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.291, 8.715, 0.681]}
         rotation={[Math.PI, -0.264, Math.PI]}
-        scale={ (props.distance*2)>457?0.106:0 }
+        scale={ (props.distance)>457?0.106:0 }
       />
       <mesh
         castShadow
@@ -4091,7 +4091,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.513, 9.407, 0.855]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>458?0.106:0 }
+        scale={ (props.distance)>458?0.106:0 }
       />
       <mesh
         castShadow
@@ -4100,7 +4100,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.077, 10.865, 1.153]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>459?0.106:0 }
+        scale={ (props.distance)>459?0.106:0 }
       />
       <mesh
         castShadow
@@ -4109,7 +4109,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.717, 11.415, 3.06]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>460?0.106:0 }
+        scale={ (props.distance)>460?0.106:0 }
       />
       <mesh
         castShadow
@@ -4118,7 +4118,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.037, 10.02, 2.403]}
         rotation={[0, -1.569, 0]}
-        scale={ (props.distance*2)>461?0.106:0 }
+        scale={ (props.distance)>461?0.106:0 }
       />
       <mesh
         castShadow
@@ -4127,7 +4127,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.277, 11.732, 1.988]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>462?0.106:0 }
+        scale={ (props.distance)>462?0.106:0 }
       />
       <mesh
         castShadow
@@ -4136,7 +4136,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.491, 10.886, 2.607]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>463?0.106:0 }
+        scale={ (props.distance)>463?0.106:0 }
       />
       <mesh
         castShadow
@@ -4145,7 +4145,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.991, 9.407, 0.908]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>464?0.106:0 }
+        scale={ (props.distance)>464?0.106:0 }
       />
       <mesh
         castShadow
@@ -4154,7 +4154,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.456, 10.886, -1.558]}
         rotation={[Math.PI, -0.938, Math.PI]}
-        scale={ (props.distance*2)>465?0.106:0 }
+        scale={ (props.distance)>465?0.106:0 }
       />
       <mesh
         castShadow
@@ -4163,7 +4163,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.555, 10.865, 1.208]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>466?0.106:0 }
+        scale={ (props.distance)>466?0.106:0 }
       />
       <mesh
         castShadow
@@ -4172,7 +4172,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.685, 9.093, 4.957]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>467?0.106:0 }
+        scale={ (props.distance)>467?0.106:0 }
       />
       <mesh
         castShadow
@@ -4181,7 +4181,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.072, 9.939, 5.818]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>468?0.106:0 }
+        scale={ (props.distance)>468?0.106:0 }
       />
       <mesh
         castShadow
@@ -4190,7 +4190,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.54, 10.215, 7.23]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>469?0.106:0 }
+        scale={ (props.distance)>469?0.106:0 }
       />
       <mesh
         castShadow
@@ -4199,7 +4199,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.058, 9.605, 7.573]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>470?0.106:0 }
+        scale={ (props.distance)>470?0.106:0 }
       />
       <mesh
         castShadow
@@ -4208,7 +4208,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.728, 9.982, 7.832]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>471?0.106:0 }
+        scale={ (props.distance)>471?0.106:0 }
       />
       <mesh
         castShadow
@@ -4217,7 +4217,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.137, 9.854, 9.2]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>472?0.106:0 }
+        scale={ (props.distance)>472?0.106:0 }
       />
       <mesh
         castShadow
@@ -4226,7 +4226,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.115, 9.052, 8.717]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>473?0.106:0 }
+        scale={ (props.distance)>473?0.106:0 }
       />
       <mesh
         castShadow
@@ -4235,7 +4235,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.35, 9.326, 7.536]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>474?0.106:0 }
+        scale={ (props.distance)>474?0.106:0 }
       />
       <mesh
         castShadow
@@ -4244,7 +4244,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.397, 10.72, 9.925]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>475?0.106:0 }
+        scale={ (props.distance)>475?0.106:0 }
       />
       <mesh
         castShadow
@@ -4253,7 +4253,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.107, 10.89, 9.098]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>476?0.106:0 }
+        scale={ (props.distance)>476?0.106:0 }
       />
       <mesh
         castShadow
@@ -4262,7 +4262,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.413, 11.059, 7.9]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>477?0.106:0 }
+        scale={ (props.distance)>477?0.106:0 }
       />
       <mesh
         castShadow
@@ -4271,7 +4271,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.199, 10.374, 7.7]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>478?0.106:0 }
+        scale={ (props.distance)>478?0.106:0 }
       />
       <mesh
         castShadow
@@ -4280,7 +4280,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.912, 11.651, 6.041]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>479?0.106:0 }
+        scale={ (props.distance)>479?0.106:0 }
       />
       <mesh
         castShadow
@@ -4289,7 +4289,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.096, 10.543, 5.322]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>480?0.106:0 }
+        scale={ (props.distance)>480?0.106:0 }
       />
       <mesh
         castShadow
@@ -4298,7 +4298,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.449, 11.334, 3.783]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>481?0.106:0 }
+        scale={ (props.distance)>481?0.106:0 }
       />
       <mesh
         castShadow
@@ -4307,7 +4307,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.758, 11.017, 2.728]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>482?0.106:0 }
+        scale={ (props.distance)>482?0.106:0 }
       />
       <mesh
         castShadow
@@ -4316,7 +4316,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.588, 10.869, 2.289]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>483?0.106:0 }
+        scale={ (props.distance)>483?0.106:0 }
       />
       <mesh
         castShadow
@@ -4325,7 +4325,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.409, 10.087, 3.942]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>484?0.106:0 }
+        scale={ (props.distance)>484?0.106:0 }
       />
       <mesh
         castShadow
@@ -4334,7 +4334,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.279, 9.939, 6.1]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>485?0.106:0 }
+        scale={ (props.distance)>485?0.106:0 }
       />
       <mesh
         castShadow
@@ -4343,7 +4343,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.309, 9.368, 7.736]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>486?0.106:0 }
+        scale={ (props.distance)>486?0.106:0 }
       />
       <mesh
         castShadow
@@ -4352,7 +4352,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.384, 9.326, 7.032]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>487?0.106:0 }
+        scale={ (props.distance)>487?0.106:0 }
       />
       <mesh
         castShadow
@@ -4361,7 +4361,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.576, 10.805, 0.426]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>488?0.106:0 }
+        scale={ (props.distance)>488?0.106:0 }
       />
       <mesh
         castShadow
@@ -4370,7 +4370,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.838, 11.059, 7.377]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>489?0.106:0 }
+        scale={ (props.distance)>489?0.106:0 }
       />
       <mesh
         castShadow
@@ -4379,7 +4379,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.025, 11.244, 6.703]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>490?0.106:0 }
+        scale={ (props.distance)>490?0.106:0 }
       />
       <mesh
         castShadow
@@ -4388,7 +4388,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.728, 11.334, 4.663]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>491?0.106:0 }
+        scale={ (props.distance)>491?0.106:0 }
       />
       <mesh
         castShadow
@@ -4397,7 +4397,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.541, 11.017, -2.144]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>492?0.106:0 }
+        scale={ (props.distance)>492?0.106:0 }
       />
       <mesh
         castShadow
@@ -4406,7 +4406,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.646, 10.869, 3.204]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>493?0.106:0 }
+        scale={ (props.distance)>493?0.106:0 }
       />
       <mesh
         castShadow
@@ -4415,7 +4415,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.419, 9.368, 3.86]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>494?0.106:0 }
+        scale={ (props.distance)>494?0.106:0 }
       />
       <mesh
         castShadow
@@ -4424,7 +4424,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.106, 9.326, 4.897]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>495?0.106:0 }
+        scale={ (props.distance)>495?0.106:0 }
       />
       <mesh
         castShadow
@@ -4433,7 +4433,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.155, 10.805, 2.408]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>496?0.106:0 }
+        scale={ (props.distance)>496?0.106:0 }
       />
       <mesh
         castShadow
@@ -4442,7 +4442,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.345, 10.784, 5.369]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>497?0.106:0 }
+        scale={ (props.distance)>497?0.106:0 }
       />
       <mesh
         castShadow
@@ -4451,7 +4451,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.874, 11.334, 8.386]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>498?0.106:0 }
+        scale={ (props.distance)>498?0.106:0 }
       />
       <mesh
         castShadow
@@ -4460,7 +4460,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.226, 11.017, 9.827]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>499?0.106:0 }
+        scale={ (props.distance)>499?0.106:0 }
       />
       <mesh
         castShadow
@@ -4469,7 +4469,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.402, 10.869, 11.126]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>500?0.106:0 }
+        scale={ (props.distance)>500?0.106:0 }
       />
       <mesh
         castShadow
@@ -4478,7 +4478,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.44, 9.939, 6.634]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>501?0.106:0 }
+        scale={ (props.distance)>501?0.106:0 }
       />
       <mesh
         castShadow
@@ -4487,7 +4487,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.741, 10.002, 6.354]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>502?0.106:0 }
+        scale={ (props.distance)>502?0.106:0 }
       />
       <mesh
         castShadow
@@ -4496,7 +4496,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.159, 10.002, 5.744]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>503?0.106:0 }
+        scale={ (props.distance)>503?0.106:0 }
       />
       <mesh
         castShadow
@@ -4505,7 +4505,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.684, 9.368, 6.233]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>504?0.106:0 }
+        scale={ (props.distance)>504?0.106:0 }
       />
       <mesh
         castShadow
@@ -4514,7 +4514,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.614, 10.805, -1.134]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>505?0.106:0 }
+        scale={ (props.distance)>505?0.106:0 }
       />
       <mesh
         castShadow
@@ -4523,7 +4523,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.998, 11.651, 6.819]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>506?0.106:0 }
+        scale={ (props.distance)>506?0.106:0 }
       />
       <mesh
         castShadow
@@ -4532,7 +4532,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.584, 10.805, 7.111]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>507?0.106:0 }
+        scale={ (props.distance)>507?0.106:0 }
       />
       <mesh
         castShadow
@@ -4541,7 +4541,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.965, 11.334, 7.799]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>508?0.106:0 }
+        scale={ (props.distance)>508?0.106:0 }
       />
       <mesh
         castShadow
@@ -4550,7 +4550,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.091, 9.326, 5.422]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>509?0.106:0 }
+        scale={ (props.distance)>509?0.106:0 }
       />
       <mesh
         castShadow
@@ -4559,7 +4559,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.164, 10.805, 3.649]}
         rotation={[0, -0.763, 0]}
-        scale={ (props.distance*2)>510?0.106:0 }
+        scale={ (props.distance)>510?0.106:0 }
       />
       <mesh
         castShadow
@@ -4568,7 +4568,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.56, 11.059, 5.183]}
         rotation={[0, -0.763, 0]}
-        scale={ (props.distance*2)>511?0.106:0 }
+        scale={ (props.distance)>511?0.106:0 }
       />
       <mesh
         castShadow
@@ -4577,7 +4577,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.332, 10.784, 5.893]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>512?0.106:0 }
+        scale={ (props.distance)>512?0.106:0 }
       />
       <mesh
         castShadow
@@ -4586,7 +4586,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.873, 11.334, 8.903]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>513?0.106:0 }
+        scale={ (props.distance)>513?0.106:0 }
       />
       <mesh
         castShadow
@@ -4595,7 +4595,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.39, 9.419, 7.579]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>514?0.106:0 }
+        scale={ (props.distance)>514?0.106:0 }
       />
       <mesh
         castShadow
@@ -4604,7 +4604,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.219, 9.368, 5.947]}
         rotation={[Math.PI, -0.292, Math.PI]}
-        scale={ (props.distance*2)>515?0.106:0 }
+        scale={ (props.distance)>515?0.106:0 }
       />
       <mesh
         castShadow
@@ -4613,7 +4613,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.037, 9.326, 5.728]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>516?0.106:0 }
+        scale={ (props.distance)>516?0.106:0 }
       />
       <mesh
         castShadow
@@ -4622,7 +4622,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.298, 10.805, 4.092]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>517?0.106:0 }
+        scale={ (props.distance)>517?0.106:0 }
       />
       <mesh
         castShadow
@@ -4631,7 +4631,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.084, 10.869, 9.432]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>518?0.106:0 }
+        scale={ (props.distance)>518?0.106:0 }
       />
       <mesh
         castShadow
@@ -4640,7 +4640,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.507, 8.881, 5.552]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>519?0.106:0 }
+        scale={ (props.distance)>519?0.106:0 }
       />
       <mesh
         castShadow
@@ -4649,7 +4649,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.885, 9.587, 5.722]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>520?0.106:0 }
+        scale={ (props.distance)>520?0.106:0 }
       />
       <mesh
         castShadow
@@ -4658,7 +4658,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.327, 10.319, 7.088]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>521?0.106:0 }
+        scale={ (props.distance)>521?0.106:0 }
       />
       <mesh
         castShadow
@@ -4667,7 +4667,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.449, 10.192, 8.574]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>522?0.106:0 }
+        scale={ (props.distance)>522?0.106:0 }
       />
       <mesh
         castShadow
@@ -4676,7 +4676,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1, 9.39, 8.266]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>523?0.106:0 }
+        scale={ (props.distance)>523?0.106:0 }
       />
       <mesh
         castShadow
@@ -4685,7 +4685,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.962, 11.989, 6.28]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>524?0.106:0 }
+        scale={ (props.distance)>524?0.106:0 }
       />
       <mesh
         castShadow
@@ -4694,7 +4694,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.498, 11.671, 4.539]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>525?0.106:0 }
+        scale={ (props.distance)>525?0.106:0 }
       />
       <mesh
         castShadow
@@ -4703,7 +4703,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.266, 11.354, 3.754]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>526?0.106:0 }
+        scale={ (props.distance)>526?0.106:0 }
       />
       <mesh
         castShadow
@@ -4712,7 +4712,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.087, 11.206, 4.226]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>527?0.106:0 }
+        scale={ (props.distance)>527?0.106:0 }
       />
       <mesh
         castShadow
@@ -4721,7 +4721,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.271, 10.424, 5.131]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>528?0.106:0 }
+        scale={ (props.distance)>528?0.106:0 }
       />
       <mesh
         castShadow
@@ -4730,7 +4730,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.258, 10.276, 6.504]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>529?0.106:0 }
+        scale={ (props.distance)>529?0.106:0 }
       />
       <mesh
         castShadow
@@ -4739,7 +4739,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.647, 9.663, 6.544]}
         rotation={[0, 0.161, 0]}
-        scale={ (props.distance*2)>530?0.106:0 }
+        scale={ (props.distance)>530?0.106:0 }
       />
       <mesh
         castShadow
@@ -4748,7 +4748,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.762, 11.143, -1.48]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>531?0.106:0 }
+        scale={ (props.distance)>531?0.106:0 }
       />
       <mesh
         castShadow
@@ -4757,7 +4757,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.211, 11.397, 6.636]}
         rotation={[0, 0.161, 0]}
-        scale={ (props.distance*2)>532?0.106:0 }
+        scale={ (props.distance)>532?0.106:0 }
       />
       <mesh
         castShadow
@@ -4766,7 +4766,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.063, 8.971, 5.784]}
         rotation={[Math.PI, -1.216, Math.PI]}
-        scale={ (props.distance*2)>533?0.106:0 }
+        scale={ (props.distance)>533?0.106:0 }
       />
       <mesh
         castShadow
@@ -4775,7 +4775,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.789, 9.663, 4.891]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>534?0.106:0 }
+        scale={ (props.distance)>534?0.106:0 }
       />
       <mesh
         castShadow
@@ -4784,7 +4784,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.778, 11.122, 5.419]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>535?0.106:0 }
+        scale={ (props.distance)>535?0.106:0 }
       />
       <mesh
         castShadow
@@ -4793,7 +4793,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.708, 11.671, 8.801]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>536?0.106:0 }
+        scale={ (props.distance)>536?0.106:0 }
       />
       <mesh
         castShadow
@@ -4802,7 +4802,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.149, 10.276, 7.051]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>537?0.106:0 }
+        scale={ (props.distance)>537?0.106:0 }
       />
       <mesh
         castShadow
@@ -4811,7 +4811,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.672, 11.989, 7.006]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>538?0.106:0 }
+        scale={ (props.distance)>538?0.106:0 }
       />
       <mesh
         castShadow
@@ -4820,7 +4820,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.052, 11.143, 7.54]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>539?0.106:0 }
+        scale={ (props.distance)>539?0.106:0 }
       />
       <mesh
         castShadow
@@ -4829,7 +4829,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.528, 9.663, 5.347]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>540?0.106:0 }
+        scale={ (props.distance)>540?0.106:0 }
       />
       <mesh
         castShadow
@@ -4838,7 +4838,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.628, 11.143, 2.722]}
         rotation={[0, -1.253, 0]}
-        scale={ (props.distance*2)>541?0.106:0 }
+        scale={ (props.distance)>541?0.106:0 }
       />
       <mesh
         castShadow
@@ -4847,7 +4847,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.52, 11.122, 5.876]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>542?0.106:0 }
+        scale={ (props.distance)>542?0.106:0 }
       />
       <mesh
         castShadow
@@ -4856,7 +4856,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.474, 11.206, 0.233]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>543?0.106:0 }
+        scale={ (props.distance)>543?0.106:0 }
       />
       <mesh
         castShadow
@@ -4865,7 +4865,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.964, 8.402, 4.263]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>544?0.106:0 }
+        scale={ (props.distance)>544?0.106:0 }
       />
       <mesh
         castShadow
@@ -4873,7 +4873,7 @@ export function Model(props) {
         geometry={nodes.Sphere544.geometry}
         material={materials["light blue"]}
         position={[4.27, 8.995, 1.624]}
-        scale={ (props.distance*2)>545?0.106:0 }
+        scale={ (props.distance)>545?0.106:0 }
       />
       <mesh
         castShadow
@@ -4882,7 +4882,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.688, 9.6, 1.356]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>546?0.106:0 }
+        scale={ (props.distance)>546?0.106:0 }
       />
       <mesh
         castShadow
@@ -4891,7 +4891,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.16, 8.995, 1.957]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>547?0.106:0 }
+        scale={ (props.distance)>547?0.106:0 }
       />
       <mesh
         castShadow
@@ -4900,7 +4900,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.459, 8.382, 0.303]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>548?0.106:0 }
+        scale={ (props.distance)>548?0.106:0 }
       />
       <mesh
         castShadow
@@ -4909,7 +4909,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.163, 10.115, 0.257]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>549?0.106:0 }
+        scale={ (props.distance)>549?0.106:0 }
       />
       <mesh
         castShadow
@@ -4918,7 +4918,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.214, 9.841, 0.772]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>550?0.106:0 }
+        scale={ (props.distance)>550?0.106:0 }
       />
       <mesh
         castShadow
@@ -4927,7 +4927,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.819, 8.995, 2.398]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>551?0.106:0 }
+        scale={ (props.distance)>551?0.106:0 }
       />
       <mesh
         castShadow
@@ -4936,7 +4936,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.756, 10.39, 4.316]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>552?0.106:0 }
+        scale={ (props.distance)>552?0.106:0 }
       />
       <mesh
         castShadow
@@ -4945,7 +4945,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.023, 8.382, 0.596]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>553?0.106:0 }
+        scale={ (props.distance)>553?0.106:0 }
       />
       <mesh
         castShadow
@@ -4954,7 +4954,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.839, 10.115, -0.073]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>554?0.106:0 }
+        scale={ (props.distance)>554?0.106:0 }
       />
       <mesh
         castShadow
@@ -4963,7 +4963,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.779, 9.841, 1.065]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>555?0.106:0 }
+        scale={ (props.distance)>555?0.106:0 }
       />
       <mesh
         castShadow
@@ -4972,7 +4972,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.412, 8.424, 3.447]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>556?0.106:0 }
+        scale={ (props.distance)>556?0.106:0 }
       />
       <mesh
         castShadow
@@ -4981,7 +4981,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.904, 8.382, 2.357]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>557?0.106:0 }
+        scale={ (props.distance)>557?0.106:0 }
       />
       <mesh
         castShadow
@@ -4990,7 +4990,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.82, 8.643, 2.23]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>558?0.106:0 }
+        scale={ (props.distance)>558?0.106:0 }
       />
       <mesh
         castShadow
@@ -4999,7 +4999,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.819, 9.333, 2.174]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>559?0.106:0 }
+        scale={ (props.distance)>559?0.106:0 }
       />
       <mesh
         castShadow
@@ -5008,7 +5008,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.86, 8.72, 0.855]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>560?0.106:0 }
+        scale={ (props.distance)>560?0.106:0 }
       />
       <mesh
         castShadow
@@ -5017,7 +5017,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.424, 10.178, 1.153]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>561?0.106:0 }
+        scale={ (props.distance)>561?0.106:0 }
       />
       <mesh
         castShadow
@@ -5026,7 +5026,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.338, 8.72, 0.908]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>562?0.106:0 }
+        scale={ (props.distance)>562?0.106:0 }
       />
       <mesh
         castShadow
@@ -5035,7 +5035,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.902, 10.178, 1.208]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>563?0.106:0 }
+        scale={ (props.distance)>563?0.106:0 }
       />
       <mesh
         castShadow
@@ -5044,7 +5044,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.42, 8.406, -2.349]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>564?0.106:0 }
+        scale={ (props.distance)>564?0.106:0 }
       />
       <mesh
         castShadow
@@ -5053,7 +5053,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.807, 9.252, -1.488]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>565?0.106:0 }
+        scale={ (props.distance)>565?0.106:0 }
       />
       <mesh
         castShadow
@@ -5062,7 +5062,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.887, 9.528, 7.23]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>566?0.106:0 }
+        scale={ (props.distance)>566?0.106:0 }
       />
       <mesh
         castShadow
@@ -5071,7 +5071,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.697, 8.639, 7.536]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>567?0.106:0 }
+        scale={ (props.distance)>567?0.106:0 }
       />
       <mesh
         castShadow
@@ -5080,7 +5080,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.934, 9.687, 0.394]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>568?0.106:0 }
+        scale={ (props.distance)>568?0.106:0 }
       />
       <mesh
         castShadow
@@ -5089,7 +5089,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.831, 9.856, -1.984]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>569?0.106:0 }
+        scale={ (props.distance)>569?0.106:0 }
       />
       <mesh
         castShadow
@@ -5098,7 +5098,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.105, 10.33, 2.728]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>570?0.106:0 }
+        scale={ (props.distance)>570?0.106:0 }
       />
       <mesh
         castShadow
@@ -5107,7 +5107,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.014, 9.252, -1.205]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>571?0.106:0 }
+        scale={ (props.distance)>571?0.106:0 }
       />
       <mesh
         castShadow
@@ -5116,7 +5116,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.692, 10.097, 5.369]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>572?0.106:0 }
+        scale={ (props.distance)>572?0.106:0 }
       />
       <mesh
         castShadow
@@ -5125,7 +5125,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.175, 9.252, -0.671]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>573?0.106:0 }
+        scale={ (props.distance)>573?0.106:0 }
       />
       <mesh
         castShadow
@@ -5134,7 +5134,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.319, 10.118, -0.194]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>574?0.106:0 }
+        scale={ (props.distance)>574?0.106:0 }
       />
       <mesh
         castShadow
@@ -5143,7 +5143,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.125, 8.732, 0.273]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>575?0.106:0 }
+        scale={ (props.distance)>575?0.106:0 }
       />
       <mesh
         castShadow
@@ -5152,7 +5152,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.772, 8.639, -1.578]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>576?0.106:0 }
+        scale={ (props.distance)>576?0.106:0 }
       />
       <mesh
         castShadow
@@ -5161,7 +5161,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.62, 8.9, -1.584]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>577?0.106:0 }
+        scale={ (props.distance)>577?0.106:0 }
       />
       <mesh
         castShadow
@@ -5170,7 +5170,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.993, 9.589, -0.801]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>578?0.106:0 }
+        scale={ (props.distance)>578?0.106:0 }
       />
       <mesh
         castShadow
@@ -5179,7 +5179,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.136, 8.976, 4.891]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>579?0.106:0 }
+        scale={ (props.distance)>579?0.106:0 }
       />
       <mesh
         castShadow
@@ -5188,7 +5188,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.513, 10.435, -1.886]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>580?0.106:0 }
+        scale={ (props.distance)>580?0.106:0 }
       />
       <mesh
         castShadow
@@ -5197,7 +5197,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.884, 9.589, -0.254]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>581?0.106:0 }
+        scale={ (props.distance)>581?0.106:0 }
       />
       <mesh
         castShadow
@@ -5206,7 +5206,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.787, 10.456, 0.234]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>582?0.106:0 }
+        scale={ (props.distance)>582?0.106:0 }
       />
       <mesh
         castShadow
@@ -5215,7 +5215,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.875, 8.976, 5.347]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>583?0.106:0 }
+        scale={ (props.distance)>583?0.106:0 }
       />
       <mesh
         castShadow
@@ -5224,7 +5224,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.867, 10.435, 5.876]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>584?0.106:0 }
+        scale={ (props.distance)>584?0.106:0 }
       />
       <mesh
         castShadow
@@ -5233,7 +5233,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.664, 8.296, 4.263]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>585?0.106:0 }
+        scale={ (props.distance)>585?0.106:0 }
       />
       <mesh
         castShadow
@@ -5241,7 +5241,7 @@ export function Model(props) {
         geometry={nodes.Sphere586.geometry}
         material={materials["Dark blue"]}
         position={[-3.357, 8.889, 1.624]}
-        scale={ (props.distance*2)>586?0.106:0 }
+        scale={ (props.distance)>586?0.106:0 }
       />
       <mesh
         castShadow
@@ -5250,7 +5250,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.94, 9.494, 1.356]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>587?0.106:0 }
+        scale={ (props.distance)>587?0.106:0 }
       />
       <mesh
         castShadow
@@ -5259,7 +5259,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.467, 8.889, 1.957]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>588?0.106:0 }
+        scale={ (props.distance)>588?0.106:0 }
       />
       <mesh
         castShadow
@@ -5268,7 +5268,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.63, 8.319, -0.727]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>589?0.106:0 }
+        scale={ (props.distance)>589?0.106:0 }
       />
       <mesh
         castShadow
@@ -5277,7 +5277,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.169, 8.276, 0.303]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>590?0.106:0 }
+        scale={ (props.distance)>590?0.106:0 }
       />
       <mesh
         castShadow
@@ -5286,7 +5286,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.464, 10.01, 0.257]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>591?0.106:0 }
+        scale={ (props.distance)>591?0.106:0 }
       />
       <mesh
         castShadow
@@ -5295,7 +5295,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.414, 9.735, 0.772]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>592?0.106:0 }
+        scale={ (props.distance)>592?0.106:0 }
       />
       <mesh
         castShadow
@@ -5304,7 +5304,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.809, 8.889, 2.398]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>593?0.106:0 }
+        scale={ (props.distance)>593?0.106:0 }
       />
       <mesh
         castShadow
@@ -5313,7 +5313,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.872, 10.285, 4.316]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>594?0.106:0 }
+        scale={ (props.distance)>594?0.106:0 }
       />
       <mesh
         castShadow
@@ -5322,7 +5322,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.605, 8.276, 0.596]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>595?0.106:0 }
+        scale={ (props.distance)>595?0.106:0 }
       />
       <mesh
         castShadow
@@ -5331,7 +5331,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.848, 9.735, 1.065]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>596?0.106:0 }
+        scale={ (props.distance)>596?0.106:0 }
       />
       <mesh
         castShadow
@@ -5340,7 +5340,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.216, 8.319, 3.447]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>597?0.106:0 }
+        scale={ (props.distance)>597?0.106:0 }
       />
       <mesh
         castShadow
@@ -5349,7 +5349,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.724, 8.276, 2.357]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>598?0.106:0 }
+        scale={ (props.distance)>598?0.106:0 }
       />
       <mesh
         castShadow
@@ -5358,7 +5358,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.807, 8.538, 2.23]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>599?0.106:0 }
+        scale={ (props.distance)>599?0.106:0 }
       />
       <mesh
         castShadow
@@ -5367,7 +5367,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.808, 9.227, 2.174]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>600?0.106:0 }
+        scale={ (props.distance)>600?0.106:0 }
       />
       <mesh
         castShadow
@@ -5376,7 +5376,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.767, 8.614, 0.855]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>601?0.106:0 }
+        scale={ (props.distance)>601?0.106:0 }
       />
       <mesh
         castShadow
@@ -5385,7 +5385,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.204, 10.073, 1.153]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>602?0.106:0 }
+        scale={ (props.distance)>602?0.106:0 }
       />
       <mesh
         castShadow
@@ -5394,7 +5394,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.29, 8.614, 0.908]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>603?0.106:0 }
+        scale={ (props.distance)>603?0.106:0 }
       />
       <mesh
         castShadow
@@ -5403,7 +5403,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.725, 10.073, 1.208]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>604?0.106:0 }
+        scale={ (props.distance)>604?0.106:0 }
       />
       <mesh
         castShadow
@@ -5412,7 +5412,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.91, 8.3, -2.202]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>605?0.106:0 }
+        scale={ (props.distance)>605?0.106:0 }
       />
       <mesh
         castShadow
@@ -5421,7 +5421,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.524, 9.146, -1.342]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>606?0.106:0 }
+        scale={ (props.distance)>606?0.106:0 }
       />
       <mesh
         castShadow
@@ -5430,7 +5430,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-5.055, 9.423, 0.071]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>607?0.106:0 }
+        scale={ (props.distance)>607?0.106:0 }
       />
       <mesh
         castShadow
@@ -5439,7 +5439,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-5.246, 8.533, 0.377]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>608?0.106:0 }
+        scale={ (props.distance)>608?0.106:0 }
       />
       <mesh
         castShadow
@@ -5448,7 +5448,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.397, 9.581, 0.54]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>609?0.106:0 }
+        scale={ (props.distance)>609?0.106:0 }
       />
       <mesh
         castShadow
@@ -5457,7 +5457,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.5, 9.751, -1.838]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>610?0.106:0 }
+        scale={ (props.distance)>610?0.106:0 }
       />
       <mesh
         castShadow
@@ -5466,7 +5466,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.523, 10.224, 2.728]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>611?0.106:0 }
+        scale={ (props.distance)>611?0.106:0 }
       />
       <mesh
         castShadow
@@ -5475,7 +5475,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.316, 9.146, -1.059]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>612?0.106:0 }
+        scale={ (props.distance)>612?0.106:0 }
       />
       <mesh
         castShadow
@@ -5484,7 +5484,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.803, 10.266, 4.297]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>613?0.106:0 }
+        scale={ (props.distance)>613?0.106:0 }
       />
       <mesh
         castShadow
@@ -5493,7 +5493,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.25, 9.992, -1.791]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>614?0.106:0 }
+        scale={ (props.distance)>614?0.106:0 }
       />
       <mesh
         castShadow
@@ -5502,7 +5502,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.156, 9.146, -0.525]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>615?0.106:0 }
+        scale={ (props.distance)>615?0.106:0 }
       />
       <mesh
         castShadow
@@ -5511,7 +5511,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.012, 10.013, -0.048]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>616?0.106:0 }
+        scale={ (props.distance)>616?0.106:0 }
       />
       <mesh
         castShadow
@@ -5520,7 +5520,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.206, 8.626, 0.419]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>617?0.106:0 }
+        scale={ (props.distance)>617?0.106:0 }
       />
       <mesh
         castShadow
@@ -5529,7 +5529,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.243, 8.533, 5.728]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>618?0.106:0 }
+        scale={ (props.distance)>618?0.106:0 }
       />
       <mesh
         castShadow
@@ -5538,7 +5538,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.71, 8.794, -1.438]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>619?0.106:0 }
+        scale={ (props.distance)>619?0.106:0 }
       />
       <mesh
         castShadow
@@ -5547,7 +5547,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.337, 9.484, -0.655]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>620?0.106:0 }
+        scale={ (props.distance)>620?0.106:0 }
       />
       <mesh
         castShadow
@@ -5556,7 +5556,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.492, 8.871, 4.891]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>621?0.106:0 }
+        scale={ (props.distance)>621?0.106:0 }
       />
       <mesh
         castShadow
@@ -5565,7 +5565,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.818, 10.329, -1.74]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>622?0.106:0 }
+        scale={ (props.distance)>622?0.106:0 }
       />
       <mesh
         castShadow
@@ -5574,7 +5574,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.447, 9.484, -0.108]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>623?0.106:0 }
+        scale={ (props.distance)>623?0.106:0 }
       />
       <mesh
         castShadow
@@ -5583,7 +5583,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.544, 10.35, 0.38]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>624?0.106:0 }
+        scale={ (props.distance)>624?0.106:0 }
       />
       <mesh
         castShadow
@@ -5592,7 +5592,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-5.067, 8.871, -1.812]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>625?0.106:0 }
+        scale={ (props.distance)>625?0.106:0 }
       />
       <mesh
         castShadow
@@ -5601,7 +5601,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.076, 10.329, -1.284]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>626?0.106:0 }
+        scale={ (props.distance)>626?0.106:0 }
       />
       <mesh
         castShadow
@@ -5609,7 +5609,7 @@ export function Model(props) {
         geometry={nodes.Sphere627.geometry}
         material={materials["Dark blue"]}
         position={[-3.72, 8.201, -5.079]}
-        scale={ (props.distance*2)>627?0.106:0 }
+        scale={ (props.distance)>627?0.106:0 }
       />
       <mesh
         castShadow
@@ -5618,7 +5618,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.299, 8.371, -4.509]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>628?0.106:0 }
+        scale={ (props.distance)>628?0.106:0 }
       />
       <mesh
         castShadow
@@ -5626,7 +5626,7 @@ export function Model(props) {
         geometry={nodes.Sphere629.geometry}
         material={materials["Dark blue"]}
         position={[-1.501, 8.54, -5.454]}
-        scale={ (props.distance*2)>629?0.106:0 }
+        scale={ (props.distance)>629?0.106:0 }
       />
       <mesh
         castShadow
@@ -5634,7 +5634,7 @@ export function Model(props) {
         geometry={nodes.Sphere630.geometry}
         material={materials["light blue"]}
         position={[0.782, 9.132, -5.454]}
-        scale={ (props.distance*2)>630?0.106:0 }
+        scale={ (props.distance)>630?0.106:0 }
       />
       <mesh
         castShadow
@@ -5643,7 +5643,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.932, 8.815, -6.328]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>631?0.106:0 }
+        scale={ (props.distance)>631?0.106:0 }
       />
       <mesh
         castShadow
@@ -5652,7 +5652,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.971, 8.498, -6.689]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>632?0.106:0 }
+        scale={ (props.distance)>632?0.106:0 }
       />
       <mesh
         castShadow
@@ -5660,7 +5660,7 @@ export function Model(props) {
         geometry={nodes.Sphere633.geometry}
         material={materials["Dark blue"]}
         position={[5.39, 8.35, -5.454]}
-        scale={ (props.distance*2)>633?0.106:0 }
+        scale={ (props.distance)>633?0.106:0 }
       />
       <mesh
         castShadow
@@ -5669,7 +5669,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.322, 8.54, -6.103]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>634?0.106:0 }
+        scale={ (props.distance)>634?0.106:0 }
       />
       <mesh
         castShadow
@@ -5678,7 +5678,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.272, 8.725, -5.791]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>635?0.106:0 }
+        scale={ (props.distance)>635?0.106:0 }
       />
       <mesh
         castShadow
@@ -5687,7 +5687,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.959, 8.815, -4.775]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>636?0.106:0 }
+        scale={ (props.distance)>636?0.106:0 }
       />
       <mesh
         castShadow
@@ -5696,7 +5696,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.38, 8.498, -3.326]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>637?0.106:0 }
+        scale={ (props.distance)>637?0.106:0 }
       />
       <mesh
         castShadow
@@ -5705,7 +5705,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.26, 8.35, -4.061]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>638?0.106:0 }
+        scale={ (props.distance)>638?0.106:0 }
       />
       <mesh
         castShadow
@@ -5714,7 +5714,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.54, 8.286, -9.246]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>639?0.106:0 }
+        scale={ (props.distance)>639?0.106:0 }
       />
       <mesh
         castShadow
@@ -5723,7 +5723,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.95, 8.54, -6.82]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>640?0.106:0 }
+        scale={ (props.distance)>640?0.106:0 }
       />
       <mesh
         castShadow
@@ -5732,7 +5732,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1, 8.265, -6.306]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>641?0.106:0 }
+        scale={ (props.distance)>641?0.106:0 }
       />
       <mesh
         castShadow
@@ -5741,7 +5741,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.568, 8.815, -3.309]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>642?0.106:0 }
+        scale={ (props.distance)>642?0.106:0 }
       />
       <mesh
         castShadow
@@ -5750,7 +5750,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.118, 8.498, -3]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>643?0.106:0 }
+        scale={ (props.distance)>643?0.106:0 }
       />
       <mesh
         castShadow
@@ -5759,7 +5759,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.074, 8.35, -2.103]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>644?0.106:0 }
+        scale={ (props.distance)>644?0.106:0 }
       />
       <mesh
         castShadow
@@ -5768,7 +5768,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.65, 8.286, -8.891]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>645?0.106:0 }
+        scale={ (props.distance)>645?0.106:0 }
       />
       <mesh
         castShadow
@@ -5777,7 +5777,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.199, 9.132, -4.933]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>646?0.106:0 }
+        scale={ (props.distance)>646?0.106:0 }
       />
       <mesh
         castShadow
@@ -5786,7 +5786,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.301, 8.286, -4.285]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>647?0.106:0 }
+        scale={ (props.distance)>647?0.106:0 }
       />
       <mesh
         castShadow
@@ -5795,7 +5795,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.543, 8.815, -2.761]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>648?0.106:0 }
+        scale={ (props.distance)>648?0.106:0 }
       />
       <mesh
         castShadow
@@ -5804,7 +5804,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.944, 8.286, -9.347]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>649?0.106:0 }
+        scale={ (props.distance)>649?0.106:0 }
       />
       <mesh
         castShadow
@@ -5813,7 +5813,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.626, 8.54, -7.15]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>650?0.106:0 }
+        scale={ (props.distance)>650?0.106:0 }
       />
       <mesh
         castShadow
@@ -5822,7 +5822,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.566, 8.265, -6.012]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>651?0.106:0 }
+        scale={ (props.distance)>651?0.106:0 }
       />
       <mesh
         castShadow
@@ -5831,7 +5831,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.99, 8.815, -3.01]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>652?0.106:0 }
+        scale={ (props.distance)>652?0.106:0 }
       />
       <mesh
         castShadow
@@ -5840,7 +5840,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.36, 8.35, -0.33]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>653?0.106:0 }
+        scale={ (props.distance)>653?0.106:0 }
       />
       <mesh
         castShadow
@@ -5849,7 +5849,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.335, 8.286, -3.829]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>654?0.106:0 }
+        scale={ (props.distance)>654?0.106:0 }
       />
       <mesh
         castShadow
@@ -5858,7 +5858,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.299, 8.35, -6.739]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>655?0.106:0 }
+        scale={ (props.distance)>655?0.106:0 }
       />
       <mesh
         castShadow
@@ -5867,7 +5867,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.617, 9.469, -5.275]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>656?0.106:0 }
+        scale={ (props.distance)>656?0.106:0 }
       />
       <mesh
         castShadow
@@ -5876,7 +5876,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.926, 9.152, -5.035]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>657?0.106:0 }
+        scale={ (props.distance)>657?0.106:0 }
       />
       <mesh
         castShadow
@@ -5885,7 +5885,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.012, 8.835, -4.865]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>658?0.106:0 }
+        scale={ (props.distance)>658?0.106:0 }
       />
       <mesh
         castShadow
@@ -5894,7 +5894,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.684, 8.687, -3.108]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>659?0.106:0 }
+        scale={ (props.distance)>659?0.106:0 }
       />
       <mesh
         castShadow
@@ -5903,7 +5903,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.454, 8.624, -9.213]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>660?0.106:0 }
+        scale={ (props.distance)>660?0.106:0 }
       />
       <mesh
         castShadow
@@ -5912,7 +5912,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.934, 8.878, -6.837]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>661?0.106:0 }
+        scale={ (props.distance)>661?0.106:0 }
       />
       <mesh
         castShadow
@@ -5921,7 +5921,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.21, 8.603, -5.924]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>662?0.106:0 }
+        scale={ (props.distance)>662?0.106:0 }
       />
       <mesh
         castShadow
@@ -5930,7 +5930,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.583, 9.152, -4.017]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>663?0.106:0 }
+        scale={ (props.distance)>663?0.106:0 }
       />
       <mesh
         castShadow
@@ -5939,7 +5939,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.143, 9.469, -5.089]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>664?0.106:0 }
+        scale={ (props.distance)>664?0.106:0 }
       />
       <mesh
         castShadow
@@ -5948,7 +5948,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.357, 8.624, -4.47]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>665?0.106:0 }
+        scale={ (props.distance)>665?0.106:0 }
       />
       <mesh
         castShadow
@@ -5957,7 +5957,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.59, 8.624, -8.635]}
         rotation={[Math.PI, -0.938, Math.PI]}
-        scale={ (props.distance*2)>666?0.106:0 }
+        scale={ (props.distance)>666?0.106:0 }
       />
       <mesh
         castShadow
@@ -5966,7 +5966,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.689, 8.603, -5.869]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>667?0.106:0 }
+        scale={ (props.distance)>667?0.106:0 }
       />
       <mesh
         castShadow
@@ -5974,7 +5974,7 @@ export function Model(props) {
         geometry={nodes.Sphere670.geometry}
         material={materials["light blue"]}
         position={[1.98, 9.217, -7.914]}
-        scale={ (props.distance*2)>668?0.106:0 }
+        scale={ (props.distance)>668?0.106:0 }
       />
       <mesh
         castShadow
@@ -5982,7 +5982,7 @@ export function Model(props) {
         geometry={nodes.Sphere671.geometry}
         material={materials["Dark blue"]}
         position={[0.923, 10.063, -7.914]}
-        scale={ (props.distance*2)>669?0.106:0 }
+        scale={ (props.distance)>669?0.106:0 }
       />
       <mesh
         castShadow
@@ -5990,7 +5990,7 @@ export function Model(props) {
         geometry={nodes.Sphere672.geometry}
         material={materials["Dark blue"]}
         position={[-0.535, 10.339, -7.527]}
-        scale={ (props.distance*2)>670?0.106:0 }
+        scale={ (props.distance)>670?0.106:0 }
       />
       <mesh
         castShadow
@@ -5999,7 +5999,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.095, 9.728, -7.72]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>671?0.106:0 }
+        scale={ (props.distance)>671?0.106:0 }
       />
       <mesh
         castShadow
@@ -6007,7 +6007,7 @@ export function Model(props) {
         geometry={nodes.Sphere674.geometry}
         material={materials["light blue"]}
         position={[-1.761, 10.106, -8.21]}
-        scale={ (props.distance*2)>672?0.106:0 }
+        scale={ (props.distance)>672?0.106:0 }
       />
       <mesh
         castShadow
@@ -6016,7 +6016,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.532, 9.978, -6.935]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>673?0.106:0 }
+        scale={ (props.distance)>673?0.106:0 }
       />
       <mesh
         castShadow
@@ -6025,7 +6025,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.993, 9.176, -7.01]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>674?0.106:0 }
+        scale={ (props.distance)>674?0.106:0 }
       />
       <mesh
         castShadow
@@ -6034,7 +6034,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.895, 9.45, -7.504]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>675?0.106:0 }
+        scale={ (props.distance)>675?0.106:0 }
       />
       <mesh
         castShadow
@@ -6043,7 +6043,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.433, 11.014, -6.969]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>676?0.106:0 }
+        scale={ (props.distance)>676?0.106:0 }
       />
       <mesh
         castShadow
@@ -6051,7 +6051,7 @@ export function Model(props) {
         geometry={nodes.Sphere680.geometry}
         material={materials["light blue"]}
         position={[-1.635, 11.183, -7.914]}
-        scale={ (props.distance*2)>677?0.106:0 }
+        scale={ (props.distance)>677?0.106:0 }
       />
       <mesh
         castShadow
@@ -6059,7 +6059,7 @@ export function Model(props) {
         geometry={nodes.Sphere681.geometry}
         material={materials["light blue"]}
         position={[-0.535, 10.498, -6.718]}
-        scale={ (props.distance*2)>678?0.106:0 }
+        scale={ (props.distance)>678?0.106:0 }
       />
       <mesh
         castShadow
@@ -6067,7 +6067,7 @@ export function Model(props) {
         geometry={nodes.Sphere682.geometry}
         material={materials["Dark blue"]}
         position={[0.648, 11.775, -7.914]}
-        scale={ (props.distance*2)>679?0.106:0 }
+        scale={ (props.distance)>679?0.106:0 }
       />
       <mesh
         castShadow
@@ -6076,7 +6076,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.341, 10.667, -8.182]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>680?0.106:0 }
+        scale={ (props.distance)>680?0.106:0 }
       />
       <mesh
         castShadow
@@ -6085,7 +6085,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.799, 11.458, -8.788]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>681?0.106:0 }
+        scale={ (props.distance)>681?0.106:0 }
       />
       <mesh
         castShadow
@@ -6094,7 +6094,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.837, 11.141, -9.149]}
         rotation={[0, 0.335, 0]}
-        scale={ (props.distance*2)>682?0.106:0 }
+        scale={ (props.distance)>682?0.106:0 }
       />
       <mesh
         castShadow
@@ -6102,7 +6102,7 @@ export function Model(props) {
         geometry={nodes.Sphere687.geometry}
         material={materials["light blue"]}
         position={[3.227, 10.211, -7.914]}
-        scale={ (props.distance*2)>683?0.106:0 }
+        scale={ (props.distance)>683?0.106:0 }
       />
       <mesh
         castShadow
@@ -6111,7 +6111,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.813, 10.063, -7.581]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>684?0.106:0 }
+        scale={ (props.distance)>684?0.106:0 }
       />
       <mesh
         castShadow
@@ -6120,7 +6120,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.021, 9.492, -8.738]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>685?0.106:0 }
+        scale={ (props.distance)>685?0.106:0 }
       />
       <mesh
         castShadow
@@ -6129,7 +6129,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.91, 9.45, -8.394]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>686?0.106:0 }
+        scale={ (props.distance)>686?0.106:0 }
       />
       <mesh
         castShadow
@@ -6138,7 +6138,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.032, 10.929, -10.416]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>687?0.106:0 }
+        scale={ (props.distance)>687?0.106:0 }
       />
       <mesh
         castShadow
@@ -6147,7 +6147,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.455, 11.183, -8.563]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>688?0.106:0 }
+        scale={ (props.distance)>688?0.106:0 }
       />
       <mesh
         castShadow
@@ -6156,7 +6156,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.406, 11.368, -8.252]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>689?0.106:0 }
+        scale={ (props.distance)>689?0.106:0 }
       />
       <mesh
         castShadow
@@ -6165,7 +6165,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.825, 11.458, -7.236]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>690?0.106:0 }
+        scale={ (props.distance)>690?0.106:0 }
       />
       <mesh
         castShadow
@@ -6174,7 +6174,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.246, 11.141, -5.787]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>691?0.106:0 }
+        scale={ (props.distance)>691?0.106:0 }
       />
       <mesh
         castShadow
@@ -6183,7 +6183,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.126, 10.993, -6.522]}
         rotation={[0, -0.301, 0]}
-        scale={ (props.distance*2)>692?0.106:0 }
+        scale={ (props.distance)>692?0.106:0 }
       />
       <mesh
         castShadow
@@ -6192,7 +6192,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.651, 9.492, -10.264]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>693?0.106:0 }
+        scale={ (props.distance)>693?0.106:0 }
       />
       <mesh
         castShadow
@@ -6201,7 +6201,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.112, 9.45, -9.234]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>694?0.106:0 }
+        scale={ (props.distance)>694?0.106:0 }
       />
       <mesh
         castShadow
@@ -6210,7 +6210,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.816, 11.183, -9.28]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>695?0.106:0 }
+        scale={ (props.distance)>695?0.106:0 }
       />
       <mesh
         castShadow
@@ -6219,7 +6219,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.867, 10.908, -8.766]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>696?0.106:0 }
+        scale={ (props.distance)>696?0.106:0 }
       />
       <mesh
         castShadow
@@ -6228,7 +6228,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.702, 11.458, -5.77]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>697?0.106:0 }
+        scale={ (props.distance)>697?0.106:0 }
       />
       <mesh
         castShadow
@@ -6237,7 +6237,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.252, 11.141, -5.46]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>698?0.106:0 }
+        scale={ (props.distance)>698?0.106:0 }
       />
       <mesh
         castShadow
@@ -6246,7 +6246,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.207, 10.993, -4.563]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>699?0.106:0 }
+        scale={ (props.distance)>699?0.106:0 }
       />
       <mesh
         castShadow
@@ -6255,7 +6255,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.472, 10.063, -7.14]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>700?0.106:0 }
+        scale={ (props.distance)>700?0.106:0 }
       />
       <mesh
         castShadow
@@ -6264,7 +6264,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.566, 10.126, -9.078]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>701?0.106:0 }
+        scale={ (props.distance)>701?0.106:0 }
       />
       <mesh
         castShadow
@@ -6273,7 +6273,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.312, 10.126, -9.773]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>702?0.106:0 }
+        scale={ (props.distance)>702?0.106:0 }
       />
       <mesh
         castShadow
@@ -6282,7 +6282,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.015, 9.492, -9.917]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>703?0.106:0 }
+        scale={ (props.distance)>703?0.106:0 }
       />
       <mesh
         castShadow
@@ -6291,7 +6291,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.784, 10.929, -11.351]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>704?0.106:0 }
+        scale={ (props.distance)>704?0.106:0 }
       />
       <mesh
         castShadow
@@ -6300,7 +6300,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.065, 11.775, -7.393]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>705?0.106:0 }
+        scale={ (props.distance)>705?0.106:0 }
       />
       <mesh
         castShadow
@@ -6309,7 +6309,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.167, 10.929, -6.746]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>706?0.106:0 }
+        scale={ (props.distance)>706?0.106:0 }
       />
       <mesh
         castShadow
@@ -6318,7 +6318,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.409, 11.458, -5.222]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>707?0.106:0 }
+        scale={ (props.distance)>707?0.106:0 }
       />
       <mesh
         castShadow
@@ -6327,7 +6327,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.676, 9.45, -8.942]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>708?0.106:0 }
+        scale={ (props.distance)>708?0.106:0 }
       />
       <mesh
         castShadow
@@ -6336,7 +6336,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.81, 10.929, -11.807]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>709?0.106:0 }
+        scale={ (props.distance)>709?0.106:0 }
       />
       <mesh
         castShadow
@@ -6345,7 +6345,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.492, 11.183, -9.611]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>710?0.106:0 }
+        scale={ (props.distance)>710?0.106:0 }
       />
       <mesh
         castShadow
@@ -6354,7 +6354,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.432, 10.908, -8.473]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>711?0.106:0 }
+        scale={ (props.distance)>711?0.106:0 }
       />
       <mesh
         castShadow
@@ -6363,7 +6363,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.124, 11.458, -5.47]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>712?0.106:0 }
+        scale={ (props.distance)>712?0.106:0 }
       />
       <mesh
         castShadow
@@ -6372,7 +6372,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.494, 10.993, -2.79]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>713?0.106:0 }
+        scale={ (props.distance)>713?0.106:0 }
       />
       <mesh
         castShadow
@@ -6381,7 +6381,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.326, 9.543, -6.632]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>714?0.106:0 }
+        scale={ (props.distance)>714?0.106:0 }
       />
       <mesh
         castShadow
@@ -6390,7 +6390,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.065, 9.492, -6.091]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>715?0.106:0 }
+        scale={ (props.distance)>715?0.106:0 }
       />
       <mesh
         castShadow
@@ -6399,7 +6399,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.557, 9.45, -7.18]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>716?0.106:0 }
+        scale={ (props.distance)>716?0.106:0 }
       />
       <mesh
         castShadow
@@ -6408,7 +6408,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.201, 10.929, -6.289]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>717?0.106:0 }
+        scale={ (props.distance)>717?0.106:0 }
       />
       <mesh
         castShadow
@@ -6417,7 +6417,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.392, 9.005, -7.714]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>718?0.106:0 }
+        scale={ (props.distance)>718?0.106:0 }
       />
       <mesh
         castShadow
@@ -6426,7 +6426,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.473, 9.711, -7.308]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>719?0.106:0 }
+        scale={ (props.distance)>719?0.106:0 }
       />
       <mesh
         castShadow
@@ -6435,7 +6435,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.504, 10.443, -9.129]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>720?0.106:0 }
+        scale={ (props.distance)>720?0.106:0 }
       />
       <mesh
         castShadow
@@ -6444,7 +6444,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.273, 9.513, -8.18]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>721?0.106:0 }
+        scale={ (props.distance)>721?0.106:0 }
       />
       <mesh
         castShadow
@@ -6453,7 +6453,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.483, 12.112, -7.735]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>722?0.106:0 }
+        scale={ (props.distance)>722?0.106:0 }
       />
       <mesh
         castShadow
@@ -6462,7 +6462,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.792, 11.795, -7.495]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>723?0.106:0 }
+        scale={ (props.distance)>723?0.106:0 }
       />
       <mesh
         castShadow
@@ -6471,7 +6471,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.878, 11.478, -7.326]}
         rotation={[0, -0.155, 0]}
-        scale={ (props.distance*2)>724?0.106:0 }
+        scale={ (props.distance)>724?0.106:0 }
       />
       <mesh
         castShadow
@@ -6480,7 +6480,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.55, 11.33, -5.568]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>725?0.106:0 }
+        scale={ (props.distance)>725?0.106:0 }
       />
       <mesh
         castShadow
@@ -6489,7 +6489,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.759, 10.548, -6.523]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>726?0.106:0 }
+        scale={ (props.distance)>726?0.106:0 }
       />
       <mesh
         castShadow
@@ -6498,7 +6498,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.472, 10.4, -7.363]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>727?0.106:0 }
+        scale={ (props.distance)>727?0.106:0 }
       />
       <mesh
         castShadow
@@ -6507,7 +6507,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.667, 9.787, -8.892]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>728?0.106:0 }
+        scale={ (props.distance)>728?0.106:0 }
       />
       <mesh
         castShadow
@@ -6516,7 +6516,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.588, 11.267, -11.674]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>729?0.106:0 }
+        scale={ (props.distance)>729?0.106:0 }
       />
       <mesh
         castShadow
@@ -6525,7 +6525,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.068, 11.521, -9.297]}
         rotation={[0, -0.79, 0]}
-        scale={ (props.distance*2)>730?0.106:0 }
+        scale={ (props.distance)>730?0.106:0 }
       />
       <mesh
         castShadow
@@ -6534,7 +6534,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.291, 9.095, -8.857]}
         rotation={[Math.PI, -0.264, Math.PI]}
-        scale={ (props.distance*2)>731?0.106:0 }
+        scale={ (props.distance)>731?0.106:0 }
       />
       <mesh
         castShadow
@@ -6543,7 +6543,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.513, 9.787, -8.682]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>732?0.106:0 }
+        scale={ (props.distance)>732?0.106:0 }
       />
       <mesh
         castShadow
@@ -6552,7 +6552,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.077, 11.246, -8.385]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>733?0.106:0 }
+        scale={ (props.distance)>733?0.106:0 }
       />
       <mesh
         castShadow
@@ -6561,7 +6561,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.717, 11.795, -6.478]}
         rotation={[Math.PI, -0.599, Math.PI]}
-        scale={ (props.distance*2)>734?0.106:0 }
+        scale={ (props.distance)>734?0.106:0 }
       />
       <mesh
         castShadow
@@ -6570,7 +6570,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.037, 10.4, -7.135]}
         rotation={[0, -1.569, 0]}
-        scale={ (props.distance*2)>735?0.106:0 }
+        scale={ (props.distance)>735?0.106:0 }
       />
       <mesh
         castShadow
@@ -6579,7 +6579,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.277, 12.112, -7.55]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>736?0.106:0 }
+        scale={ (props.distance)>736?0.106:0 }
       />
       <mesh
         castShadow
@@ -6588,7 +6588,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.491, 11.267, -6.93]}
         rotation={[Math.PI, -1.238, Math.PI]}
-        scale={ (props.distance*2)>737?0.106:0 }
+        scale={ (props.distance)>737?0.106:0 }
       />
       <mesh
         castShadow
@@ -6597,7 +6597,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.991, 9.787, -8.629]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>738?0.106:0 }
+        scale={ (props.distance)>738?0.106:0 }
       />
       <mesh
         castShadow
@@ -6606,7 +6606,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.555, 11.246, -8.33]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>739?0.106:0 }
+        scale={ (props.distance)>739?0.106:0 }
       />
       <mesh
         castShadow
@@ -6615,7 +6615,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.685, 9.474, -4.581]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>740?0.106:0 }
+        scale={ (props.distance)>740?0.106:0 }
       />
       <mesh
         castShadow
@@ -6624,7 +6624,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.072, 10.319, -3.72]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>741?0.106:0 }
+        scale={ (props.distance)>741?0.106:0 }
       />
       <mesh
         castShadow
@@ -6633,7 +6633,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.54, 10.596, -2.308]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>742?0.106:0 }
+        scale={ (props.distance)>742?0.106:0 }
       />
       <mesh
         castShadow
@@ -6642,7 +6642,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.058, 9.985, -1.964]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>743?0.106:0 }
+        scale={ (props.distance)>743?0.106:0 }
       />
       <mesh
         castShadow
@@ -6651,7 +6651,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.728, 10.362, -1.706]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>744?0.106:0 }
+        scale={ (props.distance)>744?0.106:0 }
       />
       <mesh
         castShadow
@@ -6660,7 +6660,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.137, 10.235, -0.338]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>745?0.106:0 }
+        scale={ (props.distance)>745?0.106:0 }
       />
       <mesh
         castShadow
@@ -6669,7 +6669,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.115, 9.432, -0.821]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>746?0.106:0 }
+        scale={ (props.distance)>746?0.106:0 }
       />
       <mesh
         castShadow
@@ -6678,7 +6678,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.35, 9.706, -2.002]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>747?0.106:0 }
+        scale={ (props.distance)>747?0.106:0 }
       />
       <mesh
         castShadow
@@ -6687,7 +6687,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.397, 11.101, 0.387]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>748?0.106:0 }
+        scale={ (props.distance)>748?0.106:0 }
       />
       <mesh
         castShadow
@@ -6696,7 +6696,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.107, 11.27, -0.439]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>749?0.106:0 }
+        scale={ (props.distance)>749?0.106:0 }
       />
       <mesh
         castShadow
@@ -6705,7 +6705,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.413, 11.439, -1.638]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>750?0.106:0 }
+        scale={ (props.distance)>750?0.106:0 }
       />
       <mesh
         castShadow
@@ -6714,7 +6714,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.199, 10.754, -1.838]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>751?0.106:0 }
+        scale={ (props.distance)>751?0.106:0 }
       />
       <mesh
         castShadow
@@ -6723,7 +6723,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.912, 12.031, -3.496]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>752?0.106:0 }
+        scale={ (props.distance)>752?0.106:0 }
       />
       <mesh
         castShadow
@@ -6732,7 +6732,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.096, 10.924, -4.216]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>753?0.106:0 }
+        scale={ (props.distance)>753?0.106:0 }
       />
       <mesh
         castShadow
@@ -6741,7 +6741,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.449, 11.714, -5.755]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>754?0.106:0 }
+        scale={ (props.distance)>754?0.106:0 }
       />
       <mesh
         castShadow
@@ -6750,7 +6750,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.758, 11.397, -6.809]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>755?0.106:0 }
+        scale={ (props.distance)>755?0.106:0 }
       />
       <mesh
         castShadow
@@ -6759,7 +6759,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.588, 11.249, -7.248]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>756?0.106:0 }
+        scale={ (props.distance)>756?0.106:0 }
       />
       <mesh
         castShadow
@@ -6768,7 +6768,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.409, 10.467, -5.596]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>757?0.106:0 }
+        scale={ (props.distance)>757?0.106:0 }
       />
       <mesh
         castShadow
@@ -6777,7 +6777,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.279, 10.319, -3.437]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>758?0.106:0 }
+        scale={ (props.distance)>758?0.106:0 }
       />
       <mesh
         castShadow
@@ -6786,7 +6786,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.309, 9.748, -1.802]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>759?0.106:0 }
+        scale={ (props.distance)>759?0.106:0 }
       />
       <mesh
         castShadow
@@ -6795,7 +6795,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.384, 9.706, -2.506]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>760?0.106:0 }
+        scale={ (props.distance)>760?0.106:0 }
       />
       <mesh
         castShadow
@@ -6804,7 +6804,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.261, 11.186, -1.953]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>761?0.106:0 }
+        scale={ (props.distance)>761?0.106:0 }
       />
       <mesh
         castShadow
@@ -6813,7 +6813,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.838, 11.439, -2.16]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>762?0.106:0 }
+        scale={ (props.distance)>762?0.106:0 }
       />
       <mesh
         castShadow
@@ -6822,7 +6822,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.025, 11.625, -2.834]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>763?0.106:0 }
+        scale={ (props.distance)>763?0.106:0 }
       />
       <mesh
         castShadow
@@ -6831,7 +6831,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[2.728, 11.714, -4.875]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>764?0.106:0 }
+        scale={ (props.distance)>764?0.106:0 }
       />
       <mesh
         castShadow
@@ -6840,7 +6840,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.153, 11.397, -4.377]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>765?0.106:0 }
+        scale={ (props.distance)>765?0.106:0 }
       />
       <mesh
         castShadow
@@ -6849,7 +6849,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.646, 11.249, -6.334]}
         rotation={[0, 0.651, 0]}
-        scale={ (props.distance*2)>766?0.106:0 }
+        scale={ (props.distance)>766?0.106:0 }
       />
       <mesh
         castShadow
@@ -6858,7 +6858,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.419, 9.748, -5.677]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>767?0.106:0 }
+        scale={ (props.distance)>767?0.106:0 }
       />
       <mesh
         castShadow
@@ -6867,7 +6867,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.106, 9.706, -4.64]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>768?0.106:0 }
+        scale={ (props.distance)>768?0.106:0 }
       />
       <mesh
         castShadow
@@ -6876,7 +6876,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.155, 11.186, -7.129]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>769?0.106:0 }
+        scale={ (props.distance)>769?0.106:0 }
       />
       <mesh
         castShadow
@@ -6885,7 +6885,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.345, 11.165, -4.169]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>770?0.106:0 }
+        scale={ (props.distance)>770?0.106:0 }
       />
       <mesh
         castShadow
@@ -6894,7 +6894,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.874, 11.714, -1.152]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>771?0.106:0 }
+        scale={ (props.distance)>771?0.106:0 }
       />
       <mesh
         castShadow
@@ -6903,7 +6903,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.226, 11.397, 0.29]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>772?0.106:0 }
+        scale={ (props.distance)>772?0.106:0 }
       />
       <mesh
         castShadow
@@ -6912,7 +6912,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.402, 11.249, 1.588]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>773?0.106:0 }
+        scale={ (props.distance)>773?0.106:0 }
       />
       <mesh
         castShadow
@@ -6921,7 +6921,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.44, 10.319, -2.903]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>774?0.106:0 }
+        scale={ (props.distance)>774?0.106:0 }
       />
       <mesh
         castShadow
@@ -6930,7 +6930,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.741, 10.383, -3.183]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>775?0.106:0 }
+        scale={ (props.distance)>775?0.106:0 }
       />
       <mesh
         castShadow
@@ -6939,7 +6939,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.159, 10.383, -3.794]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>776?0.106:0 }
+        scale={ (props.distance)>776?0.106:0 }
       />
       <mesh
         castShadow
@@ -6948,7 +6948,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.684, 9.748, -3.305]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>777?0.106:0 }
+        scale={ (props.distance)>777?0.106:0 }
       />
       <mesh
         castShadow
@@ -6957,7 +6957,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.299, 11.186, -3.512]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>778?0.106:0 }
+        scale={ (props.distance)>778?0.106:0 }
       />
       <mesh
         castShadow
@@ -6966,7 +6966,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.998, 12.031, -2.719]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>779?0.106:0 }
+        scale={ (props.distance)>779?0.106:0 }
       />
       <mesh
         castShadow
@@ -6975,7 +6975,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.584, 11.186, -2.427]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>780?0.106:0 }
+        scale={ (props.distance)>780?0.106:0 }
       />
       <mesh
         castShadow
@@ -6984,7 +6984,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.965, 11.714, -1.738]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>781?0.106:0 }
+        scale={ (props.distance)>781?0.106:0 }
       />
       <mesh
         castShadow
@@ -6993,7 +6993,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.091, 9.706, -4.115]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>782?0.106:0 }
+        scale={ (props.distance)>782?0.106:0 }
       />
       <mesh
         castShadow
@@ -7002,7 +7002,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.164, 11.186, -5.888]}
         rotation={[0, -0.763, 0]}
-        scale={ (props.distance*2)>783?0.106:0 }
+        scale={ (props.distance)>783?0.106:0 }
       />
       <mesh
         castShadow
@@ -7011,7 +7011,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.56, 11.439, -4.354]}
         rotation={[0, -0.763, 0]}
-        scale={ (props.distance*2)>784?0.106:0 }
+        scale={ (props.distance)>784?0.106:0 }
       />
       <mesh
         castShadow
@@ -7020,7 +7020,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.332, 11.165, -3.645]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>785?0.106:0 }
+        scale={ (props.distance)>785?0.106:0 }
       />
       <mesh
         castShadow
@@ -7029,7 +7029,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.873, 11.714, -0.634]}
         rotation={[0, -1.098, 0]}
-        scale={ (props.distance*2)>786?0.106:0 }
+        scale={ (props.distance)>786?0.106:0 }
       />
       <mesh
         castShadow
@@ -7038,7 +7038,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.39, 9.799, -1.959]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>787?0.106:0 }
+        scale={ (props.distance)>787?0.106:0 }
       />
       <mesh
         castShadow
@@ -7047,7 +7047,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.219, 9.748, -3.591]}
         rotation={[Math.PI, -0.292, Math.PI]}
-        scale={ (props.distance*2)>788?0.106:0 }
+        scale={ (props.distance)>788?0.106:0 }
       />
       <mesh
         castShadow
@@ -7056,7 +7056,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.037, 9.706, -3.81]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>789?0.106:0 }
+        scale={ (props.distance)>789?0.106:0 }
       />
       <mesh
         castShadow
@@ -7065,7 +7065,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.298, 11.186, -5.445]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>790?0.106:0 }
+        scale={ (props.distance)>790?0.106:0 }
       />
       <mesh
         castShadow
@@ -7074,7 +7074,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.084, 11.249, -0.106]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>791?0.106:0 }
+        scale={ (props.distance)>791?0.106:0 }
       />
       <mesh
         castShadow
@@ -7083,7 +7083,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.507, 9.262, -3.986]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>792?0.106:0 }
+        scale={ (props.distance)>792?0.106:0 }
       />
       <mesh
         castShadow
@@ -7092,7 +7092,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.885, 9.967, -3.816]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>793?0.106:0 }
+        scale={ (props.distance)>793?0.106:0 }
       />
       <mesh
         castShadow
@@ -7101,7 +7101,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.327, 10.7, -2.449]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>794?0.106:0 }
+        scale={ (props.distance)>794?0.106:0 }
       />
       <mesh
         castShadow
@@ -7110,7 +7110,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-1.449, 10.572, -0.964]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>795?0.106:0 }
+        scale={ (props.distance)>795?0.106:0 }
       />
       <mesh
         castShadow
@@ -7119,7 +7119,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1, 9.77, -1.272]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>796?0.106:0 }
+        scale={ (props.distance)>796?0.106:0 }
       />
       <mesh
         castShadow
@@ -7128,7 +7128,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.962, 12.369, -3.258]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>797?0.106:0 }
+        scale={ (props.distance)>797?0.106:0 }
       />
       <mesh
         castShadow
@@ -7137,7 +7137,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[2.498, 12.052, -4.999]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>798?0.106:0 }
+        scale={ (props.distance)>798?0.106:0 }
       />
       <mesh
         castShadow
@@ -7146,7 +7146,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.266, 11.735, -5.784]}
         rotation={[0, 0.796, 0]}
-        scale={ (props.distance*2)>799?0.106:0 }
+        scale={ (props.distance)>799?0.106:0 }
       />
       <mesh
         castShadow
@@ -7155,7 +7155,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.087, 11.587, -5.311]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>800?0.106:0 }
+        scale={ (props.distance)>800?0.106:0 }
       />
       <mesh
         castShadow
@@ -7164,7 +7164,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.271, 10.805, -4.407]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>801?0.106:0 }
+        scale={ (props.distance)>801?0.106:0 }
       />
       <mesh
         castShadow
@@ -7173,7 +7173,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[1.258, 10.657, -3.033]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>802?0.106:0 }
+        scale={ (props.distance)>802?0.106:0 }
       />
       <mesh
         castShadow
@@ -7182,7 +7182,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.647, 10.044, -2.993]}
         rotation={[0, 0.161, 0]}
-        scale={ (props.distance*2)>803?0.106:0 }
+        scale={ (props.distance)>803?0.106:0 }
       />
       <mesh
         castShadow
@@ -7191,7 +7191,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.447, 11.523, -3.858]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>804?0.106:0 }
+        scale={ (props.distance)>804?0.106:0 }
       />
       <mesh
         castShadow
@@ -7200,7 +7200,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-1.211, 11.777, -2.902]}
         rotation={[0, 0.161, 0]}
-        scale={ (props.distance*2)>805?0.106:0 }
+        scale={ (props.distance)>805?0.106:0 }
       />
       <mesh
         castShadow
@@ -7209,7 +7209,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-0.063, 9.352, -3.753]}
         rotation={[Math.PI, -1.216, Math.PI]}
-        scale={ (props.distance*2)>806?0.106:0 }
+        scale={ (props.distance)>806?0.106:0 }
       />
       <mesh
         castShadow
@@ -7218,7 +7218,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.789, 10.044, -4.647]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>807?0.106:0 }
+        scale={ (props.distance)>807?0.106:0 }
       />
       <mesh
         castShadow
@@ -7227,7 +7227,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.778, 11.502, -4.118]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>808?0.106:0 }
+        scale={ (props.distance)>808?0.106:0 }
       />
       <mesh
         castShadow
@@ -7236,7 +7236,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[0.708, 12.052, -0.737]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>809?0.106:0 }
+        scale={ (props.distance)>809?0.106:0 }
       />
       <mesh
         castShadow
@@ -7245,7 +7245,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.149, 10.657, -2.487]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>810?0.106:0 }
+        scale={ (props.distance)>810?0.106:0 }
       />
       <mesh
         castShadow
@@ -7254,7 +7254,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.672, 12.369, -2.532]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>811?0.106:0 }
+        scale={ (props.distance)>811?0.106:0 }
       />
       <mesh
         castShadow
@@ -7263,7 +7263,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[1.052, 11.523, -1.998]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>812?0.106:0 }
+        scale={ (props.distance)>812?0.106:0 }
       />
       <mesh
         castShadow
@@ -7272,7 +7272,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.528, 10.044, -4.191]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>813?0.106:0 }
+        scale={ (props.distance)>813?0.106:0 }
       />
       <mesh
         castShadow
@@ -7281,7 +7281,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-0.628, 11.523, -6.816]}
         rotation={[0, -1.253, 0]}
-        scale={ (props.distance*2)>814?0.106:0 }
+        scale={ (props.distance)>814?0.106:0 }
       />
       <mesh
         castShadow
@@ -7290,7 +7290,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[0.52, 11.502, -3.662]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>815?0.106:0 }
+        scale={ (props.distance)>815?0.106:0 }
       />
       <mesh
         castShadow
@@ -7299,7 +7299,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.159, 11.587, -2.145]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>816?0.106:0 }
+        scale={ (props.distance)>816?0.106:0 }
       />
       <mesh
         castShadow
@@ -7308,7 +7308,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.964, 8.782, -5.275]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>817?0.106:0 }
+        scale={ (props.distance)>817?0.106:0 }
       />
       <mesh
         castShadow
@@ -7317,7 +7317,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.16, 9.376, -7.581]}
         rotation={[0, -0.635, 0]}
-        scale={ (props.distance*2)>818?0.106:0 }
+        scale={ (props.distance)>818?0.106:0 }
       />
       <mesh
         castShadow
@@ -7326,7 +7326,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.819, 9.376, -7.14]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>819?0.106:0 }
+        scale={ (props.distance)>819?0.106:0 }
       />
       <mesh
         castShadow
@@ -7335,7 +7335,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.756, 10.771, -5.222]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>820?0.106:0 }
+        scale={ (props.distance)>820?0.106:0 }
       />
       <mesh
         castShadow
@@ -7344,7 +7344,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.023, 8.763, -8.942]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>821?0.106:0 }
+        scale={ (props.distance)>821?0.106:0 }
       />
       <mesh
         castShadow
@@ -7353,7 +7353,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.839, 10.496, -9.611]}
         rotation={[Math.PI, -1.427, Math.PI]}
-        scale={ (props.distance*2)>822?0.106:0 }
+        scale={ (props.distance)>822?0.106:0 }
       />
       <mesh
         castShadow
@@ -7362,7 +7362,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.779, 10.221, -8.473]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>823?0.106:0 }
+        scale={ (props.distance)>823?0.106:0 }
       />
       <mesh
         castShadow
@@ -7371,7 +7371,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.412, 8.805, -6.091]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>824?0.106:0 }
+        scale={ (props.distance)>824?0.106:0 }
       />
       <mesh
         castShadow
@@ -7380,7 +7380,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.819, 9.713, -7.363]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>825?0.106:0 }
+        scale={ (props.distance)>825?0.106:0 }
       />
       <mesh
         castShadow
@@ -7389,7 +7389,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[3.902, 10.559, -8.33]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>826?0.106:0 }
+        scale={ (props.distance)>826?0.106:0 }
       />
       <mesh
         castShadow
@@ -7398,7 +7398,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.032, 8.787, -4.581]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>827?0.106:0 }
+        scale={ (props.distance)>827?0.106:0 }
       />
       <mesh
         castShadow
@@ -7407,7 +7407,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.419, 9.632, -3.72]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>828?0.106:0 }
+        scale={ (props.distance)>828?0.106:0 }
       />
       <mesh
         castShadow
@@ -7416,7 +7416,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.887, 9.909, -2.308]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>829?0.106:0 }
+        scale={ (props.distance)>829?0.106:0 }
       />
       <mesh
         castShadow
@@ -7425,7 +7425,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.697, 9.019, -2.002]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>830?0.106:0 }
+        scale={ (props.distance)>830?0.106:0 }
       />
       <mesh
         castShadow
@@ -7434,7 +7434,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.546, 10.067, -1.838]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>831?0.106:0 }
+        scale={ (props.distance)>831?0.106:0 }
       />
       <mesh
         castShadow
@@ -7443,7 +7443,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.443, 10.237, -4.216]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>832?0.106:0 }
+        scale={ (props.distance)>832?0.106:0 }
       />
       <mesh
         castShadow
@@ -7452,7 +7452,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.105, 10.71, -6.809]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>833?0.106:0 }
+        scale={ (props.distance)>833?0.106:0 }
       />
       <mesh
         castShadow
@@ -7461,7 +7461,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.626, 9.632, -3.437]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>834?0.106:0 }
+        scale={ (props.distance)>834?0.106:0 }
       />
       <mesh
         castShadow
@@ -7470,7 +7470,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.825, 10.752, -5.241]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>835?0.106:0 }
+        scale={ (props.distance)>835?0.106:0 }
       />
       <mesh
         castShadow
@@ -7479,7 +7479,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.692, 10.478, -4.169]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>836?0.106:0 }
+        scale={ (props.distance)>836?0.106:0 }
       />
       <mesh
         castShadow
@@ -7488,7 +7488,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.787, 9.632, -2.903]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>837?0.106:0 }
+        scale={ (props.distance)>837?0.106:0 }
       />
       <mesh
         castShadow
@@ -7497,7 +7497,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.931, 10.499, -2.427]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>838?0.106:0 }
+        scale={ (props.distance)>838?0.106:0 }
       />
       <mesh
         castShadow
@@ -7506,7 +7506,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.737, 9.112, -1.959]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>839?0.106:0 }
+        scale={ (props.distance)>839?0.106:0 }
       />
       <mesh
         castShadow
@@ -7515,7 +7515,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.384, 9.019, -3.81]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>840?0.106:0 }
+        scale={ (props.distance)>840?0.106:0 }
       />
       <mesh
         castShadow
@@ -7524,7 +7524,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.232, 9.28, -3.816]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>841?0.106:0 }
+        scale={ (props.distance)>841?0.106:0 }
       />
       <mesh
         castShadow
@@ -7533,7 +7533,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.605, 9.97, -3.033]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>842?0.106:0 }
+        scale={ (props.distance)>842?0.106:0 }
       />
       <mesh
         castShadow
@@ -7542,7 +7542,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.136, 9.357, -4.647]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>843?0.106:0 }
+        scale={ (props.distance)>843?0.106:0 }
       />
       <mesh
         castShadow
@@ -7551,7 +7551,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.125, 10.815, -4.118]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>844?0.106:0 }
+        scale={ (props.distance)>844?0.106:0 }
       />
       <mesh
         castShadow
@@ -7560,7 +7560,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[4.496, 9.97, -2.487]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>845?0.106:0 }
+        scale={ (props.distance)>845?0.106:0 }
       />
       <mesh
         castShadow
@@ -7569,7 +7569,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[4.399, 10.836, -1.998]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>846?0.106:0 }
+        scale={ (props.distance)>846?0.106:0 }
       />
       <mesh
         castShadow
@@ -7578,7 +7578,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.875, 9.357, -4.191]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>847?0.106:0 }
+        scale={ (props.distance)>847?0.106:0 }
       />
       <mesh
         castShadow
@@ -7587,7 +7587,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[3.867, 10.815, -3.662]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>848?0.106:0 }
+        scale={ (props.distance)>848?0.106:0 }
       />
       <mesh
         castShadow
@@ -7596,7 +7596,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.664, 8.677, -5.275]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>849?0.106:0 }
+        scale={ (props.distance)>849?0.106:0 }
       />
       <mesh
         castShadow
@@ -7605,7 +7605,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.63, 8.699, -10.264]}
         rotation={[Math.PI, -1.089, Math.PI]}
-        scale={ (props.distance*2)>850?0.106:0 }
+        scale={ (props.distance)>850?0.106:0 }
       />
       <mesh
         castShadow
@@ -7614,7 +7614,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.464, 10.39, -9.28]}
         rotation={[Math.PI, -0.754, Math.PI]}
-        scale={ (props.distance*2)>851?0.106:0 }
+        scale={ (props.distance)>851?0.106:0 }
       />
       <mesh
         castShadow
@@ -7623,7 +7623,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.872, 10.665, -5.222]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>852?0.106:0 }
+        scale={ (props.distance)>852?0.106:0 }
       />
       <mesh
         castShadow
@@ -7632,7 +7632,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.216, 8.699, -6.091]}
         rotation={[-Math.PI, 0.66, -Math.PI]}
-        scale={ (props.distance*2)>853?0.106:0 }
+        scale={ (props.distance)>853?0.106:0 }
       />
       <mesh
         castShadow
@@ -7641,7 +7641,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.724, 8.657, -7.18]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>854?0.106:0 }
+        scale={ (props.distance)>854?0.106:0 }
       />
       <mesh
         castShadow
@@ -7650,7 +7650,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.595, 8.681, -4.581]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>855?0.106:0 }
+        scale={ (props.distance)>855?0.106:0 }
       />
       <mesh
         castShadow
@@ -7659,7 +7659,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.209, 9.526, -3.72]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>856?0.106:0 }
+        scale={ (props.distance)>856?0.106:0 }
       />
       <mesh
         castShadow
@@ -7668,7 +7668,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.74, 9.803, -2.308]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>857?0.106:0 }
+        scale={ (props.distance)>857?0.106:0 }
       />
       <mesh
         castShadow
@@ -7677,7 +7677,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.931, 8.913, -2.002]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>858?0.106:0 }
+        scale={ (props.distance)>858?0.106:0 }
       />
       <mesh
         castShadow
@@ -7686,7 +7686,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.082, 9.961, -1.838]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>859?0.106:0 }
+        scale={ (props.distance)>859?0.106:0 }
       />
       <mesh
         castShadow
@@ -7695,7 +7695,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.185, 10.131, -4.216]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>860?0.106:0 }
+        scale={ (props.distance)>860?0.106:0 }
       />
       <mesh
         castShadow
@@ -7704,7 +7704,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-2.523, 10.605, -6.809]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>861?0.106:0 }
+        scale={ (props.distance)>861?0.106:0 }
       />
       <mesh
         castShadow
@@ -7713,7 +7713,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.001, 9.526, -3.437]}
         rotation={[0, 0.316, 0]}
-        scale={ (props.distance*2)>862?0.106:0 }
+        scale={ (props.distance)>862?0.106:0 }
       />
       <mesh
         castShadow
@@ -7722,7 +7722,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.803, 10.647, -5.241]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>863?0.106:0 }
+        scale={ (props.distance)>863?0.106:0 }
       />
       <mesh
         castShadow
@@ -7731,7 +7731,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.935, 10.372, -4.169]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>864?0.106:0 }
+        scale={ (props.distance)>864?0.106:0 }
       />
       <mesh
         castShadow
@@ -7740,7 +7740,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.841, 9.526, -2.903]}
         rotation={[0, -0.128, 0]}
-        scale={ (props.distance*2)>865?0.106:0 }
+        scale={ (props.distance)>865?0.106:0 }
       />
       <mesh
         castShadow
@@ -7749,7 +7749,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.697, 10.393, -2.427]}
         rotation={[0, -0.462, 0]}
-        scale={ (props.distance*2)>866?0.106:0 }
+        scale={ (props.distance)>866?0.106:0 }
       />
       <mesh
         castShadow
@@ -7758,7 +7758,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.891, 9.007, -1.959]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>867?0.106:0 }
+        scale={ (props.distance)>867?0.106:0 }
       />
       <mesh
         castShadow
@@ -7767,7 +7767,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.243, 8.913, -3.81]}
         rotation={[Math.PI, -0.626, Math.PI]}
-        scale={ (props.distance*2)>868?0.106:0 }
+        scale={ (props.distance)>868?0.106:0 }
       />
       <mesh
         castShadow
@@ -7776,7 +7776,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-2.395, 9.175, -3.816]}
         rotation={[0, 0.462, 0]}
-        scale={ (props.distance*2)>869?0.106:0 }
+        scale={ (props.distance)>869?0.106:0 }
       />
       <mesh
         castShadow
@@ -7785,7 +7785,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.022, 9.864, -3.033]}
         rotation={[0, -0.174, 0]}
-        scale={ (props.distance*2)>870?0.106:0 }
+        scale={ (props.distance)>870?0.106:0 }
       />
       <mesh
         castShadow
@@ -7794,7 +7794,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.492, 9.251, -4.647]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>871?0.106:0 }
+        scale={ (props.distance)>871?0.106:0 }
       />
       <mesh
         castShadow
@@ -7803,7 +7803,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-3.503, 10.71, -4.118]}
         rotation={[Math.PI, -1.55, Math.PI]}
-        scale={ (props.distance*2)>872?0.106:0 }
+        scale={ (props.distance)>872?0.106:0 }
       />
       <mesh
         castShadow
@@ -7812,7 +7812,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.132, 9.864, -2.487]}
         rotation={[0, -0.617, 0]}
-        scale={ (props.distance*2)>873?0.106:0 }
+        scale={ (props.distance)>873?0.106:0 }
       />
       <mesh
         castShadow
@@ -7821,7 +7821,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.229, 10.731, -1.998]}
         rotation={[0, -0.952, 0]}
-        scale={ (props.distance*2)>874?0.106:0 }
+        scale={ (props.distance)>874?0.106:0 }
       />
       <mesh
         castShadow
@@ -7830,7 +7830,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.752, 9.251, -4.191]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>875?0.106:0 }
+        scale={ (props.distance)>875?0.106:0 }
       />
       <mesh
         castShadow
@@ -7839,7 +7839,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-3.761, 10.71, -3.662]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>876?0.106:0 }
+        scale={ (props.distance)>876?0.106:0 }
       />
       <mesh
         castShadow
@@ -7847,7 +7847,7 @@ export function Model(props) {
         geometry={nodes.Sphere571.geometry}
         material={materials["light blue"]}
         position={[-4.707, 10.312, 1.999]}
-        scale={ (props.distance*2)>877?0.106:0 }
+        scale={ (props.distance)>877?0.106:0 }
       />
       <mesh
         castShadow
@@ -7856,7 +7856,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-6.327, 11.054, 0.233]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>878?0.106:0 }
+        scale={ (props.distance)>878?0.106:0 }
       />
       <mesh
         castShadow
@@ -7865,7 +7865,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.516, 8.144, 4.263]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>879?0.106:0 }
+        scale={ (props.distance)>879?0.106:0 }
       />
       <mesh
         castShadow
@@ -7874,7 +7874,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.661, 8.737, 2.398]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>880?0.106:0 }
+        scale={ (props.distance)>880?0.106:0 }
       />
       <mesh
         castShadow
@@ -7883,7 +7883,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.724, 10.132, 4.316]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>881?0.106:0 }
+        scale={ (props.distance)>881?0.106:0 }
       />
       <mesh
         castShadow
@@ -7892,7 +7892,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.457, 8.124, 0.596]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>882?0.106:0 }
+        scale={ (props.distance)>882?0.106:0 }
       />
       <mesh
         castShadow
@@ -7901,7 +7901,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.7, 9.583, 1.065]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>883?0.106:0 }
+        scale={ (props.distance)>883?0.106:0 }
       />
       <mesh
         castShadow
@@ -7910,7 +7910,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.661, 9.075, 2.174]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>884?0.106:0 }
+        scale={ (props.distance)>884?0.106:0 }
       />
       <mesh
         castShadow
@@ -7919,7 +7919,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.577, 9.92, 1.208]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>885?0.106:0 }
+        scale={ (props.distance)>885?0.106:0 }
       />
       <mesh
         castShadow
@@ -7928,7 +7928,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.908, 9.271, 0.071]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>886?0.106:0 }
+        scale={ (props.distance)>886?0.106:0 }
       />
       <mesh
         castShadow
@@ -7937,7 +7937,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-6.098, 8.381, 0.377]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>887?0.106:0 }
+        scale={ (props.distance)>887?0.106:0 }
       />
       <mesh
         castShadow
@@ -7946,7 +7946,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.655, 10.114, 4.297]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>888?0.106:0 }
+        scale={ (props.distance)>888?0.106:0 }
       />
       <mesh
         castShadow
@@ -7955,7 +7955,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-6.103, 9.839, -1.791]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>889?0.106:0 }
+        scale={ (props.distance)>889?0.106:0 }
       />
       <mesh
         castShadow
@@ -7964,7 +7964,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.919, 8.718, -1.812]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>890?0.106:0 }
+        scale={ (props.distance)>890?0.106:0 }
       />
       <mesh
         castShadow
@@ -7973,7 +7973,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.928, 10.177, -1.284]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>891?0.106:0 }
+        scale={ (props.distance)>891?0.106:0 }
       />
       <mesh
         castShadow
@@ -7981,7 +7981,7 @@ export function Model(props) {
         geometry={nodes.Sphere922.geometry}
         material={materials["Dark blue"]}
         position={[-4.573, 8.049, -5.079]}
-        scale={ (props.distance*2)>892?0.106:0 }
+        scale={ (props.distance)>892?0.106:0 }
       />
       <mesh
         castShadow
@@ -7990,7 +7990,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-5.151, 8.198, -6.739]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>893?0.106:0 }
+        scale={ (props.distance)>893?0.106:0 }
       />
       <mesh
         castShadow
@@ -7999,7 +7999,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-5.012, 11.435, -2.145]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>894?0.106:0 }
+        scale={ (props.distance)>894?0.106:0 }
       />
       <mesh
         castShadow
@@ -8008,7 +8008,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.516, 8.525, -5.275]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>895?0.106:0 }
+        scale={ (props.distance)>895?0.106:0 }
       />
       <mesh
         castShadow
@@ -8017,7 +8017,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.724, 10.513, -5.222]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>896?0.106:0 }
+        scale={ (props.distance)>896?0.106:0 }
       />
       <mesh
         castShadow
@@ -8026,7 +8026,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.593, 9.651, -2.308]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>897?0.106:0 }
+        scale={ (props.distance)>897?0.106:0 }
       />
       <mesh
         castShadow
@@ -8035,7 +8035,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.783, 8.761, -2.002]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>898?0.106:0 }
+        scale={ (props.distance)>898?0.106:0 }
       />
       <mesh
         castShadow
@@ -8044,7 +8044,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.655, 10.495, -5.241]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>899?0.106:0 }
+        scale={ (props.distance)>899?0.106:0 }
       />
       <mesh
         castShadow
@@ -8053,7 +8053,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.788, 10.22, -4.169]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>900?0.106:0 }
+        scale={ (props.distance)>900?0.106:0 }
       />
       <mesh
         castShadow
@@ -8062,7 +8062,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[-4.604, 9.099, -4.191]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>901?0.106:0 }
+        scale={ (props.distance)>901?0.106:0 }
       />
       <mesh
         castShadow
@@ -8071,7 +8071,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[-4.613, 10.557, -3.662]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>902?0.106:0 }
+        scale={ (props.distance)>902?0.106:0 }
       />
       <mesh
         castShadow
@@ -8079,7 +8079,7 @@ export function Model(props) {
         geometry={nodes.Sphere939.geometry}
         material={materials["Dark blue"]}
         position={[5.978, 10.586, 1.999]}
-        scale={ (props.distance*2)>903?0.106:0 }
+        scale={ (props.distance)>903?0.106:0 }
       />
       <mesh
         castShadow
@@ -8088,7 +8088,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[7.061, 11.328, 0.087]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>904?0.106:0 }
+        scale={ (props.distance)>904?0.106:0 }
       />
       <mesh
         castShadow
@@ -8097,7 +8097,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.168, 8.418, 4.263]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>905?0.106:0 }
+        scale={ (props.distance)>905?0.106:0 }
       />
       <mesh
         castShadow
@@ -8106,7 +8106,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.023, 9.011, 2.398]}
         rotation={[0, -1.079, 0]}
-        scale={ (props.distance*2)>906?0.106:0 }
+        scale={ (props.distance)>906?0.106:0 }
       />
       <mesh
         castShadow
@@ -8115,7 +8115,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.96, 10.406, 4.316]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>907?0.106:0 }
+        scale={ (props.distance)>907?0.106:0 }
       />
       <mesh
         castShadow
@@ -8124,7 +8124,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.227, 8.398, 0.596]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>908?0.106:0 }
+        scale={ (props.distance)>908?0.106:0 }
       />
       <mesh
         castShadow
@@ -8133,7 +8133,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.984, 9.857, 1.065]}
         rotation={[Math.PI, -1.093, Math.PI]}
-        scale={ (props.distance*2)>909?0.106:0 }
+        scale={ (props.distance)>909?0.106:0 }
       />
       <mesh
         castShadow
@@ -8142,7 +8142,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.024, 9.349, 2.174]}
         rotation={[0, -1.125, 0]}
-        scale={ (props.distance*2)>910?0.106:0 }
+        scale={ (props.distance)>910?0.106:0 }
       />
       <mesh
         castShadow
@@ -8151,7 +8151,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.107, 10.194, 1.208]}
         rotation={[Math.PI, -0.603, Math.PI]}
-        scale={ (props.distance*2)>911?0.106:0 }
+        scale={ (props.distance)>911?0.106:0 }
       />
       <mesh
         castShadow
@@ -8160,7 +8160,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[7.48, 9.544, -0.076]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>912?0.106:0 }
+        scale={ (props.distance)>912?0.106:0 }
       />
       <mesh
         castShadow
@@ -8169,7 +8169,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[7.289, 8.655, 0.231]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>913?0.106:0 }
+        scale={ (props.distance)>913?0.106:0 }
       />
       <mesh
         castShadow
@@ -8178,7 +8178,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.029, 10.388, 4.297]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>914?0.106:0 }
+        scale={ (props.distance)>914?0.106:0 }
       />
       <mesh
         castShadow
@@ -8187,7 +8187,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[7.285, 10.113, -1.937]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>915?0.106:0 }
+        scale={ (props.distance)>915?0.106:0 }
       />
       <mesh
         castShadow
@@ -8196,7 +8196,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[7.468, 8.992, -1.958]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>916?0.106:0 }
+        scale={ (props.distance)>916?0.106:0 }
       />
       <mesh
         castShadow
@@ -8205,7 +8205,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[7.459, 10.451, -1.43]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>917?0.106:0 }
+        scale={ (props.distance)>917?0.106:0 }
       />
       <mesh
         castShadow
@@ -8213,7 +8213,7 @@ export function Model(props) {
         geometry={nodes.Sphere954.geometry}
         material={materials["light blue"]}
         position={[6.112, 8.323, -5.079]}
-        scale={ (props.distance*2)>918?0.106:0 }
+        scale={ (props.distance)>918?0.106:0 }
       />
       <mesh
         castShadow
@@ -8222,7 +8222,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.533, 8.472, -6.739]}
         rotation={[-Math.PI, 0.325, -Math.PI]}
-        scale={ (props.distance*2)>919?0.106:0 }
+        scale={ (props.distance)>919?0.106:0 }
       />
       <mesh
         castShadow
@@ -8231,7 +8231,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.673, 11.709, -2.145]}
         rotation={[Math.PI, -0.137, Math.PI]}
-        scale={ (props.distance*2)>920?0.106:0 }
+        scale={ (props.distance)>920?0.106:0 }
       />
       <mesh
         castShadow
@@ -8240,7 +8240,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.168, 8.799, -5.275]}
         rotation={[0, -0.49, 0]}
-        scale={ (props.distance*2)>921?0.106:0 }
+        scale={ (props.distance)>921?0.106:0 }
       />
       <mesh
         castShadow
@@ -8249,7 +8249,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.96, 10.787, -5.222]}
         rotation={[0, -1.414, 0]}
-        scale={ (props.distance*2)>922?0.106:0 }
+        scale={ (props.distance)>922?0.106:0 }
       />
       <mesh
         castShadow
@@ -8258,7 +8258,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.092, 9.925, -2.308]}
         rotation={[0, 0.951, 0]}
-        scale={ (props.distance*2)>923?0.106:0 }
+        scale={ (props.distance)>923?0.106:0 }
       />
       <mesh
         castShadow
@@ -8267,7 +8267,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[5.901, 9.035, -2.002]}
         rotation={[0, 1.286, 0]}
-        scale={ (props.distance*2)>924?0.106:0 }
+        scale={ (props.distance)>924?0.106:0 }
       />
       <mesh
         castShadow
@@ -8276,7 +8276,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.029, 10.769, -5.241]}
         rotation={[0, -1.436, 0]}
-        scale={ (props.distance*2)>925?0.106:0 }
+        scale={ (props.distance)>925?0.106:0 }
       />
       <mesh
         castShadow
@@ -8285,7 +8285,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[5.897, 10.494, -4.169]}
         rotation={[0, -1.102, 0]}
-        scale={ (props.distance*2)>926?0.106:0 }
+        scale={ (props.distance)>926?0.106:0 }
       />
       <mesh
         castShadow
@@ -8294,7 +8294,7 @@ export function Model(props) {
         material={materials["light blue"]}
         position={[6.08, 9.373, -4.191]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>927?0.106:0 }
+        scale={ (props.distance)>927?0.106:0 }
       />
       <mesh
         castShadow
@@ -8303,7 +8303,7 @@ export function Model(props) {
         material={materials["Dark blue"]}
         position={[6.071, 10.831, -3.662]}
         rotation={[Math.PI, -1.554, Math.PI]}
-        scale={ (props.distance*2)>928?0.106:0 }
+        scale={ (props.distance)>928?0.106:0 }
       />
     </group>
   );
