@@ -51,3 +51,11 @@
     height: 100%;
     z-index: -1;
 }
+
+.section {
+    /* position: absolute; */
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
