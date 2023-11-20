@@ -11,6 +11,7 @@ import {Model as PurpleCapsule} from '../models/PurpleCapsule.jsx';
 import tripod from '../assets/tripod.svg';
 import LeftSection from './LeftSection.js';
 import RightSection from './RightSection.js';
+import FAQ from './FAQ.js';
 
 const Home = () => {
   const [distance, setDistance] = useState(0);
@@ -68,7 +69,7 @@ const Home = () => {
                 <directionalLight intensity={2} position={[-6, 2, 2]} />
                 <Suspense fallback={null}>
                     {/* <Particles scale={40} distance={distance}/> */}
-                    <CapsulePill scale={1} distance={distance} />
+                    {/* <CapsulePill scale={1} distance={distance} /> */}
                     {/* <PurpleCapsule scale={1} distance={distance} /> */}
                     {/* <Model z={z} scale={0.3} setZ={setZ}/> */}
                 </Suspense>
@@ -84,6 +85,7 @@ const Home = () => {
             <img id='tripod' src={tripod} alt="" />
           </div>
         </div>
+        <FAQ />
     </div>
   )
 }

@@ -1,0 +1,56 @@
+.faqContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 10rem 11vw;
+}
+
+
+.texts >p{
+    color: rgba(222, 229, 255, 0.85);
+    font-family: Clash Grotesk;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.texts>h1 {
+    color: #FFF;
+    font-family: Avenir Next LT Pro;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.singleContainer {
+    border-bottom: 1px solid #3554BA;
+    cursor: pointer;
+}
+
+.singleContainer>div {
+    user-select: none;
+    display: flex;
+    gap:2rem;
+    justify-content: space-between;
+}
+
+.singleContainer>p {
+    color: #A1BBC9;
+    font-family: Avenir Next LT Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.singleContainer>div>p {
+    color: #FFF;
+    font-family: Avenir Next LT Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
