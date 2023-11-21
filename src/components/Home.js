@@ -12,6 +12,8 @@ import tripod from '../assets/tripod.svg';
 import LeftSection from './LeftSection.js';
 import RightSection from './RightSection.js';
 import FAQ from './FAQ.js';
+import Footer from './Footer.js';
+import BusinessCase from './BusinessCase.js';
 
 const Home = () => {
   const [distance, setDistance] = useState(0);
@@ -19,11 +21,11 @@ const Home = () => {
   const tripodElement = document.getElementById('tripod');
   const [flag, setFlag] = useState(false);
 
-  useEffect(()=>{
-    let capsuleDistance = window.scrollY+ capsuleElement?.getBoundingClientRect()?.top;
-    let tripodDistance = window.scrollY+ tripodElement?.getBoundingClientRect()?.top;
-    setFlag((capsuleDistance+200)>tripodDistance);
-  },[capsuleElement, distance, tripodElement]);
+  // useEffect(()=>{
+  //   let capsuleDistance = window.scrollY+ capsuleElement?.getBoundingClientRect()?.top;
+  //   let tripodDistance = window.scrollY+ tripodElement?.getBoundingClientRect()?.top;
+  //   setFlag((capsuleDistance+200)>tripodDistance);
+  // },[capsuleElement, distance, tripodElement]);
 
   const appearOptions = {
     threshold: 0,
@@ -62,14 +64,14 @@ const Home = () => {
               <Canvas camera={{ position: [0,0,-800], fov: 70}}>
                 {/* <color attach="background" args={[0xe2f4df]} /> */}
                 <ambientLight />
-                <OrbitControls enableZoom={false} autoRotate={false} />
+                <OrbitControls enableZoom={false} autoRotate/>
                 <pointLight position={[0, 20, 10]} intensity={1.5} />
                 <directionalLight intensity={2} position={[0.5, 0, 0.866]} />
                 <spotLight intensity={2}/>
                 <directionalLight intensity={2} position={[-6, 2, 2]} />
                 <Suspense fallback={null}>
-                    {/* <Particles scale={40} distance={distance}/> */}
-                    {/* <CapsulePill scale={1} distance={distance} /> */}
+                    {/* <Particles scale={40} distance={distance}/>
+                    <CapsulePill scale={1} distance={distance} /> */}
                     {/* <PurpleCapsule scale={1} distance={distance} /> */}
                     {/* <Model z={z} scale={0.3} setZ={setZ}/> */}
                 </Suspense>
@@ -82,10 +84,12 @@ const Home = () => {
             <RightSection />
           </div>
           <div style={{display:'flex', justifyContent:'center', alignItems: 'center'}}>
-            <img id='tripod' src={tripod} alt="" />
+            <img id='tripod' style={{width: '100%'}} src={tripod} alt="" />
           </div>
         </div>
+        <BusinessCase />
         <FAQ />
+        <Footer />
     </div>
   )
 }

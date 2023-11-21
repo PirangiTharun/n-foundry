@@ -1,0 +1,81 @@
+.footerContainer {
+    padding: 10rem 11vw 0 11vw;
+}
+
+.footerContainer>img {
+    margin-bottom: 2rem;
+}
+
+.flexing {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.mainText {
+    color: #FFF;
+    font-family: Avenir Next LT Pro;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block: 0;
+}
+
+.smallTitle {
+    color: rgba(255, 255, 255, 0.40);
+    font-family: Avenir Next LT Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+ul {
+    padding: 0;
+}
+ul>li {
+    color: #FFF;
+    font-family: Avenir Next LT Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contacts {
+    color: #FFF;
+    font-family: Avenir Next LT Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.cpr {
+    color: #FFF;
+    font-family: Avenir Next LT Pro;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tnc {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Avenir Next LT Pro;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}

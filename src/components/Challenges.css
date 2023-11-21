@@ -1,0 +1,53 @@
+.challengeContainer {
+    border-radius: 1.25rem;
+    background: #121C46;
+    padding: 2rem;
+}
+
+.challengeContainer>h1 {
+    color: var(--Headng-colour, rgba(255, 255, 255, 0.80));
+    text-align: center;
+    font-family: Avenir Next LT Pro;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.singleBox {
+    border-radius: 0.625rem;
+    background: #0B1335;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+.title>p {
+    color: #383F5D;
+    font-family: Avenir Next LT Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.info {
+    color: var(--Text-colour, rgba(198, 229, 241, 0.80));
+    font-family: Avenir Next LT Pro;
+    font-size: 1.55rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 1.5rem;
+    margin-block: 0;
+    text-align: left;
+}
+
+.singleBox>img {
+    float: right;
+}

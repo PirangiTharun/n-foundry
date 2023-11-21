@@ -1,0 +1,45 @@
+.businessCaseContainer {
+    padding: 10vw 11vw 0 10vw;
+}
+
+.smallTitle {
+    color: rgba(222, 229, 255, 0.85);
+    text-align: center;
+    font-family: Clash Grotesk;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.mainTitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Avenir Next LT Pro;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.info {
+    color: var(--Text-colour, rgba(198, 229, 241, 0.80));
+    text-align: center;
+    font-family: Avenir Next LT Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%; /* 1.675rem */
+}
+
+.innerTitle {
+    color: var(--Headng-colour, rgba(255, 255, 255, 0.80));
+    text-align: center;
+    font-family: Avenir Next LT Pro;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+}
