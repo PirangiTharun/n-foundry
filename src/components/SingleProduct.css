@@ -1,0 +1,25 @@
+.productContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 11vw;
+}
+
+.productTitle {
+    color: var(--Headng-colour, rgba(255, 255, 255, 0.80));
+    font-family: Avenir Next LT Pro;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 134%; /* 3.015rem */
+    text-transform: capitalize;
+}
+
+.productText {
+    color: var(--Text-colour, rgba(198, 229, 241, 0.80));
+    font-family: Avenir Next LT Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%; /* 1.675rem */
+}

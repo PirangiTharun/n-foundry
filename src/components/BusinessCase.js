@@ -9,7 +9,7 @@ import s2 from "../assets/s2.svg";
 import s3 from "../assets/s3.svg";
 import s4 from '../assets/s4.svg';
 import basket from '../assets/basket.svg';
-
+import video from '../assets/lab-video.mp4';
 
 const BusinessCase = () => {
   return (
@@ -17,7 +17,7 @@ const BusinessCase = () => {
       <div style={{ display: "flex" }}>
         <img src={bubble1} alt="" />
         <div>
-          <p className="smallTitle">Ai - Cobots</p>
+          <p className="smalltitle">Ai - Cobots</p>
           <h2 className="mainTitle">Automated mobile phase solution</h2>
           <p className="info">
             Mobile phase and base solution are frequently used the drug testing
@@ -41,6 +41,9 @@ const BusinessCase = () => {
                 <img style={{width: '45%'}} src={s4} alt="" />
             </div>
         </div>
+      </div>
+      <div>
+        <video style={{borderRadius: '1.5rem', margin: '10rem 0'}} src={video} width={'100%'} autoPlay={true} muted loop />
       </div>
     </div>
   );

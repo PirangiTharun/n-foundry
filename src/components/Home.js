@@ -14,6 +14,8 @@ import RightSection from './RightSection.js';
 import FAQ from './FAQ.js';
 import Footer from './Footer.js';
 import BusinessCase from './BusinessCase.js';
+import SecondBusiness from './SecondBusiness.js';
+import SingleProduct from './SingleProduct.js';
 
 const Home = () => {
   const [distance, setDistance] = useState(0);
@@ -88,6 +90,8 @@ const Home = () => {
           </div>
         </div>
         <BusinessCase />
+        <SecondBusiness />
+        <SingleProduct />
         <FAQ />
         <Footer />
     </div>

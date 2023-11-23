@@ -1,8 +1,9 @@
 .businessCaseContainer {
+    background: #0B1335;
     padding: 10vw 11vw 0 10vw;
 }
 
-.smallTitle {
+.smalltitle {
     color: rgba(222, 229, 255, 0.85);
     text-align: center;
     font-family: Clash Grotesk;
