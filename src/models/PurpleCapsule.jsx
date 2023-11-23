@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import pcapsule from "../gltfs/pill new colours .gltf";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/pill new colours .gltf");
+  const { nodes, materials } = useGLTF(pcapsule);
   return (
     <group position={[0,-200,0]} rotateOnAxis {...props} dispose={null}>
       <mesh
@@ -29,4 +30,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/pill new colours .gltf");
+useGLTF.preload(pcapsule);

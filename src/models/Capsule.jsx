@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useGLTF } from "@react-three/drei";
+import capsule from  '../gltfs/Capsule.gltf';
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/Capsule.gltf");
+  const { nodes, materials } = useGLTF(capsule);
   const [flag, setFlag] = useState(false);
   const [distance, setDistance] = useState(1);
   // console.log(z);
@@ -33,4 +34,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/Capsule.gltf");
+useGLTF.preload(capsule);
