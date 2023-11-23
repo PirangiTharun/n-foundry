@@ -1,6 +1,6 @@
 {
-  "homepage": "https://PirangiTharun.github.io/neural-foundry",
-  "name": "neural-foundry",
+  "homepage": "https://PirangiTharun.github.io/n-foundry",
+  "name": "n-foundry",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
