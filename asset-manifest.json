@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/n-foundry/static/css/main.23a69ed1.css",
-    "main.js": "/n-foundry/static/js/main.d7770339.js",
+    "main.js": "/n-foundry/static/js/main.cd694f65.js",
     "static/js/787.97f5327e.chunk.js": "/n-foundry/static/js/787.97f5327e.chunk.js",
+    "static/media/Pills out of capsule no lights.gltf": "/n-foundry/static/media/Pills out of capsule no lights.3a027cbff98dd59515bb.gltf",
     "static/media/overall.svg": "/n-foundry/static/media/overall.3df4ba239f22fe22a0f155f23bcbf432.svg",
     "static/media/lab-video.mp4": "/n-foundry/static/media/lab-video.771400003401f36cf433.mp4",
     "static/media/s1.svg": "/n-foundry/static/media/s1.528c83b7597dd20fcffaf0cf6b1611fc.svg",
     "static/media/s4.svg": "/n-foundry/static/media/s4.9b409b0302ede0878f47ee31e3bc48d9.svg",
+    "static/media/Capsule pills.gltf": "/n-foundry/static/media/Capsule pills.620aedec2b587202c75e.gltf",
     "static/media/basket.svg": "/n-foundry/static/media/basket.aad576a7cce7b048addd43e8db95b97f.svg",
     "static/media/bubble2.svg": "/n-foundry/static/media/bubble2.342a192821da4172860eb2ab830d5a25.svg",
     "static/media/bubble1.svg": "/n-foundry/static/media/bubble1.695cb48a7d6e561fb8c5b62c6b9903c5.svg",
     "static/media/tripod.svg": "/n-foundry/static/media/tripod.e1df3a1eaaf35d5feab0980c0d3e5f83.svg",
+    "static/media/Capsule.gltf": "/n-foundry/static/media/Capsule.b6f91743034ec54a57f8.gltf",
     "static/media/s3.svg": "/n-foundry/static/media/s3.5c2c3c5a623d3d52177c8a122a5323da.svg",
     "static/media/s2.svg": "/n-foundry/static/media/s2.01e6860307b04c4d97c35f52145b06bd.svg",
     "static/media/vr.svg": "/n-foundry/static/media/vr.4b823dad52c1be6576d87facfa1b1f6e.svg",
+    "static/media/pill new colours .gltf": "/n-foundry/static/media/pill new colours .1e63a225acdf93dc7301.gltf",
     "static/media/AvenirNextLTPro-Demi.otf": "/n-foundry/static/media/AvenirNextLTPro-Demi.2a0cec709a4166a967dc.otf",
     "static/media/human-warning.svg": "/n-foundry/static/media/human-warning.a0a2fbf60a5c5fed4ae4945a275e3e5d.svg",
     "static/media/Vector.svg": "/n-foundry/static/media/Vector.cf605c2f1ed9c487c158161b87185229.svg",
@@ -27,11 +31,11 @@
     "static/media/twitter.svg": "/n-foundry/static/media/twitter.09dec8da597153cad55872a41ddb0770.svg",
     "static/media/arrow-right.svg": "/n-foundry/static/media/arrow-right.bb0196ff6575a082456efaec1bed4ace.svg",
     "main.23a69ed1.css.map": "/n-foundry/static/css/main.23a69ed1.css.map",
-    "main.d7770339.js.map": "/n-foundry/static/js/main.d7770339.js.map",
+    "main.cd694f65.js.map": "/n-foundry/static/js/main.cd694f65.js.map",
     "787.97f5327e.chunk.js.map": "/n-foundry/static/js/787.97f5327e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23a69ed1.css",
-    "static/js/main.d7770339.js"
+    "static/js/main.cd694f65.js"
   ]
 }
