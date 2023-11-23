@@ -72,9 +72,9 @@ const Home = () => {
                 <spotLight intensity={2}/>
                 <directionalLight intensity={2} position={[-6, 2, 2]} />
                 <Suspense fallback={null}>
-                    {/* <Particles scale={40} distance={distance}/>
-                    <CapsulePill scale={1} distance={distance} /> */}
-                    {/* <PurpleCapsule scale={1} distance={distance} /> */}
+                    <Particles scale={40} distance={distance}/>
+                    {/* <CapsulePill scale={1} distance={distance} /> */}
+                    <PurpleCapsule scale={1} distance={distance} />
                     {/* <Model z={z} scale={0.3} setZ={setZ}/> */}
                 </Suspense>
               </Canvas>
