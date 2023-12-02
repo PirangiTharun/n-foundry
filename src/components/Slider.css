@@ -1,0 +1,29 @@
+.sliderContainer {
+    padding: 10rem 11vw;
+}
+
+.sliderHeading {
+    color: var(--Headng-colour, rgba(255, 255, 255, 0.80));
+    font-family: Avenir Next LT Pro;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 134%; /* 8.04rem */
+    text-transform: capitalize;
+}
+
+.activeIndex {
+    color: #21BAF6;
+    font-family: Avenir Next LT Pro;
+    font-size: 6.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.flexClass {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+}

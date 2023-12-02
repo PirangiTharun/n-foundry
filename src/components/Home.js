@@ -16,6 +16,7 @@ import Footer from './Footer.js';
 import BusinessCase from './BusinessCase.js';
 import SecondBusiness from './SecondBusiness.js';
 import SingleProduct from './SingleProduct.js';
+import Slider from './Slider.js';
 
 const Home = () => {
   const [distance, setDistance] = useState(0);
@@ -23,11 +24,11 @@ const Home = () => {
   const tripodElement = document.getElementById('tripod');
   const [flag, setFlag] = useState(false);
 
-  // useEffect(()=>{
-  //   let capsuleDistance = window.scrollY+ capsuleElement?.getBoundingClientRect()?.top;
-  //   let tripodDistance = window.scrollY+ tripodElement?.getBoundingClientRect()?.top;
-  //   setFlag((capsuleDistance+200)>tripodDistance);
-  // },[capsuleElement, distance, tripodElement]);
+  useEffect(()=>{
+    let capsuleDistance = window.scrollY+ capsuleElement?.getBoundingClientRect()?.top;
+    let tripodDistance = window.scrollY+ tripodElement?.getBoundingClientRect()?.top;
+    setFlag((capsuleDistance+200)>tripodDistance);
+  },[capsuleElement, distance, tripodElement]);
 
   const appearOptions = {
     threshold: 0,
@@ -62,7 +63,7 @@ const Home = () => {
             <p className='mainIntro'>AI, AR & Robotics</p>
 
             <button className='eqBtn'>Enquire now</button>
-            <div id='canvass' style={!flag? {position:'fixed'}:{position:'sticky'}} className='canvasContainer'>
+            <div id='canvass' style={!flag? {position:'fixed'}:{position: 'inherit'}} className='canvasContainer'>
               <Canvas camera={{ position: [0,0,-800], fov: 70}}>
                 {/* <color attach="background" args={[0xe2f4df]} /> */}
                 <ambientLight />
@@ -92,6 +93,7 @@ const Home = () => {
         <BusinessCase />
         <SecondBusiness />
         <SingleProduct />
+        <Slider />
         <FAQ />
         <Footer />
     </div>
