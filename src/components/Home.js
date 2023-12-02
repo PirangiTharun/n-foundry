@@ -17,6 +17,7 @@ import BusinessCase from './BusinessCase.js';
 import SecondBusiness from './SecondBusiness.js';
 import SingleProduct from './SingleProduct.js';
 import Slider from './Slider.js';
+import Features from './Features.js';
 
 const Home = () => {
   const [distance, setDistance] = useState(0);
@@ -73,9 +74,9 @@ const Home = () => {
                 <spotLight intensity={2}/>
                 <directionalLight intensity={2} position={[-6, 2, 2]} />
                 <Suspense fallback={null}>
-                    <Particles scale={40} distance={distance}/>
+                    {/* <Particles scale={40} distance={distance}/> */}
                     {/* <CapsulePill scale={1} distance={distance} /> */}
-                    <PurpleCapsule scale={1} distance={distance} />
+                    {/* <PurpleCapsule scale={1} distance={distance} /> */}
                     {/* <Model z={z} scale={0.3} setZ={setZ}/> */}
                 </Suspense>
               </Canvas>
@@ -94,6 +95,7 @@ const Home = () => {
         <SecondBusiness />
         <SingleProduct />
         <Slider />
+        <Features />
         <FAQ />
         <Footer />
     </div>
