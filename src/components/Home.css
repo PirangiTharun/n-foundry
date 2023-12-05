@@ -59,3 +59,24 @@
     justify-content: space-between;
     overflow-x: hidden;
 }
+
+@media screen and (max-width: 640px) {
+    .intro {
+        font-size: 1rem;
+    }
+    .mainIntro {
+        font-size: 1.75rem;
+    }
+    .eqBtn {
+        font-size: 1.1rem;
+    }
+    .canvasContainer {
+        width: 100%;
+        height: auto;
+        margin-top: 30rem;
+    }
+    .section {
+        display: block;
+        padding: 1rem;
+    }
+}

@@ -73,3 +73,30 @@
     line-height: 134%; /* 1.675rem */
     padding-right: 8px;
 }
+
+
+@media screen and (max-width: 640px) {
+    .leftSection{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .rightSection{
+        width: 100%;
+    }
+    .leftSection>h2, .rightSection>h2 {
+        font-size: 1.125rem;
+    }
+    .leftSection>p, .rightSection>p {
+        font-size: 0.875rem;
+    }
+    .rightSection>p>img {
+        display: none;
+    }
+    .rightSection>p>span {
+        font-size: 0.875rem;
+    }
+    .leftSection, .rightSection {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

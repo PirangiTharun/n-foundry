@@ -26,7 +26,7 @@ const SingleBox = ({title, info}) => {
             />
           </svg>
         </div>
-        <p className='info'>{info}</p>
+        <p className='singleInfo'>{info}</p>
         <img className='floatingImage' src={images[parseInt(title)-1]} alt="" />
       </div>
     );

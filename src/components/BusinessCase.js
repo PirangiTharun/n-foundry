@@ -15,7 +15,7 @@ const BusinessCase = () => {
   return (
     <div className="businessCaseContainer">
       <div style={{ display: "flex" }}>
-        <img src={bubble1} alt="" />
+        <img className="bubble1" src={bubble1} alt="" />
         <div>
           <p className="smalltitle">Ai - Cobots</p>
           <h2 className="mainTitle">Automated mobile phase solution</h2>
@@ -26,24 +26,30 @@ const BusinessCase = () => {
             with the help of A.I powered cobot workstation setup.
           </p>
         </div>
-        <img src={bubble2} alt="" />
+        <img className="bubble1" src={bubble2} alt="" />
       </div>
       <img style={{ width: "100%" }} src={overall} alt="" />
-      <div style={{display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '3rem'}}>
+      <img className="mobileBasket" src={basket} alt="" />
+      <div className="challenges">
         <Challenges />
+      </div>
+      <div className="gridBox">
+        <div className="deskChallenges">
+          <Challenges />
+        </div>
         <div style={{margin: 'auto'}}>
-            <img style={{width:'100%'}} src={basket} alt="" />
+            <img className="basket" src={basket} alt="" />
             <h3 className="innerTitle">Solution</h3>
-            <div style={{display: 'flex', flexWrap: 'wrap', gap: '4rem', justifyContent: 'space-between'}}>
-                <img style={{width: '45%'}} src={s1} alt="" />
-                <img style={{width: '45%'}} src={s2} alt="" />
-                <img style={{width: '45%'}} src={s3} alt="" />
-                <img style={{width: '45%'}} src={s4} alt="" />
+            <div className="boxesContainer">
+                <img className="boxes" src={s1} alt="" />
+                <img className="boxes" src={s2} alt="" />
+                <img className="boxes" src={s3} alt="" />
+                <img className="boxes" src={s4} alt="" />
             </div>
         </div>
       </div>
       <div>
-        <video style={{borderRadius: '1.5rem', margin: '10rem 0'}} src={video} width={'100%'} autoPlay={true} muted loop />
+        <video className="videoBox" src={video} width={'100%'} autoPlay={true} muted loop />
       </div>
     </div>
   );

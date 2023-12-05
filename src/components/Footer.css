@@ -80,3 +80,46 @@ ul>li {
     display: flex;
     justify-content: center;
 }
+
+.tncContainer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+    .footerContainer {
+        padding: 1rem;
+    }
+    .footerContainer>img {
+        height: 3rem;
+        width: 5.8rem;
+    }
+    .mainText {
+        font-size: 1.5rem;
+    }
+    .flexing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .smallTitle {
+        font-size: 0.8rem;
+    }
+    ul>li {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+    ul>li>img {
+        display: none;
+    }
+    .contacts {
+        font-size: 0.875rem;
+    }
+    .tncContainer{
+        display: none;
+    }
+    .imageContainer {
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+}

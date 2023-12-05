@@ -36,7 +36,7 @@
     line-height: normal;
 }
 
-.info {
+.singleInfo {
     color: var(--Text-colour, rgba(198, 229, 241, 0.80));
     font-family: Avenir Next LT Pro;
     font-size: 1.55rem;
@@ -50,4 +50,21 @@
 
 .singleBox>img {
     float: right;
+}
+
+@media screen and (max-width: 640px) {
+    .challengeContainer {
+        /* width: 100%; */
+        padding: 1rem;
+    }
+    .challengeContainer>h1 {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+    .floatingImage {
+        width: 3rem;
+    }
+    .singleInfo {
+        font-size: 1rem;
+    }
 }

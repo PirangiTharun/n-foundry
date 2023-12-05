@@ -4,7 +4,9 @@
     align-items: center;
     padding: 2.5rem 11vw;
 }
-
+.mobileNavContainer {
+    display: none;
+}
 .ulList {
     display: flex;
     align-items: center;
@@ -44,4 +46,53 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+@media screen and (max-width: 640px) {
+    .mobileNavContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background: #020719;
+    }
+    .navContainer {
+        display: none;
+    }
+    .mobileList {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .mobileList>li {
+        font-family: Avenir Next LT Pro;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        opacity: 0.8;
+        line-height: normal;
+        color: #2069A9;
+        margin-bottom: 1.5rem;
+    }
+    .mobileList>li:hover {
+        opacity: 1;
+        cursor: pointer;
+        background: linear-gradient(91deg, #01FDFE, #1C9DFE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .mobileContactBtn {
+        display: flex;
+        padding: 0.85713rem 2rem;
+        align-items: flex-start;
+        gap: 0.71431rem;
+        border-radius: 0.85713rem;
+        border: 1px solid #01FDFE;
+        font-family: Avenir Next LT Pro;
+        font-size: 1.42856rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: fit-content;
+    }
 }

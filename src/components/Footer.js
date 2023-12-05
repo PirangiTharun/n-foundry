@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div style={{marginTop: '5rem', display: 'flex', justifyContent: 'space-between'}}>
+        <div className='tncContainer'>
           <div style={{display: 'flex', gap: '2rem'}}>
             <p className='tnc'>Privacy<img src={arrow} alt="" /></p>
             <p className='tnc'>Terms and Conditions<img src={arrow} alt="" /></p>

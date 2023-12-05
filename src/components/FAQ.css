@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 10rem 11vw;
+    background: #0C1228;
 }
 
 
@@ -53,4 +54,24 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media screen and (max-width: 640px) {
+    .faqContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .texts>p {
+        font-size: 0.5rem;
+    }
+    .texts>h1 {
+        font-size: 1.5rem;
+    }
+    .singleContainer>p{
+        font-size: 0.8rem;
+    }
+    .singleContainer>div>p{
+        font-size: 1rem;
+    }
 }

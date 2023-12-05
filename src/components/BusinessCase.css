@@ -44,3 +44,82 @@
     line-height: normal;
     text-align: left;
 }
+.gridBox {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.mobileBasket {
+    display: none;
+    width: 100%;
+}
+
+.basket {
+    width: 100%;
+}
+.challenges {
+    display: none;
+}
+.boxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.boxes {
+    width: 45%;
+}
+.videoBox {
+    border-radius: 1.5rem;
+    margin: 10rem 0;
+}
+@media screen and (max-width: 640px) {
+    .businessCaseContainer {
+        padding: 1rem;
+    }
+    .bubble1 {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-top: 2rem;
+    }
+    .smalltitle {
+        font-size: 0.8rem;
+    }
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+    .info {
+        display: none;
+    }
+    .gridBox {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mobileBasket {
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .basket {
+        display: none;
+    }
+    .challenges{
+        display: block;
+    }
+    .boxesContainer {
+        gap: 2rem;
+    }
+    .boxes{
+        width: 45%;
+    }
+    .innerTitle {
+        font-size: 1.25rem;
+    }
+    .deskChallenges{
+        display: none;
+    }
+    .videoBox {
+        margin: 3rem 0;
+    }
+}

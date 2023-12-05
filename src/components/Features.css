@@ -74,3 +74,74 @@
   font-weight: 400;
   line-height: 134%; /* 1.675rem */
 }
+.textContainer {
+  margin-bottom: 5rem;
+}
+
+.mobileTextContainer {
+  margin-bottom: 3rem;
+  display: none;
+}
+
+.thirdBox {
+  display: flex;
+  flex-direction: column;
+}
+.tempp {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .textContainer {
+    display: none;
+  }
+  .mobileTextContainer {
+    display: block;
+  }
+  .featuresContainer {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  .featureContainer>h2 {
+    font-size: 1rem;
+  }
+  .featureContainer>p {
+    font-size: 0.7rem;
+  }
+  .featureContainer>img {
+    width: 2rem;
+  }
+  .mobileTextContainer>h2 {
+    color: var(--Headng-colour, rgba(255, 255, 255, 0.80));
+    font-family: Avenir Next LT Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 134%; /* 1.675rem */
+    text-transform: capitalize;
+  }
+  .mobileTextContainer>p {
+    color: var(--Text-colour, rgba(198, 229, 241, 0.80));
+    font-family: Avenir Next LT Pro;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%; /* 1.1725rem */
+  }
+  .thirdBox {
+    display: none;
+  }
+  .featureContainer {
+    padding: 1rem;
+    width: auto;
+  }
+  .fullSet {
+    gap: 0.5rem;
+  }
+  .firstSet, .secondSet {
+    width: auto;
+    gap: 1rem;
+  }
+  .tempp {
+    display: block;
+  }
+}

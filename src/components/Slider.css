@@ -27,3 +27,51 @@
     gap: 10rem;
     justify-content: space-between;
 }
+
+.singleSlider {
+    border-radius: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+    width: 350px;
+}
+
+.singleSlider>p {
+    color: rgba(198,229,241,0.80);
+    width: 80%;
+    font-family: Avenir Next LT Pro;
+    font-size: 2rem;
+}
+
+.singleSlider>img {
+    width: 200px;
+    float: right;
+}
+
+@media screen and (max-width: 640px) {
+    .sliderContainer {
+        padding: 1rem;
+    }
+    .sliderHeading {
+        font-size: 1.25rem;
+    }
+    .br {
+        display: none;
+    }
+    .flexClass {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .activeIndex {
+        font-size: 2rem;
+    }
+    .singleSlider {
+        padding: 1rem;
+        width: 80%;
+    }
+    .singleSlider>p {
+        font-size: 1.5rem;
+    }
+    .singleSlider>img {
+        width: 150px;
+    }
+}

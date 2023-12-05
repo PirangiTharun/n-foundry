@@ -5,13 +5,14 @@ import setting from '../assets/setting.svg';
 import check from '../assets/check.png';
 import refresh from '../assets/refresh.png';
 import backgroundimage from '../assets/backgroundimg.png';
+import './Slider.css';
 
 const icons = [exit, testtube, setting, check, refresh];
 const SliderCard = ({text,index}) => {
   return (
-    <div style={{background: `url(${backgroundimage})`, borderRadius: '2rem', padding: '2rem 2rem', overflow: 'hidden', width: '350px'}}>
-        <p style={{color: 'rgba(198, 229, 241, 0.80)', width: '80%', fontFamily: 'Avenir Next LT Pro', fontSize: '2rem'}}>{text}</p>
-        <img style={{width: '200px', float: 'right'}} src={icons[index]} alt="" />
+    <div className='singleSlider' style={{background: `url(${backgroundimage})`}}>
+        <p>{text}</p>
+        <img src={icons[index]} alt="" />
     </div>
   )
 }

@@ -55,9 +55,10 @@ const Home = () => {
     appearOnScroll.observe(slider);
   });
 
+  console.log(distance);
   
   return (
-    <div onWheel={(e)=> setDistance(Math.min(Math.max(distance+e.deltaY/5, 0),300))}>
+    <div onTouchMove={(e)=> setDistance(Math.min(Math.max(distance+e.touches[0].clientY/3, 0),300))} onWheel={(e)=> setDistance(Math.min(Math.max(distance+e.deltaY/5, 0),300))}>
         <Navbar />
         <div style={{height:'80svh'}}>
             <p className='intro'>Elevate Pharma Innovation <br></br> With Your Vision & Our Expertise in </p>
@@ -74,9 +75,9 @@ const Home = () => {
                 <spotLight intensity={2}/>
                 <directionalLight intensity={2} position={[-6, 2, 2]} />
                 <Suspense fallback={null}>
-                    {/* <Particles scale={40} distance={distance}/> */}
+                    <Particles scale={40} distance={distance}/>
                     {/* <CapsulePill scale={1} distance={distance} /> */}
-                    {/* <PurpleCapsule scale={1} distance={distance} /> */}
+                    <PurpleCapsule scale={1} distance={distance} />
                     {/* <Model z={z} scale={0.3} setZ={setZ}/> */}
                 </Suspense>
               </Canvas>

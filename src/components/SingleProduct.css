@@ -23,3 +23,19 @@
     font-weight: 400;
     line-height: 134%; /* 1.675rem */
 }
+
+@media screen and (max-width: 640px) {
+    .productTitle {
+        font-size: 1.25rem;
+    }
+    .productText {
+        font-size: 0.875rem;
+    }
+    .productContainer {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .productContainer>img {
+        width: 100%;
+    }
+}
