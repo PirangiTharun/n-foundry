@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/n-foundry/static/css/main.98309c3a.css",
-    "main.js": "/n-foundry/static/js/main.e1fe6df7.js",
+    "main.css": "/n-foundry/static/css/main.a53483be.css",
+    "main.js": "/n-foundry/static/js/main.ca3dacda.js",
     "static/js/787.97f5327e.chunk.js": "/n-foundry/static/js/787.97f5327e.chunk.js",
     "static/media/Pills out of capsule no lights.gltf": "/n-foundry/static/media/Pills out of capsule no lights.3a027cbff98dd59515bb.gltf",
     "static/media/overall.svg": "/n-foundry/static/media/overall.32139520aaa8a2c79793977d3dc1607c.svg",
@@ -40,12 +40,12 @@
     "static/media/minus-circle.svg": "/n-foundry/static/media/minus-circle.4c25ddcbd80df7dd1a69d81d5eaff0e3.svg",
     "static/media/twitter.svg": "/n-foundry/static/media/twitter.6f53c98d08b4b4e7c5a6c93f98dff2b4.svg",
     "static/media/arrow-right.svg": "/n-foundry/static/media/arrow-right.ff1b3299fddb1ddd700a4f3ce650ab08.svg",
-    "main.98309c3a.css.map": "/n-foundry/static/css/main.98309c3a.css.map",
-    "main.e1fe6df7.js.map": "/n-foundry/static/js/main.e1fe6df7.js.map",
+    "main.a53483be.css.map": "/n-foundry/static/css/main.a53483be.css.map",
+    "main.ca3dacda.js.map": "/n-foundry/static/js/main.ca3dacda.js.map",
     "787.97f5327e.chunk.js.map": "/n-foundry/static/js/787.97f5327e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98309c3a.css",
-    "static/js/main.e1fe6df7.js"
+    "static/css/main.a53483be.css",
+    "static/js/main.ca3dacda.js"
   ]
 }
