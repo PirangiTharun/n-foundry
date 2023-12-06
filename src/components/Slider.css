@@ -26,6 +26,7 @@
     display: flex;
     gap: 10rem;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .singleSlider {
@@ -60,16 +61,18 @@
     .flexClass {
         flex-wrap: wrap;
         gap: 0;
+        width: 100%;
     }
     .activeIndex {
         font-size: 2rem;
     }
     .singleSlider {
         padding: 1rem;
-        width: 80%;
+        width: 100%;
+        margin-left: 1rem;
     }
     .singleSlider>p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .singleSlider>img {
         width: 150px;

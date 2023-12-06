@@ -55,7 +55,6 @@ const Home = () => {
     appearOnScroll.observe(slider);
   });
 
-  console.log(distance);
   
   return (
     <div onTouchMove={(e)=> setDistance(Math.min(Math.max(distance+e.touches[0].clientY/3, 0),300))} onWheel={(e)=> setDistance(Math.min(Math.max(distance+e.deltaY/5, 0),300))}>

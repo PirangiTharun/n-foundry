@@ -3,10 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Slider.css';
 import SliderCard from './SliderCard';
+import { NewSlider } from './NewSlider';
 
 
 const Slider = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [active, setActive] = useState(0);
     const [deviceWidth, setDeviceWidth] = useState(1920);
     useEffect(()=>{
         setDeviceWidth(window.innerWidth);
@@ -16,8 +17,8 @@ const Slider = () => {
         <div className='sliderContainer'>
             <h1 className='sliderHeading'>Process functions<br className='br'></br> performed</h1>
             <div className='flexClass'>
-                <p className='activeIndex'>0{activeIndex+1}</p>
-                <Swiper
+                <p className='activeIndex'>0{Math.max(active+1,1)}</p>
+                {/* <Swiper
                     spaceBetween={-10}
                     slidesPerView={deviceWidth>1000?2:1}
                     onSlideChange={(e) => setActiveIndex(e.activeIndex)}
@@ -28,7 +29,8 @@ const Slider = () => {
                     <SwiperSlide><SliderCard text="Manage smart assistant section" index={2} /></SwiperSlide>
                     <SwiperSlide><SliderCard text="Manage smart assistant section" index={3} /></SwiperSlide>
                     <SwiperSlide><SliderCard text="Ata synchronization" index={4} /></SwiperSlide>
-                </Swiper>
+                </Swiper> */}
+                <NewSlider active={active} setActive={setActive} />
             </div>
         </div>
     )
